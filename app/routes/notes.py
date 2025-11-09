@@ -8,7 +8,7 @@ from bson import ObjectId
 from flask import Blueprint, jsonify, request, g
 
 from ..db import get_db
-from ..utils import error_response
+from ..utils import error_response, resolve_existing_id
 from ..auth import require_auth  # uses g.current_user set by token
 
 notes_bp = Blueprint("notes", __name__, url_prefix="/api/v1/notes")
@@ -49,7 +49,6 @@ def _object_id(id_str: str):
 @notes_bp.post("/")
 @require_auth()
 def create_note():
-    """Create a note for a match (any logged-in user)."""
     db = get_db()
     data = request.get_json(silent=True) or {}
 
@@ -59,23 +58,20 @@ def create_note():
     if not match_id or not text:
         return error_response("VALIDATION_ERROR", "match_id and note are required", 422)
 
-    mid = _object_id(match_id)
+    # returns the canonical _id (ObjectId OR string) if it exists; otherwise None
+    mid = resolve_existing_id(db, "matches", match_id)
     if not mid:
-        return error_response("VALIDATION_ERROR", "match_id must be a valid ObjectId", 422)
-
-    # ensure match exists
-    if not db.matches.find_one({"_id": mid}, {"_id": 1}):
         return error_response("NOT_FOUND", "Match not found", 404)
 
     doc = {
-        "match_id": mid,
+        "match_id": mid,                 # store in the same type as matches._id
         "note": text,
         "created_by": {
             "user_id": str(g.current_user["_id"]),
             "username": g.current_user.get("email"),
             "role": g.current_user.get("role", "user"),
         },
-        "created_at": datetime.now(timezone.utc),   # keep as datetime in DB
+        "created_at": datetime.now(timezone.utc),
         "edited_at": None,
     }
     ins = db.match_notes.insert_one(doc)
@@ -83,18 +79,18 @@ def create_note():
     return jsonify(_serialize_note(saved)), 201
 
 
+
 @notes_bp.get("/")
 @require_auth()
 def list_notes():
-    """List notes for a match: /api/v1/notes?match_id=..."""
     db = get_db()
     match_id = (request.args.get("match_id") or "").strip()
     if not match_id:
         return error_response("VALIDATION_ERROR", "match_id is required", 422)
 
-    mid = _object_id(match_id)
+    mid = resolve_existing_id(db, "matches", match_id)
     if not mid:
-        return error_response("VALIDATION_ERROR", "match_id must be a valid ObjectId", 422)
+        return error_response("NOT_FOUND", "Match not found", 404)
 
     cur = db.match_notes.find({"match_id": mid}).sort([("created_at", 1)])
     return jsonify([_serialize_note(d) for d in cur]), 200

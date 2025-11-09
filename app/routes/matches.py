@@ -89,6 +89,19 @@ def list_matches():
     total = db.matches.count_documents(q)
     return ok_list(items, page, page_size, total)
 
+@matches_bp.get("/<match_id>")
+def get_match(match_id):
+    db = get_db()
+    if not match_id:
+        return error_response("VALIDATION_ERROR", "Invalid match id", 400)
+
+    key = maybe_object_id(match_id)          # accepts ObjectId hex or plain string
+    doc = db.matches.find_one({"_id": key})
+    if not doc:
+        return error_response("NOT_FOUND", "Match not found", 404)
+
+    return jsonify(_serialize_match(doc)), 200
+
 
 @matches_bp.post("/")
 @require_auth(role="admin")

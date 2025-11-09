@@ -12,7 +12,9 @@ db = client[DB_NAME]
 
 DATA_DIR = Path(__file__).resolve().parents[1] / "data"
 
+
 def to_iso(d):
+    """Return YYYY-MM-DD or None."""
     if not d:
         return None
     try:
@@ -20,74 +22,145 @@ def to_iso(d):
     except Exception:
         return None
 
-def score_to_str(score):
-    if isinstance(score, dict) and isinstance(score.get("ft"), list) and len(score["ft"]) == 2:
-        h, a = score["ft"]
-        return f"{int(h)}-{int(a)}"
+
+def normalize_score(score):
+    """
+    Return:
+      {"ft": {"home": int, "away": int}, "ht": {"home": int, "away": int}} (ht optional)
+    Accepts any of:
+      - {"ft":[h,a], "ht":[h,a]}
+      - {"ft":{"home":h,"away":a}, "ht":{"home":h,"away":a}}
+      - "h-a" (string)
+    """
+    out = {}
+
+    # dict with ft/ht
+    if isinstance(score, dict):
+        ft = score.get("ft")
+        if isinstance(ft, list) and len(ft) == 2:
+            out["ft"] = {"home": int(ft[0]), "away": int(ft[1])}
+        elif isinstance(ft, dict):
+            out["ft"] = {"home": int(ft.get("home", 0)), "away": int(ft.get("away", 0))}
+
+        ht = score.get("ht")
+        if isinstance(ht, list) and len(ht) == 2:
+            out["ht"] = {"home": int(ht[0]), "away": int(ht[1])}
+        elif isinstance(ht, dict):
+            out["ht"] = {"home": int(ht.get("home", 0)), "away": int(ht.get("away", 0))}
+
+        return out if "ft" in out else None
+
+    # plain "h-a" string
     if isinstance(score, str):
         m = re.match(r"^\s*(\d+)\D+(\d+)\s*$", score)
         if m:
-            return f"{int(m.group(1))}-{int(m.group(2))}"
+            return {"ft": {"home": int(m.group(1)), "away": int(m.group(2))}}
+
     return None
+
 
 def load_simple(name):
     path = DATA_DIR / f"{name}.json"
-    if not path.exists(): return 0
+    if not path.exists():
+        return 0
     docs = json.loads(path.read_text(encoding="utf-8"))
     if isinstance(docs, dict) and "data" in docs:
         docs = docs["data"]
-    if not isinstance(docs, list): return 0
+    if not isinstance(docs, list):
+        return 0
     if docs:
-        db[name].delete_many({})      # replace-all for simplicity
+        db[name].delete_many({})  # replace-all for simplicity
         db[name].insert_many(docs)
     return len(docs)
 
+
 def load_matches():
     path = DATA_DIR / "matches.json"
-    if not path.exists(): return 0
+    if not path.exists():
+        return 0
+
     raw = json.loads(path.read_text(encoding="utf-8"))
+
     # Accept either: {"name": "...", "matches":[...]} OR a plain list of matches
+    comp_name = None
+    matches = []
     if isinstance(raw, dict) and "matches" in raw:
         comp_name = raw.get("name")
-        matches = raw["matches"]
-    else:
-        comp_name = None
-        matches = raw if isinstance(raw, list) else []
+        matches = raw["matches"] if isinstance(raw["matches"], list) else []
+    elif isinstance(raw, list):
+        matches = raw
 
-    # Try to parse season from comp_name like "... 2025/26"
-    season = None
+    # Try to parse a season token from name like "... 2025/26"
+    parsed_season = None
     if isinstance(comp_name, str):
         m = re.search(r"(\d{4}\s*/\s*\d{2})$", comp_name)
         if m:
-            season = m.group(1).replace(" ", "")
+            parsed_season = m.group(1).replace(" ", "")
             comp_name = comp_name[: m.start()].strip()
 
     out = []
+    comp_ids_seen = set()
+    season_ids_seen = set()
+
     for m in matches:
-        doc = dict(m)  # copy
+        doc = dict(m)  # shallow copy
+
+        # Normalise date string
         doc["date"] = to_iso(m.get("date"))
-        if comp_name:  doc["competition"] = comp_name
-        if season:     doc["season"] = season
-        s = score_to_str(m.get("score"))
-        if s: doc["score"] = s
-        # remove None fields
+
+        # Normalise score
+        ns = normalize_score(m.get("score"))
+        if ns:
+            doc["score"] = ns
+        else:
+            doc.pop("score", None)
+
+        # Preserve explicit *_id fields from input; optionally add human-friendly fields
+        if comp_name and "competition" not in doc:
+            doc["competition"] = comp_name
+        if parsed_season and "season" not in doc:
+            doc["season"] = parsed_season
+
+        # Track ids to build a delete filter for this dataset
+        if isinstance(doc.get("competition_id"), str):
+            comp_ids_seen.add(doc["competition_id"])
+        if isinstance(doc.get("season_id"), str):
+            season_ids_seen.add(doc["season_id"])
+
+        # Remove None fields
         doc = {k: v for k, v in doc.items() if v is not None}
         out.append(doc)
 
-    if out:
-        q = {}
-        if comp_name: q["competition"] = comp_name
-        if season:    q["season"] = season
-        if q: db.matches.delete_many(q)
-        else: db.matches.delete_many({})
-        db.matches.insert_many(out)
+    if not out:
+        return 0
+
+    # Replace existing docs for this dataset if we can identify them narrowly
+    delete_filter = {}
+    if len(comp_ids_seen) == 1:
+        delete_filter["competition_id"] = next(iter(comp_ids_seen))
+    if len(season_ids_seen) == 1:
+        delete_filter["season_id"] = next(iter(season_ids_seen))
+
+    if delete_filter:
+        db.matches.delete_many(delete_filter)
+    else:
+        db.matches.delete_many({})
+
+    db.matches.insert_many(out)
     return len(out)
 
+
 def ensure_indexes():
+    # New schema indexes
     db.matches.create_index([("date", 1)])
+    db.matches.create_index([("competition_id", 1), ("season_id", 1)])
+    db.matches.create_index([("home_team_id", 1)])
+    db.matches.create_index([("away_team_id", 1)])
+    # Legacy helpers (if you ever query these)
     db.matches.create_index([("competition", 1), ("season", 1)])
     db.matches.create_index([("team1", 1)])
     db.matches.create_index([("team2", 1)])
+
 
 def main():
     n_matches = load_matches()
@@ -96,7 +169,11 @@ def main():
     n_comp = load_simple("competitions")
     n_seasons = load_simple("seasons")
     ensure_indexes()
-    print(f"Loaded: matches={n_matches}, teams={n_teams}, players={n_players}, competitions={n_comp}, seasons={n_seasons}")
+    print(
+        f"Loaded: matches={n_matches}, teams={n_teams}, players={n_players}, "
+        f"competitions={n_comp}, seasons={n_seasons}"
+    )
+
 
 if __name__ == "__main__":
     main()
