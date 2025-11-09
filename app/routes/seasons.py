@@ -1,9 +1,17 @@
 # app/seasons.py
 from bson import ObjectId
 from flask import Blueprint, request, jsonify
+
 from ..db import get_db
 from ..decorators import require_auth
-from ..utils import normalize_id, normalize_many, error_response, ok_list
+from ..utils import (
+    normalize_id,
+    normalize_many,
+    error_response,
+    ok_list,
+    maybe_object_id,
+    resolve_existing_id,
+)
 from ..pagination import parse_pagination_args
 from ..validators import SeasonSchema
 
@@ -17,11 +25,10 @@ def list_seasons():
     competition_id = request.args.get("competition_id")
     status = request.args.get("status")
     if competition_id:
-        try:
-            q["competition_id"] = ObjectId(competition_id)
-        except Exception:
-            # --- FIX: Added 3 arguments ---
+        resolved = resolve_existing_id(db, "competitions", competition_id)
+        if not resolved:
             return error_response("VALIDATION_ERROR", "Invalid competition_id", 400)
+        q["competition_id"] = resolved
     if status:
         q["status"] = status
     cursor = (db.seasons.find(q)
@@ -35,15 +42,18 @@ def list_seasons():
 @seasons_bp.get("/<season_id>")
 def get_season(season_id):
     db = get_db()
-    try:
-        doc = db.seasons.find_one({"_id": ObjectId(season_id)})
-    except Exception:
-        # --- FIX: Added 3 arguments ---
+    if not season_id:
         return error_response("VALIDATION_ERROR", "Invalid season id", 400)
+
+    key = maybe_object_id(season_id)
+    doc = db.seasons.find_one({"_id": key})
     if not doc:
         # --- FIX: Added 3 arguments ---
         return error_response("NOT_FOUND", "Season not found", 404)
-    return jsonify(normalize_id(doc)), 200
+    doc = normalize_id(doc)
+    if isinstance(doc.get("competition_id"), ObjectId):
+        doc["competition_id"] = str(doc["competition_id"])
+    return jsonify(doc), 200
 
 @seasons_bp.post("/")
 @require_auth(role="admin")
@@ -52,17 +62,19 @@ def create_season():
     payload = request.get_json(force=True) or {}
     data = SeasonSchema().load(payload)
 
-    try:
-        data["competition_id"] = ObjectId(data["competition_id"])
-    except Exception:
-        return error_response("VALIDATION_ERROR", "Invalid competition_id format, must be ObjectId", 422)
+    resolved_comp = resolve_existing_id(db, "competitions", data["competition_id"])
+    if not resolved_comp:
+        return error_response("VALIDATION_ERROR", "Competition not found", 422)
+
+    data["competition_id"] = resolved_comp
 
     res = db.seasons.insert_one(data)
     doc = db.seasons.find_one({"_id": res.inserted_id})
 
     # 🔧 convert ObjectIds to strings for JSON
     doc = normalize_id(doc)
-    doc["competition_id"] = str(doc["competition_id"])
+    if isinstance(doc.get("competition_id"), ObjectId):
+        doc["competition_id"] = str(doc["competition_id"])
 
     return jsonify(doc), 201
 
@@ -72,33 +84,34 @@ def update_season(season_id):
     db = get_db()
     payload = request.get_json(force=True) or {}
     data = SeasonSchema(partial=True).load(payload)
-    try:
-        _id = ObjectId(season_id)
-    except Exception:
-        # --- FIX: Added 3 arguments ---
+    if not season_id:
         return error_response("VALIDATION_ERROR", "Invalid season id", 400)
+
+    key = maybe_object_id(season_id)
     if "competition_id" in data:
-        try:
-            data["competition_id"] = ObjectId(data["competition_id"])
-        except Exception:
-            return error_response("VALIDATION_ERROR", "Invalid competition_id format", 422)
-    res = db.seasons.update_one({"_id": _id}, {"$set": data})
+        resolved_comp = resolve_existing_id(db, "competitions", data["competition_id"])
+        if not resolved_comp:
+            return error_response("VALIDATION_ERROR", "Invalid competition_id", 422)
+        data["competition_id"] = resolved_comp
+    res = db.seasons.update_one({"_id": key}, {"$set": data})
     if res.matched_count == 0:
         # --- FIX: Added 3 arguments ---
         return error_response("NOT_FOUND", "Season not found", 404)
-    doc = db.seasons.find_one({"_id": _id})
-    return jsonify(normalize_id(doc)), 200
+    doc = db.seasons.find_one({"_id": key})
+    doc = normalize_id(doc)
+    if isinstance(doc.get("competition_id"), ObjectId):
+        doc["competition_id"] = str(doc["competition_id"])
+    return jsonify(doc), 200
 
 @seasons_bp.delete("/<season_id>")
 @require_auth(role="admin")
 def delete_season(season_id):
     db = get_db()
-    try:
-        _id = ObjectId(season_id)
-    except Exception:
-        # --- FIX: Added 3 arguments ---
+    if not season_id:
         return error_response("VALIDATION_ERROR", "Invalid season id", 400)
-    res = db.seasons.delete_one({"_id": _id})
+
+    key = maybe_object_id(season_id)
+    res = db.seasons.delete_one({"_id": key})
     if res.deleted_count == 0:
         # --- FIX: Added 3 arguments ---
         return error_response("NOT_FOUND", "Season not found", 404)

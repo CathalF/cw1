@@ -5,11 +5,11 @@ from datetime import datetime
 import re
 from typing import Any, Dict, Deque
 
-from bson import ObjectId, Regex
+from bson import Regex
 from flask import Blueprint, jsonify, request
 
 from ..db import get_db, collection
-from ..utils import error_response
+from ..utils import error_response, maybe_object_id
 
 tables_bp = Blueprint("tables", __name__, url_prefix="/api/v1/tables")
 MATCHES = collection("matches")
@@ -91,11 +91,11 @@ def league_table_by_ids(competition_id: str, season_id: str):
       score.ft.{home, away}, score.winner
     """
     db = get_db()
-    try:
-        comp_id = ObjectId(competition_id)
-        seas_id = ObjectId(season_id)
-    except Exception:
-        return error_response("VALIDATION_ERROR", "competition_id and season_id must be valid ObjectIds", 422)
+    if not competition_id or not season_id:
+        return error_response("VALIDATION_ERROR", "competition_id and season_id are required", 422)
+
+    comp_id = maybe_object_id(competition_id)
+    seas_id = maybe_object_id(season_id)
 
     pipeline = [
         {"$match": {"competition_id": comp_id, "season_id": seas_id, "status": "finished"}},

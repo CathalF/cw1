@@ -1,9 +1,15 @@
 # app/competitions.py
-from bson import ObjectId
 from flask import Blueprint, request, jsonify
+
 from ..db import get_db
 from ..decorators import require_auth
-from ..utils import normalize_id, normalize_many, error_response, ok_list
+from ..utils import (
+    normalize_id,
+    normalize_many,
+    error_response,
+    ok_list,
+    maybe_object_id,
+)
 from ..pagination import parse_pagination_args
 from ..validators import CompetitionSchema
 
@@ -28,11 +34,11 @@ def list_competitions():
 @competitions_bp.get("/<comp_id>")
 def get_competition(comp_id):
     db = get_db()
-    try:
-        doc = db.competitions.find_one({"_id": ObjectId(comp_id)})
-    except Exception:
-        # --- FIX: Added 3 arguments ---
+    if not comp_id:
         return error_response("VALIDATION_ERROR", "Invalid competition id", 400)
+
+    key = maybe_object_id(comp_id)
+    doc = db.competitions.find_one({"_id": key})
     if not doc:
         # --- FIX: Added 3 arguments ---
         return error_response("NOT_FOUND", "Competition not found", 404)
@@ -54,28 +60,26 @@ def update_competition(comp_id):
     db = get_db()
     payload = request.get_json(force=True) or {}
     data = CompetitionSchema(partial=True).load(payload)
-    try:
-        _id = ObjectId(comp_id)
-    except Exception:
-        # --- FIX: Added 3 arguments ---
+    if not comp_id:
         return error_response("VALIDATION_ERROR", "Invalid competition id", 400)
-    res = db.competitions.update_one({"_id": _id}, {"$set": data})
+
+    key = maybe_object_id(comp_id)
+    res = db.competitions.update_one({"_id": key}, {"$set": data})
     if res.matched_count == 0:
         # --- FIX: Added 3 arguments ---
         return error_response("NOT_FOUND", "Competition not found", 404)
-    doc = db.competitions.find_one({"_id": _id})
+    doc = db.competitions.find_one({"_id": key})
     return jsonify(normalize_id(doc)), 200
 
 @competitions_bp.delete("/<comp_id>")
 @require_auth(role="admin")
 def delete_competition(comp_id):
     db = get_db()
-    try:
-        _id = ObjectId(comp_id)
-    except Exception:
-        # --- FIX: Added 3 arguments ---
+    if not comp_id:
         return error_response("VALIDATION_ERROR", "Invalid competition id", 400)
-    res = db.competitions.delete_one({"_id": _id})
+
+    key = maybe_object_id(comp_id)
+    res = db.competitions.delete_one({"_id": key})
     if res.deleted_count == 0:
         # --- FIX: Added 3 arguments ---
         return error_response("NOT_FOUND", "Competition not found", 404)

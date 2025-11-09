@@ -1,9 +1,16 @@
 # app/players.py
-from bson import ObjectId
 from flask import Blueprint, request, jsonify
+
 from ..db import get_db
 from ..decorators import require_auth
-from ..utils import normalize_id, normalize_many, error_response, ok_list
+from ..utils import (
+    normalize_id,
+    normalize_many,
+    error_response,
+    ok_list,
+    resolve_existing_id,
+    maybe_object_id,
+)
 from ..pagination import parse_pagination_args
 from ..validators import PlayerSchema
 
@@ -19,11 +26,10 @@ def list_players():
     if name:
         q["$text"] = {"$search": name}
     if team_id:
-        try:
-            q["current_team_id"] = ObjectId(team_id)
-        except Exception:
-            # --- FIX: Added 3 arguments ---
+        resolved = resolve_existing_id(db, "teams", team_id)
+        if not resolved:
             return error_response("VALIDATION_ERROR", "Invalid team_id", 400)
+        q["current_team_id"] = resolved
     cursor = (db.players.find(q)
                       .sort("name", 1)
                       .skip((page - 1) * page_size)
@@ -35,11 +41,11 @@ def list_players():
 @players_bp.get("/<player_id>")
 def get_player(player_id):
     db = get_db()
-    try:
-        doc = db.players.find_one({"_id": ObjectId(player_id)})
-    except Exception:
-        # --- FIX: Added 3 arguments ---
+    if not player_id:
         return error_response("VALIDATION_ERROR", "Invalid player id", 400)
+
+    key = maybe_object_id(player_id)
+    doc = db.players.find_one({"_id": key})
     if not doc:
         # --- FIX: Added 3 arguments ---
         return error_response("NOT_FOUND", "Player not found", 404)
@@ -61,28 +67,26 @@ def update_player(player_id):
     db = get_db()
     payload = request.get_json(force=True) or {}
     data = PlayerSchema(partial=True).load(payload)
-    try:
-        _id = ObjectId(player_id)
-    except Exception:
-        # --- FIX: Added 3 arguments ---
+    if not player_id:
         return error_response("VALIDATION_ERROR", "Invalid player id", 400)
-    res = db.players.update_one({"_id": _id}, {"$set": data})
+
+    key = maybe_object_id(player_id)
+    res = db.players.update_one({"_id": key}, {"$set": data})
     if res.matched_count == 0:
         # --- FIX: Added 3 arguments ---
         return error_response("NOT_FOUND", "Player not found", 404)
-    doc = db.players.find_one({"_id": _id})
+    doc = db.players.find_one({"_id": key})
     return jsonify(normalize_id(doc)), 200
 
 @players_bp.delete("/<player_id>")
 @require_auth(role="admin")
 def delete_player(player_id):
     db = get_db()
-    try:
-        _id = ObjectId(player_id)
-    except Exception:
-        # --- FIX: Added 3 arguments ---
+    if not player_id:
         return error_response("VALIDATION_ERROR", "Invalid player id", 400)
-    res = db.players.delete_one({"_id": _id})
+
+    key = maybe_object_id(player_id)
+    res = db.players.delete_one({"_id": key})
     if res.deleted_count == 0:
         # --- FIX: Added 3 arguments ---
         return error_response("NOT_FOUND", "Player not found", 404)

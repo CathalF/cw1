@@ -5,8 +5,6 @@
       "round": "Matchday 1",
       "date": "2025-08-15",
       "time": "20:00",
-      "team1": "Liverpool FC",
-      "team2": "AFC Bournemouth",
       "score": {
         "ft": [
           4,
@@ -16,27 +14,37 @@
           1,
           0
         ]
-      }
+      },
+      "_id": "match_001",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Liverpool FC",
+      "home_team_id": "team_liverpool_fc",
+      "away_team": "AFC Bournemouth",
+      "away_team_id": "team_afc_bournemouth"
     },
     {
       "round": "Matchday 1",
       "date": "2025-08-16",
       "time": "12:30",
-      "team1": "Aston Villa FC",
-      "team2": "Newcastle United FC",
       "score": {
         "ft": [
           0,
           0
         ]
-      }
+      },
+      "_id": "match_002",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Aston Villa FC",
+      "home_team_id": "team_aston_villa_fc",
+      "away_team": "Newcastle United FC",
+      "away_team_id": "team_newcastle_united_fc"
     },
     {
       "round": "Matchday 1",
       "date": "2025-08-16",
       "time": "15:00",
-      "team1": "Brighton & Hove Albion FC",
-      "team2": "Fulham FC",
       "score": {
         "ft": [
           1,
@@ -46,14 +54,19 @@
           0,
           0
         ]
-      }
+      },
+      "_id": "match_003",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Brighton & Hove Albion FC",
+      "home_team_id": "team_brighton_hove_albion_fc",
+      "away_team": "Fulham FC",
+      "away_team_id": "team_fulham_fc"
     },
     {
       "round": "Matchday 1",
       "date": "2025-08-16",
       "time": null,
-      "team1": "Sunderland AFC",
-      "team2": "West Ham United FC",
       "score": {
         "ft": [
           3,
@@ -63,14 +76,19 @@
           0,
           0
         ]
-      }
+      },
+      "_id": "match_004",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Sunderland AFC",
+      "home_team_id": "team_sunderland_afc",
+      "away_team": "West Ham United FC",
+      "away_team_id": "team_west_ham_united_fc"
     },
     {
       "round": "Matchday 1",
       "date": "2025-08-16",
       "time": null,
-      "team1": "Tottenham Hotspur FC",
-      "team2": "Burnley FC",
       "score": {
         "ft": [
           3,
@@ -80,14 +98,19 @@
           1,
           0
         ]
-      }
+      },
+      "_id": "match_005",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Tottenham Hotspur FC",
+      "home_team_id": "team_tottenham_hotspur_fc",
+      "away_team": "Burnley FC",
+      "away_team_id": "team_burnley_fc"
     },
     {
       "round": "Matchday 1",
       "date": "2025-08-16",
       "time": "17:30",
-      "team1": "Wolverhampton Wanderers FC",
-      "team2": "Manchester City FC",
       "score": {
         "ft": [
           0,
@@ -97,14 +120,19 @@
           0,
           2
         ]
-      }
+      },
+      "_id": "match_006",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Wolverhampton Wanderers FC",
+      "home_team_id": "team_wolverhampton_wanderers_fc",
+      "away_team": "Manchester City FC",
+      "away_team_id": "team_manchester_city_fc"
     },
     {
       "round": "Matchday 1",
       "date": "2025-08-17",
       "time": "14:00",
-      "team1": "Nottingham Forest FC",
-      "team2": "Brentford FC",
       "score": {
         "ft": [
           3,
@@ -114,27 +142,37 @@
           3,
           0
         ]
-      }
+      },
+      "_id": "match_007",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Nottingham Forest FC",
+      "home_team_id": "team_nottingham_forest_fc",
+      "away_team": "Brentford FC",
+      "away_team_id": "team_brentford_fc"
     },
     {
       "round": "Matchday 1",
       "date": "2025-08-17",
       "time": null,
-      "team1": "Chelsea FC",
-      "team2": "Crystal Palace FC",
       "score": {
         "ft": [
           0,
           0
         ]
-      }
+      },
+      "_id": "match_008",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Chelsea FC",
+      "home_team_id": "team_chelsea_fc",
+      "away_team": "Crystal Palace FC",
+      "away_team_id": "team_crystal_palace_fc"
     },
     {
       "round": "Matchday 1",
       "date": "2025-08-17",
       "time": "16:30",
-      "team1": "Manchester United FC",
-      "team2": "Arsenal FC",
       "score": {
         "ft": [
           0,
@@ -144,14 +182,19 @@
           0,
           1
         ]
-      }
+      },
+      "_id": "match_009",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Manchester United FC",
+      "home_team_id": "team_manchester_united_fc",
+      "away_team": "Arsenal FC",
+      "away_team_id": "team_arsenal_fc"
     },
     {
       "round": "Matchday 1",
       "date": "2025-08-18",
       "time": "20:00",
-      "team1": "Leeds United FC",
-      "team2": "Everton FC",
       "score": {
         "ft": [
           1,
@@ -161,14 +204,19 @@
           0,
           0
         ]
-      }
+      },
+      "_id": "match_010",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Leeds United FC",
+      "home_team_id": "team_leeds_united_fc",
+      "away_team": "Everton FC",
+      "away_team_id": "team_everton_fc"
     },
     {
       "round": "Matchday 2",
       "date": "2025-08-22",
       "time": "20:00",
-      "team1": "West Ham United FC",
-      "team2": "Chelsea FC",
       "score": {
         "ft": [
           1,
@@ -178,14 +226,19 @@
           1,
           3
         ]
-      }
+      },
+      "_id": "match_011",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "West Ham United FC",
+      "home_team_id": "team_west_ham_united_fc",
+      "away_team": "Chelsea FC",
+      "away_team_id": "team_chelsea_fc"
     },
     {
       "round": "Matchday 2",
       "date": "2025-08-23",
       "time": "12:30",
-      "team1": "Manchester City FC",
-      "team2": "Tottenham Hotspur FC",
       "score": {
         "ft": [
           0,
@@ -195,14 +248,19 @@
           0,
           2
         ]
-      }
+      },
+      "_id": "match_012",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Manchester City FC",
+      "home_team_id": "team_manchester_city_fc",
+      "away_team": "Tottenham Hotspur FC",
+      "away_team_id": "team_tottenham_hotspur_fc"
     },
     {
       "round": "Matchday 2",
       "date": "2025-08-23",
       "time": "15:00",
-      "team1": "AFC Bournemouth",
-      "team2": "Wolverhampton Wanderers FC",
       "score": {
         "ft": [
           1,
@@ -212,14 +270,19 @@
           1,
           0
         ]
-      }
+      },
+      "_id": "match_013",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "AFC Bournemouth",
+      "home_team_id": "team_afc_bournemouth",
+      "away_team": "Wolverhampton Wanderers FC",
+      "away_team_id": "team_wolverhampton_wanderers_fc"
     },
     {
       "round": "Matchday 2",
       "date": "2025-08-23",
       "time": null,
-      "team1": "Brentford FC",
-      "team2": "Aston Villa FC",
       "score": {
         "ft": [
           1,
@@ -229,14 +292,19 @@
           1,
           0
         ]
-      }
+      },
+      "_id": "match_014",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Brentford FC",
+      "home_team_id": "team_brentford_fc",
+      "away_team": "Aston Villa FC",
+      "away_team_id": "team_aston_villa_fc"
     },
     {
       "round": "Matchday 2",
       "date": "2025-08-23",
       "time": null,
-      "team1": "Burnley FC",
-      "team2": "Sunderland AFC",
       "score": {
         "ft": [
           2,
@@ -246,14 +314,19 @@
           0,
           0
         ]
-      }
+      },
+      "_id": "match_015",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Burnley FC",
+      "home_team_id": "team_burnley_fc",
+      "away_team": "Sunderland AFC",
+      "away_team_id": "team_sunderland_afc"
     },
     {
       "round": "Matchday 2",
       "date": "2025-08-23",
       "time": "17:30",
-      "team1": "Arsenal FC",
-      "team2": "Leeds United FC",
       "score": {
         "ft": [
           5,
@@ -263,14 +336,19 @@
           2,
           0
         ]
-      }
+      },
+      "_id": "match_016",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Arsenal FC",
+      "home_team_id": "team_arsenal_fc",
+      "away_team": "Leeds United FC",
+      "away_team_id": "team_leeds_united_fc"
     },
     {
       "round": "Matchday 2",
       "date": "2025-08-24",
       "time": "14:00",
-      "team1": "Crystal Palace FC",
-      "team2": "Nottingham Forest FC",
       "score": {
         "ft": [
           1,
@@ -280,14 +358,19 @@
           1,
           0
         ]
-      }
+      },
+      "_id": "match_017",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Crystal Palace FC",
+      "home_team_id": "team_crystal_palace_fc",
+      "away_team": "Nottingham Forest FC",
+      "away_team_id": "team_nottingham_forest_fc"
     },
     {
       "round": "Matchday 2",
       "date": "2025-08-24",
       "time": null,
-      "team1": "Everton FC",
-      "team2": "Brighton & Hove Albion FC",
       "score": {
         "ft": [
           2,
@@ -297,14 +380,19 @@
           1,
           0
         ]
-      }
+      },
+      "_id": "match_018",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Everton FC",
+      "home_team_id": "team_everton_fc",
+      "away_team": "Brighton & Hove Albion FC",
+      "away_team_id": "team_brighton_hove_albion_fc"
     },
     {
       "round": "Matchday 2",
       "date": "2025-08-24",
       "time": "16:30",
-      "team1": "Fulham FC",
-      "team2": "Manchester United FC",
       "score": {
         "ft": [
           1,
@@ -314,14 +402,19 @@
           0,
           0
         ]
-      }
+      },
+      "_id": "match_019",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Fulham FC",
+      "home_team_id": "team_fulham_fc",
+      "away_team": "Manchester United FC",
+      "away_team_id": "team_manchester_united_fc"
     },
     {
       "round": "Matchday 2",
       "date": "2025-08-25",
       "time": "20:00",
-      "team1": "Newcastle United FC",
-      "team2": "Liverpool FC",
       "score": {
         "ft": [
           2,
@@ -331,14 +424,19 @@
           0,
           1
         ]
-      }
+      },
+      "_id": "match_020",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Newcastle United FC",
+      "home_team_id": "team_newcastle_united_fc",
+      "away_team": "Liverpool FC",
+      "away_team_id": "team_liverpool_fc"
     },
     {
       "round": "Matchday 3",
       "date": "2025-08-30",
       "time": "12:30",
-      "team1": "Chelsea FC",
-      "team2": "Fulham FC",
       "score": {
         "ft": [
           2,
@@ -348,14 +446,19 @@
           1,
           0
         ]
-      }
+      },
+      "_id": "match_021",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Chelsea FC",
+      "home_team_id": "team_chelsea_fc",
+      "away_team": "Fulham FC",
+      "away_team_id": "team_fulham_fc"
     },
     {
       "round": "Matchday 3",
       "date": "2025-08-30",
       "time": "15:00",
-      "team1": "Sunderland AFC",
-      "team2": "Brentford FC",
       "score": {
         "ft": [
           2,
@@ -365,14 +468,19 @@
           0,
           0
         ]
-      }
+      },
+      "_id": "match_022",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Sunderland AFC",
+      "home_team_id": "team_sunderland_afc",
+      "away_team": "Brentford FC",
+      "away_team_id": "team_brentford_fc"
     },
     {
       "round": "Matchday 3",
       "date": "2025-08-30",
       "time": null,
-      "team1": "Manchester United FC",
-      "team2": "Burnley FC",
       "score": {
         "ft": [
           3,
@@ -382,14 +490,19 @@
           1,
           0
         ]
-      }
+      },
+      "_id": "match_023",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Manchester United FC",
+      "home_team_id": "team_manchester_united_fc",
+      "away_team": "Burnley FC",
+      "away_team_id": "team_burnley_fc"
     },
     {
       "round": "Matchday 3",
       "date": "2025-08-30",
       "time": null,
-      "team1": "Tottenham Hotspur FC",
-      "team2": "AFC Bournemouth",
       "score": {
         "ft": [
           0,
@@ -399,14 +512,19 @@
           0,
           1
         ]
-      }
+      },
+      "_id": "match_024",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Tottenham Hotspur FC",
+      "home_team_id": "team_tottenham_hotspur_fc",
+      "away_team": "AFC Bournemouth",
+      "away_team_id": "team_afc_bournemouth"
     },
     {
       "round": "Matchday 3",
       "date": "2025-08-30",
       "time": null,
-      "team1": "Wolverhampton Wanderers FC",
-      "team2": "Everton FC",
       "score": {
         "ft": [
           2,
@@ -416,27 +534,37 @@
           1,
           2
         ]
-      }
+      },
+      "_id": "match_025",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Wolverhampton Wanderers FC",
+      "home_team_id": "team_wolverhampton_wanderers_fc",
+      "away_team": "Everton FC",
+      "away_team_id": "team_everton_fc"
     },
     {
       "round": "Matchday 3",
       "date": "2025-08-30",
       "time": "17:30",
-      "team1": "Leeds United FC",
-      "team2": "Newcastle United FC",
       "score": {
         "ft": [
           0,
           0
         ]
-      }
+      },
+      "_id": "match_026",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Leeds United FC",
+      "home_team_id": "team_leeds_united_fc",
+      "away_team": "Newcastle United FC",
+      "away_team_id": "team_newcastle_united_fc"
     },
     {
       "round": "Matchday 3",
       "date": "2025-08-31",
       "time": "14:00",
-      "team1": "Brighton & Hove Albion FC",
-      "team2": "Manchester City FC",
       "score": {
         "ft": [
           2,
@@ -446,14 +574,19 @@
           0,
           1
         ]
-      }
+      },
+      "_id": "match_027",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Brighton & Hove Albion FC",
+      "home_team_id": "team_brighton_hove_albion_fc",
+      "away_team": "Manchester City FC",
+      "away_team_id": "team_manchester_city_fc"
     },
     {
       "round": "Matchday 3",
       "date": "2025-08-31",
       "time": null,
-      "team1": "Nottingham Forest FC",
-      "team2": "West Ham United FC",
       "score": {
         "ft": [
           0,
@@ -463,14 +596,19 @@
           0,
           0
         ]
-      }
+      },
+      "_id": "match_028",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Nottingham Forest FC",
+      "home_team_id": "team_nottingham_forest_fc",
+      "away_team": "West Ham United FC",
+      "away_team_id": "team_west_ham_united_fc"
     },
     {
       "round": "Matchday 3",
       "date": "2025-08-31",
       "time": "16:30",
-      "team1": "Liverpool FC",
-      "team2": "Arsenal FC",
       "score": {
         "ft": [
           1,
@@ -480,14 +618,19 @@
           0,
           0
         ]
-      }
+      },
+      "_id": "match_029",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Liverpool FC",
+      "home_team_id": "team_liverpool_fc",
+      "away_team": "Arsenal FC",
+      "away_team_id": "team_arsenal_fc"
     },
     {
       "round": "Matchday 3",
       "date": "2025-08-31",
       "time": "19:00",
-      "team1": "Aston Villa FC",
-      "team2": "Crystal Palace FC",
       "score": {
         "ft": [
           0,
@@ -497,14 +640,19 @@
           0,
           1
         ]
-      }
+      },
+      "_id": "match_030",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Aston Villa FC",
+      "home_team_id": "team_aston_villa_fc",
+      "away_team": "Crystal Palace FC",
+      "away_team_id": "team_crystal_palace_fc"
     },
     {
       "round": "Matchday 4",
       "date": "2025-09-13",
       "time": "12:30",
-      "team1": "Arsenal FC",
-      "team2": "Nottingham Forest FC",
       "score": {
         "ft": [
           3,
@@ -514,14 +662,19 @@
           1,
           0
         ]
-      }
+      },
+      "_id": "match_031",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Arsenal FC",
+      "home_team_id": "team_arsenal_fc",
+      "away_team": "Nottingham Forest FC",
+      "away_team_id": "team_nottingham_forest_fc"
     },
     {
       "round": "Matchday 4",
       "date": "2025-09-13",
       "time": "15:00",
-      "team1": "AFC Bournemouth",
-      "team2": "Brighton & Hove Albion FC",
       "score": {
         "ft": [
           2,
@@ -531,40 +684,55 @@
           1,
           0
         ]
-      }
+      },
+      "_id": "match_032",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "AFC Bournemouth",
+      "home_team_id": "team_afc_bournemouth",
+      "away_team": "Brighton & Hove Albion FC",
+      "away_team_id": "team_brighton_hove_albion_fc"
     },
     {
       "round": "Matchday 4",
       "date": "2025-09-13",
       "time": null,
-      "team1": "Crystal Palace FC",
-      "team2": "Sunderland AFC",
       "score": {
         "ft": [
           0,
           0
         ]
-      }
+      },
+      "_id": "match_033",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Crystal Palace FC",
+      "home_team_id": "team_crystal_palace_fc",
+      "away_team": "Sunderland AFC",
+      "away_team_id": "team_sunderland_afc"
     },
     {
       "round": "Matchday 4",
       "date": "2025-09-13",
       "time": null,
-      "team1": "Everton FC",
-      "team2": "Aston Villa FC",
       "score": {
         "ft": [
           0,
           0
         ]
-      }
+      },
+      "_id": "match_034",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Everton FC",
+      "home_team_id": "team_everton_fc",
+      "away_team": "Aston Villa FC",
+      "away_team_id": "team_aston_villa_fc"
     },
     {
       "round": "Matchday 4",
       "date": "2025-09-13",
       "time": null,
-      "team1": "Fulham FC",
-      "team2": "Leeds United FC",
       "score": {
         "ft": [
           1,
@@ -574,14 +742,19 @@
           0,
           0
         ]
-      }
+      },
+      "_id": "match_035",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Fulham FC",
+      "home_team_id": "team_fulham_fc",
+      "away_team": "Leeds United FC",
+      "away_team_id": "team_leeds_united_fc"
     },
     {
       "round": "Matchday 4",
       "date": "2025-09-13",
       "time": null,
-      "team1": "Newcastle United FC",
-      "team2": "Wolverhampton Wanderers FC",
       "score": {
         "ft": [
           1,
@@ -591,14 +764,19 @@
           1,
           0
         ]
-      }
+      },
+      "_id": "match_036",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Newcastle United FC",
+      "home_team_id": "team_newcastle_united_fc",
+      "away_team": "Wolverhampton Wanderers FC",
+      "away_team_id": "team_wolverhampton_wanderers_fc"
     },
     {
       "round": "Matchday 4",
       "date": "2025-09-13",
       "time": "17:30",
-      "team1": "West Ham United FC",
-      "team2": "Tottenham Hotspur FC",
       "score": {
         "ft": [
           0,
@@ -608,14 +786,19 @@
           0,
           0
         ]
-      }
+      },
+      "_id": "match_037",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "West Ham United FC",
+      "home_team_id": "team_west_ham_united_fc",
+      "away_team": "Tottenham Hotspur FC",
+      "away_team_id": "team_tottenham_hotspur_fc"
     },
     {
       "round": "Matchday 4",
       "date": "2025-09-13",
       "time": "20:00",
-      "team1": "Brentford FC",
-      "team2": "Chelsea FC",
       "score": {
         "ft": [
           2,
@@ -625,14 +808,19 @@
           1,
           0
         ]
-      }
+      },
+      "_id": "match_038",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Brentford FC",
+      "home_team_id": "team_brentford_fc",
+      "away_team": "Chelsea FC",
+      "away_team_id": "team_chelsea_fc"
     },
     {
       "round": "Matchday 4",
       "date": "2025-09-14",
       "time": "14:00",
-      "team1": "Burnley FC",
-      "team2": "Liverpool FC",
       "score": {
         "ft": [
           0,
@@ -642,14 +830,19 @@
           0,
           0
         ]
-      }
+      },
+      "_id": "match_039",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Burnley FC",
+      "home_team_id": "team_burnley_fc",
+      "away_team": "Liverpool FC",
+      "away_team_id": "team_liverpool_fc"
     },
     {
       "round": "Matchday 4",
       "date": "2025-09-14",
       "time": "16:30",
-      "team1": "Manchester City FC",
-      "team2": "Manchester United FC",
       "score": {
         "ft": [
           3,
@@ -659,14 +852,19 @@
           1,
           0
         ]
-      }
+      },
+      "_id": "match_040",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Manchester City FC",
+      "home_team_id": "team_manchester_city_fc",
+      "away_team": "Manchester United FC",
+      "away_team_id": "team_manchester_united_fc"
     },
     {
       "round": "Matchday 5",
       "date": "2025-09-20",
       "time": "12:30",
-      "team1": "Liverpool FC",
-      "team2": "Everton FC",
       "score": {
         "ft": [
           2,
@@ -676,14 +874,19 @@
           2,
           0
         ]
-      }
+      },
+      "_id": "match_041",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Liverpool FC",
+      "home_team_id": "team_liverpool_fc",
+      "away_team": "Everton FC",
+      "away_team_id": "team_everton_fc"
     },
     {
       "round": "Matchday 5",
       "date": "2025-09-20",
       "time": "15:00",
-      "team1": "Brighton & Hove Albion FC",
-      "team2": "Tottenham Hotspur FC",
       "score": {
         "ft": [
           2,
@@ -693,14 +896,19 @@
           2,
           1
         ]
-      }
+      },
+      "_id": "match_042",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Brighton & Hove Albion FC",
+      "home_team_id": "team_brighton_hove_albion_fc",
+      "away_team": "Tottenham Hotspur FC",
+      "away_team_id": "team_tottenham_hotspur_fc"
     },
     {
       "round": "Matchday 5",
       "date": "2025-09-20",
       "time": null,
-      "team1": "Burnley FC",
-      "team2": "Nottingham Forest FC",
       "score": {
         "ft": [
           1,
@@ -710,14 +918,19 @@
           1,
           1
         ]
-      }
+      },
+      "_id": "match_043",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Burnley FC",
+      "home_team_id": "team_burnley_fc",
+      "away_team": "Nottingham Forest FC",
+      "away_team_id": "team_nottingham_forest_fc"
     },
     {
       "round": "Matchday 5",
       "date": "2025-09-20",
       "time": null,
-      "team1": "West Ham United FC",
-      "team2": "Crystal Palace FC",
       "score": {
         "ft": [
           1,
@@ -727,14 +940,19 @@
           0,
           1
         ]
-      }
+      },
+      "_id": "match_044",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "West Ham United FC",
+      "home_team_id": "team_west_ham_united_fc",
+      "away_team": "Crystal Palace FC",
+      "away_team_id": "team_crystal_palace_fc"
     },
     {
       "round": "Matchday 5",
       "date": "2025-09-20",
       "time": null,
-      "team1": "Wolverhampton Wanderers FC",
-      "team2": "Leeds United FC",
       "score": {
         "ft": [
           1,
@@ -744,14 +962,19 @@
           1,
           3
         ]
-      }
+      },
+      "_id": "match_045",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Wolverhampton Wanderers FC",
+      "home_team_id": "team_wolverhampton_wanderers_fc",
+      "away_team": "Leeds United FC",
+      "away_team_id": "team_leeds_united_fc"
     },
     {
       "round": "Matchday 5",
       "date": "2025-09-20",
       "time": "17:30",
-      "team1": "Manchester United FC",
-      "team2": "Chelsea FC",
       "score": {
         "ft": [
           2,
@@ -761,14 +984,19 @@
           2,
           0
         ]
-      }
+      },
+      "_id": "match_046",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Manchester United FC",
+      "home_team_id": "team_manchester_united_fc",
+      "away_team": "Chelsea FC",
+      "away_team_id": "team_chelsea_fc"
     },
     {
       "round": "Matchday 5",
       "date": "2025-09-20",
       "time": "20:00",
-      "team1": "Fulham FC",
-      "team2": "Brentford FC",
       "score": {
         "ft": [
           3,
@@ -778,27 +1006,37 @@
           2,
           1
         ]
-      }
+      },
+      "_id": "match_047",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Fulham FC",
+      "home_team_id": "team_fulham_fc",
+      "away_team": "Brentford FC",
+      "away_team_id": "team_brentford_fc"
     },
     {
       "round": "Matchday 5",
       "date": "2025-09-21",
       "time": "14:00",
-      "team1": "AFC Bournemouth",
-      "team2": "Newcastle United FC",
       "score": {
         "ft": [
           0,
           0
         ]
-      }
+      },
+      "_id": "match_048",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "AFC Bournemouth",
+      "home_team_id": "team_afc_bournemouth",
+      "away_team": "Newcastle United FC",
+      "away_team_id": "team_newcastle_united_fc"
     },
     {
       "round": "Matchday 5",
       "date": "2025-09-21",
       "time": null,
-      "team1": "Sunderland AFC",
-      "team2": "Aston Villa FC",
       "score": {
         "ft": [
           1,
@@ -808,14 +1046,19 @@
           0,
           0
         ]
-      }
+      },
+      "_id": "match_049",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Sunderland AFC",
+      "home_team_id": "team_sunderland_afc",
+      "away_team": "Aston Villa FC",
+      "away_team_id": "team_aston_villa_fc"
     },
     {
       "round": "Matchday 5",
       "date": "2025-09-21",
       "time": "16:30",
-      "team1": "Arsenal FC",
-      "team2": "Manchester City FC",
       "score": {
         "ft": [
           1,
@@ -825,14 +1068,19 @@
           0,
           1
         ]
-      }
+      },
+      "_id": "match_050",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Arsenal FC",
+      "home_team_id": "team_arsenal_fc",
+      "away_team": "Manchester City FC",
+      "away_team_id": "team_manchester_city_fc"
     },
     {
       "round": "Matchday 6",
       "date": "2025-09-27",
       "time": "12:30",
-      "team1": "Brentford FC",
-      "team2": "Manchester United FC",
       "score": {
         "ft": [
           3,
@@ -842,14 +1090,19 @@
           2,
           1
         ]
-      }
+      },
+      "_id": "match_051",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Brentford FC",
+      "home_team_id": "team_brentford_fc",
+      "away_team": "Manchester United FC",
+      "away_team_id": "team_manchester_united_fc"
     },
     {
       "round": "Matchday 6",
       "date": "2025-09-27",
       "time": "15:00",
-      "team1": "Crystal Palace FC",
-      "team2": "Liverpool FC",
       "score": {
         "ft": [
           2,
@@ -859,14 +1112,19 @@
           1,
           0
         ]
-      }
+      },
+      "_id": "match_052",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Crystal Palace FC",
+      "home_team_id": "team_crystal_palace_fc",
+      "away_team": "Liverpool FC",
+      "away_team_id": "team_liverpool_fc"
     },
     {
       "round": "Matchday 6",
       "date": "2025-09-27",
       "time": null,
-      "team1": "Chelsea FC",
-      "team2": "Brighton & Hove Albion FC",
       "score": {
         "ft": [
           1,
@@ -876,14 +1134,19 @@
           1,
           0
         ]
-      }
+      },
+      "_id": "match_053",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Chelsea FC",
+      "home_team_id": "team_chelsea_fc",
+      "away_team": "Brighton & Hove Albion FC",
+      "away_team_id": "team_brighton_hove_albion_fc"
     },
     {
       "round": "Matchday 6",
       "date": "2025-09-27",
       "time": null,
-      "team1": "Leeds United FC",
-      "team2": "AFC Bournemouth",
       "score": {
         "ft": [
           2,
@@ -893,14 +1156,19 @@
           1,
           1
         ]
-      }
+      },
+      "_id": "match_054",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Leeds United FC",
+      "home_team_id": "team_leeds_united_fc",
+      "away_team": "AFC Bournemouth",
+      "away_team_id": "team_afc_bournemouth"
     },
     {
       "round": "Matchday 6",
       "date": "2025-09-27",
       "time": null,
-      "team1": "Manchester City FC",
-      "team2": "Burnley FC",
       "score": {
         "ft": [
           5,
@@ -910,14 +1178,19 @@
           1,
           1
         ]
-      }
+      },
+      "_id": "match_055",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Manchester City FC",
+      "home_team_id": "team_manchester_city_fc",
+      "away_team": "Burnley FC",
+      "away_team_id": "team_burnley_fc"
     },
     {
       "round": "Matchday 6",
       "date": "2025-09-27",
       "time": "17:30",
-      "team1": "Nottingham Forest FC",
-      "team2": "Sunderland AFC",
       "score": {
         "ft": [
           0,
@@ -927,14 +1200,19 @@
           0,
           1
         ]
-      }
+      },
+      "_id": "match_056",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Nottingham Forest FC",
+      "home_team_id": "team_nottingham_forest_fc",
+      "away_team": "Sunderland AFC",
+      "away_team_id": "team_sunderland_afc"
     },
     {
       "round": "Matchday 6",
       "date": "2025-09-27",
       "time": "20:00",
-      "team1": "Tottenham Hotspur FC",
-      "team2": "Wolverhampton Wanderers FC",
       "score": {
         "ft": [
           1,
@@ -944,14 +1222,19 @@
           0,
           0
         ]
-      }
+      },
+      "_id": "match_057",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Tottenham Hotspur FC",
+      "home_team_id": "team_tottenham_hotspur_fc",
+      "away_team": "Wolverhampton Wanderers FC",
+      "away_team_id": "team_wolverhampton_wanderers_fc"
     },
     {
       "round": "Matchday 6",
       "date": "2025-09-28",
       "time": "14:00",
-      "team1": "Aston Villa FC",
-      "team2": "Fulham FC",
       "score": {
         "ft": [
           3,
@@ -961,14 +1244,19 @@
           1,
           1
         ]
-      }
+      },
+      "_id": "match_058",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Aston Villa FC",
+      "home_team_id": "team_aston_villa_fc",
+      "away_team": "Fulham FC",
+      "away_team_id": "team_fulham_fc"
     },
     {
       "round": "Matchday 6",
       "date": "2025-09-28",
       "time": "16:30",
-      "team1": "Newcastle United FC",
-      "team2": "Arsenal FC",
       "score": {
         "ft": [
           1,
@@ -978,14 +1266,19 @@
           1,
           0
         ]
-      }
+      },
+      "_id": "match_059",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Newcastle United FC",
+      "home_team_id": "team_newcastle_united_fc",
+      "away_team": "Arsenal FC",
+      "away_team_id": "team_arsenal_fc"
     },
     {
       "round": "Matchday 6",
       "date": "2025-09-29",
       "time": "20:00",
-      "team1": "Everton FC",
-      "team2": "West Ham United FC",
       "score": {
         "ft": [
           1,
@@ -995,14 +1288,19 @@
           1,
           0
         ]
-      }
+      },
+      "_id": "match_060",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Everton FC",
+      "home_team_id": "team_everton_fc",
+      "away_team": "West Ham United FC",
+      "away_team_id": "team_west_ham_united_fc"
     },
     {
       "round": "Matchday 7",
       "date": "2025-10-03",
       "time": "20:00",
-      "team1": "AFC Bournemouth",
-      "team2": "Fulham FC",
       "score": {
         "ft": [
           3,
@@ -1012,14 +1310,19 @@
           0,
           0
         ]
-      }
+      },
+      "_id": "match_061",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "AFC Bournemouth",
+      "home_team_id": "team_afc_bournemouth",
+      "away_team": "Fulham FC",
+      "away_team_id": "team_fulham_fc"
     },
     {
       "round": "Matchday 7",
       "date": "2025-10-04",
       "time": "12:30",
-      "team1": "Leeds United FC",
-      "team2": "Tottenham Hotspur FC",
       "score": {
         "ft": [
           1,
@@ -1029,14 +1332,19 @@
           1,
           1
         ]
-      }
+      },
+      "_id": "match_062",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Leeds United FC",
+      "home_team_id": "team_leeds_united_fc",
+      "away_team": "Tottenham Hotspur FC",
+      "away_team_id": "team_tottenham_hotspur_fc"
     },
     {
       "round": "Matchday 7",
       "date": "2025-10-04",
       "time": "15:00",
-      "team1": "Arsenal FC",
-      "team2": "West Ham United FC",
       "score": {
         "ft": [
           2,
@@ -1046,14 +1354,19 @@
           1,
           0
         ]
-      }
+      },
+      "_id": "match_063",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Arsenal FC",
+      "home_team_id": "team_arsenal_fc",
+      "away_team": "West Ham United FC",
+      "away_team_id": "team_west_ham_united_fc"
     },
     {
       "round": "Matchday 7",
       "date": "2025-10-04",
       "time": null,
-      "team1": "Manchester United FC",
-      "team2": "Sunderland AFC",
       "score": {
         "ft": [
           2,
@@ -1063,14 +1376,19 @@
           2,
           0
         ]
-      }
+      },
+      "_id": "match_064",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Manchester United FC",
+      "home_team_id": "team_manchester_united_fc",
+      "away_team": "Sunderland AFC",
+      "away_team_id": "team_sunderland_afc"
     },
     {
       "round": "Matchday 7",
       "date": "2025-10-04",
       "time": "17:30",
-      "team1": "Chelsea FC",
-      "team2": "Liverpool FC",
       "score": {
         "ft": [
           2,
@@ -1080,14 +1398,19 @@
           1,
           0
         ]
-      }
+      },
+      "_id": "match_065",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Chelsea FC",
+      "home_team_id": "team_chelsea_fc",
+      "away_team": "Liverpool FC",
+      "away_team_id": "team_liverpool_fc"
     },
     {
       "round": "Matchday 7",
       "date": "2025-10-05",
       "time": "14:00",
-      "team1": "Aston Villa FC",
-      "team2": "Burnley FC",
       "score": {
         "ft": [
           2,
@@ -1097,14 +1420,19 @@
           1,
           0
         ]
-      }
+      },
+      "_id": "match_066",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Aston Villa FC",
+      "home_team_id": "team_aston_villa_fc",
+      "away_team": "Burnley FC",
+      "away_team_id": "team_burnley_fc"
     },
     {
       "round": "Matchday 7",
       "date": "2025-10-05",
       "time": null,
-      "team1": "Everton FC",
-      "team2": "Crystal Palace FC",
       "score": {
         "ft": [
           2,
@@ -1114,14 +1442,19 @@
           0,
           1
         ]
-      }
+      },
+      "_id": "match_067",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Everton FC",
+      "home_team_id": "team_everton_fc",
+      "away_team": "Crystal Palace FC",
+      "away_team_id": "team_crystal_palace_fc"
     },
     {
       "round": "Matchday 7",
       "date": "2025-10-05",
       "time": null,
-      "team1": "Newcastle United FC",
-      "team2": "Nottingham Forest FC",
       "score": {
         "ft": [
           2,
@@ -1131,14 +1464,19 @@
           0,
           0
         ]
-      }
+      },
+      "_id": "match_068",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Newcastle United FC",
+      "home_team_id": "team_newcastle_united_fc",
+      "away_team": "Nottingham Forest FC",
+      "away_team_id": "team_nottingham_forest_fc"
     },
     {
       "round": "Matchday 7",
       "date": "2025-10-05",
       "time": null,
-      "team1": "Wolverhampton Wanderers FC",
-      "team2": "Brighton & Hove Albion FC",
       "score": {
         "ft": [
           1,
@@ -1148,14 +1486,19 @@
           1,
           0
         ]
-      }
+      },
+      "_id": "match_069",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Wolverhampton Wanderers FC",
+      "home_team_id": "team_wolverhampton_wanderers_fc",
+      "away_team": "Brighton & Hove Albion FC",
+      "away_team_id": "team_brighton_hove_albion_fc"
     },
     {
       "round": "Matchday 7",
       "date": "2025-10-05",
       "time": "16:30",
-      "team1": "Brentford FC",
-      "team2": "Manchester City FC",
       "score": {
         "ft": [
           0,
@@ -1165,14 +1508,19 @@
           0,
           1
         ]
-      }
+      },
+      "_id": "match_070",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Brentford FC",
+      "home_team_id": "team_brentford_fc",
+      "away_team": "Manchester City FC",
+      "away_team_id": "team_manchester_city_fc"
     },
     {
       "round": "Matchday 8",
       "date": "2025-10-18",
       "time": "12:30",
-      "team1": "Nottingham Forest FC",
-      "team2": "Chelsea FC",
       "score": {
         "ft": [
           0,
@@ -1182,14 +1530,19 @@
           0,
           0
         ]
-      }
+      },
+      "_id": "match_071",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Nottingham Forest FC",
+      "home_team_id": "team_nottingham_forest_fc",
+      "away_team": "Chelsea FC",
+      "away_team_id": "team_chelsea_fc"
     },
     {
       "round": "Matchday 8",
       "date": "2025-10-18",
       "time": "15:00",
-      "team1": "Brighton & Hove Albion FC",
-      "team2": "Newcastle United FC",
       "score": {
         "ft": [
           2,
@@ -1199,14 +1552,19 @@
           1,
           0
         ]
-      }
+      },
+      "_id": "match_072",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Brighton & Hove Albion FC",
+      "home_team_id": "team_brighton_hove_albion_fc",
+      "away_team": "Newcastle United FC",
+      "away_team_id": "team_newcastle_united_fc"
     },
     {
       "round": "Matchday 8",
       "date": "2025-10-18",
       "time": null,
-      "team1": "Crystal Palace FC",
-      "team2": "AFC Bournemouth",
       "score": {
         "ft": [
           3,
@@ -1216,14 +1574,19 @@
           0,
           2
         ]
-      }
+      },
+      "_id": "match_073",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Crystal Palace FC",
+      "home_team_id": "team_crystal_palace_fc",
+      "away_team": "AFC Bournemouth",
+      "away_team_id": "team_afc_bournemouth"
     },
     {
       "round": "Matchday 8",
       "date": "2025-10-18",
       "time": null,
-      "team1": "Burnley FC",
-      "team2": "Leeds United FC",
       "score": {
         "ft": [
           2,
@@ -1233,14 +1596,19 @@
           1,
           0
         ]
-      }
+      },
+      "_id": "match_074",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Burnley FC",
+      "home_team_id": "team_burnley_fc",
+      "away_team": "Leeds United FC",
+      "away_team_id": "team_leeds_united_fc"
     },
     {
       "round": "Matchday 8",
       "date": "2025-10-18",
       "time": null,
-      "team1": "Manchester City FC",
-      "team2": "Everton FC",
       "score": {
         "ft": [
           2,
@@ -1250,14 +1618,19 @@
           0,
           0
         ]
-      }
+      },
+      "_id": "match_075",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Manchester City FC",
+      "home_team_id": "team_manchester_city_fc",
+      "away_team": "Everton FC",
+      "away_team_id": "team_everton_fc"
     },
     {
       "round": "Matchday 8",
       "date": "2025-10-18",
       "time": null,
-      "team1": "Sunderland AFC",
-      "team2": "Wolverhampton Wanderers FC",
       "score": {
         "ft": [
           2,
@@ -1267,14 +1640,19 @@
           1,
           0
         ]
-      }
+      },
+      "_id": "match_076",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Sunderland AFC",
+      "home_team_id": "team_sunderland_afc",
+      "away_team": "Wolverhampton Wanderers FC",
+      "away_team_id": "team_wolverhampton_wanderers_fc"
     },
     {
       "round": "Matchday 8",
       "date": "2025-10-18",
       "time": "17:30",
-      "team1": "Fulham FC",
-      "team2": "Arsenal FC",
       "score": {
         "ft": [
           0,
@@ -1284,14 +1662,19 @@
           0,
           0
         ]
-      }
+      },
+      "_id": "match_077",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Fulham FC",
+      "home_team_id": "team_fulham_fc",
+      "away_team": "Arsenal FC",
+      "away_team_id": "team_arsenal_fc"
     },
     {
       "round": "Matchday 8",
       "date": "2025-10-19",
       "time": "14:00",
-      "team1": "Tottenham Hotspur FC",
-      "team2": "Aston Villa FC",
       "score": {
         "ft": [
           1,
@@ -1301,14 +1684,19 @@
           1,
           1
         ]
-      }
+      },
+      "_id": "match_078",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Tottenham Hotspur FC",
+      "home_team_id": "team_tottenham_hotspur_fc",
+      "away_team": "Aston Villa FC",
+      "away_team_id": "team_aston_villa_fc"
     },
     {
       "round": "Matchday 8",
       "date": "2025-10-19",
       "time": "16:30",
-      "team1": "Liverpool FC",
-      "team2": "Manchester United FC",
       "score": {
         "ft": [
           1,
@@ -1318,14 +1706,19 @@
           0,
           1
         ]
-      }
+      },
+      "_id": "match_079",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Liverpool FC",
+      "home_team_id": "team_liverpool_fc",
+      "away_team": "Manchester United FC",
+      "away_team_id": "team_manchester_united_fc"
     },
     {
       "round": "Matchday 8",
       "date": "2025-10-20",
       "time": "20:00",
-      "team1": "West Ham United FC",
-      "team2": "Brentford FC",
       "score": {
         "ft": [
           0,
@@ -1335,14 +1728,19 @@
           0,
           1
         ]
-      }
+      },
+      "_id": "match_080",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "West Ham United FC",
+      "home_team_id": "team_west_ham_united_fc",
+      "away_team": "Brentford FC",
+      "away_team_id": "team_brentford_fc"
     },
     {
       "round": "Matchday 9",
       "date": "2025-10-24",
       "time": "20:00",
-      "team1": "Leeds United FC",
-      "team2": "West Ham United FC",
       "score": {
         "ft": [
           2,
@@ -1352,14 +1750,19 @@
           2,
           0
         ]
-      }
+      },
+      "_id": "match_081",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Leeds United FC",
+      "home_team_id": "team_leeds_united_fc",
+      "away_team": "West Ham United FC",
+      "away_team_id": "team_west_ham_united_fc"
     },
     {
       "round": "Matchday 9",
       "date": "2025-10-25",
       "time": "15:00",
-      "team1": "Chelsea FC",
-      "team2": "Sunderland AFC",
       "score": {
         "ft": [
           1,
@@ -1369,14 +1772,19 @@
           1,
           1
         ]
-      }
+      },
+      "_id": "match_082",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Chelsea FC",
+      "home_team_id": "team_chelsea_fc",
+      "away_team": "Sunderland AFC",
+      "away_team_id": "team_sunderland_afc"
     },
     {
       "round": "Matchday 9",
       "date": "2025-10-25",
       "time": null,
-      "team1": "Newcastle United FC",
-      "team2": "Fulham FC",
       "score": {
         "ft": [
           2,
@@ -1386,14 +1794,19 @@
           1,
           0
         ]
-      }
+      },
+      "_id": "match_083",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Newcastle United FC",
+      "home_team_id": "team_newcastle_united_fc",
+      "away_team": "Fulham FC",
+      "away_team_id": "team_fulham_fc"
     },
     {
       "round": "Matchday 9",
       "date": "2025-10-25",
       "time": "17:30",
-      "team1": "Manchester United FC",
-      "team2": "Brighton & Hove Albion FC",
       "score": {
         "ft": [
           4,
@@ -1403,14 +1816,19 @@
           2,
           0
         ]
-      }
+      },
+      "_id": "match_084",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Manchester United FC",
+      "home_team_id": "team_manchester_united_fc",
+      "away_team": "Brighton & Hove Albion FC",
+      "away_team_id": "team_brighton_hove_albion_fc"
     },
     {
       "round": "Matchday 9",
       "date": "2025-10-25",
       "time": "20:00",
-      "team1": "Brentford FC",
-      "team2": "Liverpool FC",
       "score": {
         "ft": [
           3,
@@ -1420,14 +1838,19 @@
           2,
           1
         ]
-      }
+      },
+      "_id": "match_085",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Brentford FC",
+      "home_team_id": "team_brentford_fc",
+      "away_team": "Liverpool FC",
+      "away_team_id": "team_liverpool_fc"
     },
     {
       "round": "Matchday 9",
       "date": "2025-10-26",
       "time": "14:00",
-      "team1": "AFC Bournemouth",
-      "team2": "Nottingham Forest FC",
       "score": {
         "ft": [
           2,
@@ -1437,14 +1860,19 @@
           2,
           0
         ]
-      }
+      },
+      "_id": "match_086",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "AFC Bournemouth",
+      "home_team_id": "team_afc_bournemouth",
+      "away_team": "Nottingham Forest FC",
+      "away_team_id": "team_nottingham_forest_fc"
     },
     {
       "round": "Matchday 9",
       "date": "2025-10-26",
       "time": null,
-      "team1": "Aston Villa FC",
-      "team2": "Manchester City FC",
       "score": {
         "ft": [
           1,
@@ -1454,14 +1882,19 @@
           1,
           0
         ]
-      }
+      },
+      "_id": "match_087",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Aston Villa FC",
+      "home_team_id": "team_aston_villa_fc",
+      "away_team": "Manchester City FC",
+      "away_team_id": "team_manchester_city_fc"
     },
     {
       "round": "Matchday 9",
       "date": "2025-10-26",
       "time": null,
-      "team1": "Arsenal FC",
-      "team2": "Crystal Palace FC",
       "score": {
         "ft": [
           1,
@@ -1471,14 +1904,19 @@
           1,
           0
         ]
-      }
+      },
+      "_id": "match_088",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Arsenal FC",
+      "home_team_id": "team_arsenal_fc",
+      "away_team": "Crystal Palace FC",
+      "away_team_id": "team_crystal_palace_fc"
     },
     {
       "round": "Matchday 9",
       "date": "2025-10-26",
       "time": null,
-      "team1": "Wolverhampton Wanderers FC",
-      "team2": "Burnley FC",
       "score": {
         "ft": [
           2,
@@ -1488,14 +1926,19 @@
           2,
           2
         ]
-      }
+      },
+      "_id": "match_089",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Wolverhampton Wanderers FC",
+      "home_team_id": "team_wolverhampton_wanderers_fc",
+      "away_team": "Burnley FC",
+      "away_team_id": "team_burnley_fc"
     },
     {
       "round": "Matchday 9",
       "date": "2025-10-26",
       "time": "16:30",
-      "team1": "Everton FC",
-      "team2": "Tottenham Hotspur FC",
       "score": {
         "ft": [
           0,
@@ -1505,14 +1948,19 @@
           0,
           2
         ]
-      }
+      },
+      "_id": "match_090",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Everton FC",
+      "home_team_id": "team_everton_fc",
+      "away_team": "Tottenham Hotspur FC",
+      "away_team_id": "team_tottenham_hotspur_fc"
     },
     {
       "round": "Matchday 10",
       "date": "2025-11-01",
       "time": "15:00",
-      "team1": "Brighton & Hove Albion FC",
-      "team2": "Leeds United FC",
       "score": {
         "ft": [
           3,
@@ -1522,14 +1970,19 @@
           1,
           0
         ]
-      }
+      },
+      "_id": "match_091",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Brighton & Hove Albion FC",
+      "home_team_id": "team_brighton_hove_albion_fc",
+      "away_team": "Leeds United FC",
+      "away_team_id": "team_leeds_united_fc"
     },
     {
       "round": "Matchday 10",
       "date": "2025-11-01",
       "time": null,
-      "team1": "Crystal Palace FC",
-      "team2": "Brentford FC",
       "score": {
         "ft": [
           2,
@@ -1539,14 +1992,19 @@
           1,
           0
         ]
-      }
+      },
+      "_id": "match_092",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Crystal Palace FC",
+      "home_team_id": "team_crystal_palace_fc",
+      "away_team": "Brentford FC",
+      "away_team_id": "team_brentford_fc"
     },
     {
       "round": "Matchday 10",
       "date": "2025-11-01",
       "time": null,
-      "team1": "Burnley FC",
-      "team2": "Arsenal FC",
       "score": {
         "ft": [
           0,
@@ -1556,14 +2014,19 @@
           0,
           2
         ]
-      }
+      },
+      "_id": "match_093",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Burnley FC",
+      "home_team_id": "team_burnley_fc",
+      "away_team": "Arsenal FC",
+      "away_team_id": "team_arsenal_fc"
     },
     {
       "round": "Matchday 10",
       "date": "2025-11-01",
       "time": null,
-      "team1": "Fulham FC",
-      "team2": "Wolverhampton Wanderers FC",
       "score": {
         "ft": [
           3,
@@ -1573,14 +2036,19 @@
           1,
           0
         ]
-      }
+      },
+      "_id": "match_094",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Fulham FC",
+      "home_team_id": "team_fulham_fc",
+      "away_team": "Wolverhampton Wanderers FC",
+      "away_team_id": "team_wolverhampton_wanderers_fc"
     },
     {
       "round": "Matchday 10",
       "date": "2025-11-01",
       "time": null,
-      "team1": "Nottingham Forest FC",
-      "team2": "Manchester United FC",
       "score": {
         "ft": [
           2,
@@ -1590,14 +2058,19 @@
           0,
           1
         ]
-      }
+      },
+      "_id": "match_095",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Nottingham Forest FC",
+      "home_team_id": "team_nottingham_forest_fc",
+      "away_team": "Manchester United FC",
+      "away_team_id": "team_manchester_united_fc"
     },
     {
       "round": "Matchday 10",
       "date": "2025-11-01",
       "time": "17:30",
-      "team1": "Tottenham Hotspur FC",
-      "team2": "Chelsea FC",
       "score": {
         "ft": [
           0,
@@ -1607,14 +2080,19 @@
           0,
           1
         ]
-      }
+      },
+      "_id": "match_096",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Tottenham Hotspur FC",
+      "home_team_id": "team_tottenham_hotspur_fc",
+      "away_team": "Chelsea FC",
+      "away_team_id": "team_chelsea_fc"
     },
     {
       "round": "Matchday 10",
       "date": "2025-11-01",
       "time": "20:00",
-      "team1": "Liverpool FC",
-      "team2": "Aston Villa FC",
       "score": {
         "ft": [
           2,
@@ -1624,14 +2102,19 @@
           1,
           0
         ]
-      }
+      },
+      "_id": "match_097",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Liverpool FC",
+      "home_team_id": "team_liverpool_fc",
+      "away_team": "Aston Villa FC",
+      "away_team_id": "team_aston_villa_fc"
     },
     {
       "round": "Matchday 10",
       "date": "2025-11-02",
       "time": "14:00",
-      "team1": "West Ham United FC",
-      "team2": "Newcastle United FC",
       "score": {
         "ft": [
           3,
@@ -1641,14 +2124,19 @@
           2,
           1
         ]
-      }
+      },
+      "_id": "match_098",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "West Ham United FC",
+      "home_team_id": "team_west_ham_united_fc",
+      "away_team": "Newcastle United FC",
+      "away_team_id": "team_newcastle_united_fc"
     },
     {
       "round": "Matchday 10",
       "date": "2025-11-02",
       "time": "16:30",
-      "team1": "Manchester City FC",
-      "team2": "AFC Bournemouth",
       "score": {
         "ft": [
           3,
@@ -1658,14 +2146,19 @@
           2,
           1
         ]
-      }
+      },
+      "_id": "match_099",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Manchester City FC",
+      "home_team_id": "team_manchester_city_fc",
+      "away_team": "AFC Bournemouth",
+      "away_team_id": "team_afc_bournemouth"
     },
     {
       "round": "Matchday 10",
       "date": "2025-11-03",
       "time": "20:00",
-      "team1": "Sunderland AFC",
-      "team2": "Everton FC",
       "score": {
         "ft": [
           1,
@@ -1675,1967 +2168,3374 @@
           0,
           1
         ]
-      }
+      },
+      "_id": "match_100",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Sunderland AFC",
+      "home_team_id": "team_sunderland_afc",
+      "away_team": "Everton FC",
+      "away_team_id": "team_everton_fc"
     },
     {
       "round": "Matchday 11",
       "date": "2025-11-08",
       "time": "12:30",
-      "team1": "Tottenham Hotspur FC",
-      "team2": "Manchester United FC"
+      "_id": "match_101",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Tottenham Hotspur FC",
+      "home_team_id": "team_tottenham_hotspur_fc",
+      "away_team": "Manchester United FC",
+      "away_team_id": "team_manchester_united_fc"
     },
     {
       "round": "Matchday 11",
       "date": "2025-11-08",
       "time": "15:00",
-      "team1": "Everton FC",
-      "team2": "Fulham FC"
+      "_id": "match_102",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Everton FC",
+      "home_team_id": "team_everton_fc",
+      "away_team": "Fulham FC",
+      "away_team_id": "team_fulham_fc"
     },
     {
       "round": "Matchday 11",
       "date": "2025-11-08",
       "time": null,
-      "team1": "West Ham United FC",
-      "team2": "Burnley FC"
+      "_id": "match_103",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "West Ham United FC",
+      "home_team_id": "team_west_ham_united_fc",
+      "away_team": "Burnley FC",
+      "away_team_id": "team_burnley_fc"
     },
     {
       "round": "Matchday 11",
       "date": "2025-11-08",
       "time": "17:30",
-      "team1": "Sunderland AFC",
-      "team2": "Arsenal FC"
+      "_id": "match_104",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Sunderland AFC",
+      "home_team_id": "team_sunderland_afc",
+      "away_team": "Arsenal FC",
+      "away_team_id": "team_arsenal_fc"
     },
     {
       "round": "Matchday 11",
       "date": "2025-11-08",
       "time": "20:00",
-      "team1": "Chelsea FC",
-      "team2": "Wolverhampton Wanderers FC"
+      "_id": "match_105",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Chelsea FC",
+      "home_team_id": "team_chelsea_fc",
+      "away_team": "Wolverhampton Wanderers FC",
+      "away_team_id": "team_wolverhampton_wanderers_fc"
     },
     {
       "round": "Matchday 11",
       "date": "2025-11-09",
       "time": "14:00",
-      "team1": "Aston Villa FC",
-      "team2": "AFC Bournemouth"
+      "_id": "match_106",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Aston Villa FC",
+      "home_team_id": "team_aston_villa_fc",
+      "away_team": "AFC Bournemouth",
+      "away_team_id": "team_afc_bournemouth"
     },
     {
       "round": "Matchday 11",
       "date": "2025-11-09",
       "time": null,
-      "team1": "Crystal Palace FC",
-      "team2": "Brighton & Hove Albion FC"
+      "_id": "match_107",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Crystal Palace FC",
+      "home_team_id": "team_crystal_palace_fc",
+      "away_team": "Brighton & Hove Albion FC",
+      "away_team_id": "team_brighton_hove_albion_fc"
     },
     {
       "round": "Matchday 11",
       "date": "2025-11-09",
       "time": null,
-      "team1": "Brentford FC",
-      "team2": "Newcastle United FC"
+      "_id": "match_108",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Brentford FC",
+      "home_team_id": "team_brentford_fc",
+      "away_team": "Newcastle United FC",
+      "away_team_id": "team_newcastle_united_fc"
     },
     {
       "round": "Matchday 11",
       "date": "2025-11-09",
       "time": null,
-      "team1": "Nottingham Forest FC",
-      "team2": "Leeds United FC"
+      "_id": "match_109",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Nottingham Forest FC",
+      "home_team_id": "team_nottingham_forest_fc",
+      "away_team": "Leeds United FC",
+      "away_team_id": "team_leeds_united_fc"
     },
     {
       "round": "Matchday 11",
       "date": "2025-11-09",
       "time": "16:30",
-      "team1": "Manchester City FC",
-      "team2": "Liverpool FC"
+      "_id": "match_110",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Manchester City FC",
+      "home_team_id": "team_manchester_city_fc",
+      "away_team": "Liverpool FC",
+      "away_team_id": "team_liverpool_fc"
     },
     {
       "round": "Matchday 12",
       "date": "2025-11-22",
       "time": "12:30",
-      "team1": "Burnley FC",
-      "team2": "Chelsea FC"
+      "_id": "match_111",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Burnley FC",
+      "home_team_id": "team_burnley_fc",
+      "away_team": "Chelsea FC",
+      "away_team_id": "team_chelsea_fc"
     },
     {
       "round": "Matchday 12",
       "date": "2025-11-22",
       "time": "15:00",
-      "team1": "AFC Bournemouth",
-      "team2": "West Ham United FC"
+      "_id": "match_112",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "AFC Bournemouth",
+      "home_team_id": "team_afc_bournemouth",
+      "away_team": "West Ham United FC",
+      "away_team_id": "team_west_ham_united_fc"
     },
     {
       "round": "Matchday 12",
       "date": "2025-11-22",
       "time": null,
-      "team1": "Brighton & Hove Albion FC",
-      "team2": "Brentford FC"
+      "_id": "match_113",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Brighton & Hove Albion FC",
+      "home_team_id": "team_brighton_hove_albion_fc",
+      "away_team": "Brentford FC",
+      "away_team_id": "team_brentford_fc"
     },
     {
       "round": "Matchday 12",
       "date": "2025-11-22",
       "time": null,
-      "team1": "Fulham FC",
-      "team2": "Sunderland AFC"
+      "_id": "match_114",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Fulham FC",
+      "home_team_id": "team_fulham_fc",
+      "away_team": "Sunderland AFC",
+      "away_team_id": "team_sunderland_afc"
     },
     {
       "round": "Matchday 12",
       "date": "2025-11-22",
       "time": null,
-      "team1": "Liverpool FC",
-      "team2": "Nottingham Forest FC"
+      "_id": "match_115",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Liverpool FC",
+      "home_team_id": "team_liverpool_fc",
+      "away_team": "Nottingham Forest FC",
+      "away_team_id": "team_nottingham_forest_fc"
     },
     {
       "round": "Matchday 12",
       "date": "2025-11-22",
       "time": null,
-      "team1": "Wolverhampton Wanderers FC",
-      "team2": "Crystal Palace FC"
+      "_id": "match_116",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Wolverhampton Wanderers FC",
+      "home_team_id": "team_wolverhampton_wanderers_fc",
+      "away_team": "Crystal Palace FC",
+      "away_team_id": "team_crystal_palace_fc"
     },
     {
       "round": "Matchday 12",
       "date": "2025-11-22",
       "time": "17:30",
-      "team1": "Newcastle United FC",
-      "team2": "Manchester City FC"
+      "_id": "match_117",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Newcastle United FC",
+      "home_team_id": "team_newcastle_united_fc",
+      "away_team": "Manchester City FC",
+      "away_team_id": "team_manchester_city_fc"
     },
     {
       "round": "Matchday 12",
       "date": "2025-11-23",
       "time": "14:00",
-      "team1": "Leeds United FC",
-      "team2": "Aston Villa FC"
+      "_id": "match_118",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Leeds United FC",
+      "home_team_id": "team_leeds_united_fc",
+      "away_team": "Aston Villa FC",
+      "away_team_id": "team_aston_villa_fc"
     },
     {
       "round": "Matchday 12",
       "date": "2025-11-23",
       "time": "16:30",
-      "team1": "Arsenal FC",
-      "team2": "Tottenham Hotspur FC"
+      "_id": "match_119",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Arsenal FC",
+      "home_team_id": "team_arsenal_fc",
+      "away_team": "Tottenham Hotspur FC",
+      "away_team_id": "team_tottenham_hotspur_fc"
     },
     {
       "round": "Matchday 12",
       "date": "2025-11-24",
       "time": "20:00",
-      "team1": "Manchester United FC",
-      "team2": "Everton FC"
+      "_id": "match_120",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Manchester United FC",
+      "home_team_id": "team_manchester_united_fc",
+      "away_team": "Everton FC",
+      "away_team_id": "team_everton_fc"
     },
     {
       "round": "Matchday 13",
       "date": "2025-11-29",
       "time": "15:00",
-      "team1": "Sunderland AFC",
-      "team2": "AFC Bournemouth"
+      "_id": "match_121",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Sunderland AFC",
+      "home_team_id": "team_sunderland_afc",
+      "away_team": "AFC Bournemouth",
+      "away_team_id": "team_afc_bournemouth"
     },
     {
       "round": "Matchday 13",
       "date": "2025-11-29",
       "time": null,
-      "team1": "Brentford FC",
-      "team2": "Burnley FC"
+      "_id": "match_122",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Brentford FC",
+      "home_team_id": "team_brentford_fc",
+      "away_team": "Burnley FC",
+      "away_team_id": "team_burnley_fc"
     },
     {
       "round": "Matchday 13",
       "date": "2025-11-29",
       "time": null,
-      "team1": "Manchester City FC",
-      "team2": "Leeds United FC"
+      "_id": "match_123",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Manchester City FC",
+      "home_team_id": "team_manchester_city_fc",
+      "away_team": "Leeds United FC",
+      "away_team_id": "team_leeds_united_fc"
     },
     {
       "round": "Matchday 13",
       "date": "2025-11-29",
       "time": "17:30",
-      "team1": "Everton FC",
-      "team2": "Newcastle United FC"
+      "_id": "match_124",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Everton FC",
+      "home_team_id": "team_everton_fc",
+      "away_team": "Newcastle United FC",
+      "away_team_id": "team_newcastle_united_fc"
     },
     {
       "round": "Matchday 13",
       "date": "2025-11-29",
       "time": "20:00",
-      "team1": "Tottenham Hotspur FC",
-      "team2": "Fulham FC"
+      "_id": "match_125",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Tottenham Hotspur FC",
+      "home_team_id": "team_tottenham_hotspur_fc",
+      "away_team": "Fulham FC",
+      "away_team_id": "team_fulham_fc"
     },
     {
       "round": "Matchday 13",
       "date": "2025-11-30",
       "time": "12:00",
-      "team1": "Crystal Palace FC",
-      "team2": "Manchester United FC"
+      "_id": "match_126",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Crystal Palace FC",
+      "home_team_id": "team_crystal_palace_fc",
+      "away_team": "Manchester United FC",
+      "away_team_id": "team_manchester_united_fc"
     },
     {
       "round": "Matchday 13",
       "date": "2025-11-30",
       "time": "14:05",
-      "team1": "Aston Villa FC",
-      "team2": "Wolverhampton Wanderers FC"
+      "_id": "match_127",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Aston Villa FC",
+      "home_team_id": "team_aston_villa_fc",
+      "away_team": "Wolverhampton Wanderers FC",
+      "away_team_id": "team_wolverhampton_wanderers_fc"
     },
     {
       "round": "Matchday 13",
       "date": "2025-11-30",
       "time": null,
-      "team1": "Nottingham Forest FC",
-      "team2": "Brighton & Hove Albion FC"
+      "_id": "match_128",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Nottingham Forest FC",
+      "home_team_id": "team_nottingham_forest_fc",
+      "away_team": "Brighton & Hove Albion FC",
+      "away_team_id": "team_brighton_hove_albion_fc"
     },
     {
       "round": "Matchday 13",
       "date": "2025-11-30",
       "time": null,
-      "team1": "West Ham United FC",
-      "team2": "Liverpool FC"
+      "_id": "match_129",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "West Ham United FC",
+      "home_team_id": "team_west_ham_united_fc",
+      "away_team": "Liverpool FC",
+      "away_team_id": "team_liverpool_fc"
     },
     {
       "round": "Matchday 13",
       "date": "2025-11-30",
       "time": "16:30",
-      "team1": "Chelsea FC",
-      "team2": "Arsenal FC"
+      "_id": "match_130",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Chelsea FC",
+      "home_team_id": "team_chelsea_fc",
+      "away_team": "Arsenal FC",
+      "away_team_id": "team_arsenal_fc"
     },
     {
       "round": "Matchday 14",
       "date": "2025-12-02",
       "time": "19:30",
-      "team1": "AFC Bournemouth",
-      "team2": "Everton FC"
+      "_id": "match_131",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "AFC Bournemouth",
+      "home_team_id": "team_afc_bournemouth",
+      "away_team": "Everton FC",
+      "away_team_id": "team_everton_fc"
     },
     {
       "round": "Matchday 14",
       "date": "2025-12-02",
       "time": null,
-      "team1": "Fulham FC",
-      "team2": "Manchester City FC"
+      "_id": "match_132",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Fulham FC",
+      "home_team_id": "team_fulham_fc",
+      "away_team": "Manchester City FC",
+      "away_team_id": "team_manchester_city_fc"
     },
     {
       "round": "Matchday 14",
       "date": "2025-12-02",
       "time": "20:15",
-      "team1": "Newcastle United FC",
-      "team2": "Tottenham Hotspur FC"
+      "_id": "match_133",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Newcastle United FC",
+      "home_team_id": "team_newcastle_united_fc",
+      "away_team": "Tottenham Hotspur FC",
+      "away_team_id": "team_tottenham_hotspur_fc"
     },
     {
       "round": "Matchday 14",
       "date": "2025-12-03",
       "time": "19:30",
-      "team1": "Brighton & Hove Albion FC",
-      "team2": "Aston Villa FC"
+      "_id": "match_134",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Brighton & Hove Albion FC",
+      "home_team_id": "team_brighton_hove_albion_fc",
+      "away_team": "Aston Villa FC",
+      "away_team_id": "team_aston_villa_fc"
     },
     {
       "round": "Matchday 14",
       "date": "2025-12-03",
       "time": null,
-      "team1": "Arsenal FC",
-      "team2": "Brentford FC"
+      "_id": "match_135",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Arsenal FC",
+      "home_team_id": "team_arsenal_fc",
+      "away_team": "Brentford FC",
+      "away_team_id": "team_brentford_fc"
     },
     {
       "round": "Matchday 14",
       "date": "2025-12-03",
       "time": null,
-      "team1": "Burnley FC",
-      "team2": "Crystal Palace FC"
+      "_id": "match_136",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Burnley FC",
+      "home_team_id": "team_burnley_fc",
+      "away_team": "Crystal Palace FC",
+      "away_team_id": "team_crystal_palace_fc"
     },
     {
       "round": "Matchday 14",
       "date": "2025-12-03",
       "time": null,
-      "team1": "Wolverhampton Wanderers FC",
-      "team2": "Nottingham Forest FC"
+      "_id": "match_137",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Wolverhampton Wanderers FC",
+      "home_team_id": "team_wolverhampton_wanderers_fc",
+      "away_team": "Nottingham Forest FC",
+      "away_team_id": "team_nottingham_forest_fc"
     },
     {
       "round": "Matchday 14",
       "date": "2025-12-03",
       "time": "20:15",
-      "team1": "Liverpool FC",
-      "team2": "Sunderland AFC"
+      "_id": "match_138",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Liverpool FC",
+      "home_team_id": "team_liverpool_fc",
+      "away_team": "Sunderland AFC",
+      "away_team_id": "team_sunderland_afc"
     },
     {
       "round": "Matchday 14",
       "date": "2025-12-03",
       "time": null,
-      "team1": "Leeds United FC",
-      "team2": "Chelsea FC"
+      "_id": "match_139",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Leeds United FC",
+      "home_team_id": "team_leeds_united_fc",
+      "away_team": "Chelsea FC",
+      "away_team_id": "team_chelsea_fc"
     },
     {
       "round": "Matchday 14",
       "date": "2025-12-04",
       "time": "20:00",
-      "team1": "Manchester United FC",
-      "team2": "West Ham United FC"
+      "_id": "match_140",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Manchester United FC",
+      "home_team_id": "team_manchester_united_fc",
+      "away_team": "West Ham United FC",
+      "away_team_id": "team_west_ham_united_fc"
     },
     {
       "round": "Matchday 15",
       "date": "2025-12-06",
       "time": "12:30",
-      "team1": "Aston Villa FC",
-      "team2": "Arsenal FC"
+      "_id": "match_141",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Aston Villa FC",
+      "home_team_id": "team_aston_villa_fc",
+      "away_team": "Arsenal FC",
+      "away_team_id": "team_arsenal_fc"
     },
     {
       "round": "Matchday 15",
       "date": "2025-12-06",
       "time": "15:00",
-      "team1": "AFC Bournemouth",
-      "team2": "Chelsea FC"
+      "_id": "match_142",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "AFC Bournemouth",
+      "home_team_id": "team_afc_bournemouth",
+      "away_team": "Chelsea FC",
+      "away_team_id": "team_chelsea_fc"
     },
     {
       "round": "Matchday 15",
       "date": "2025-12-06",
       "time": null,
-      "team1": "Everton FC",
-      "team2": "Nottingham Forest FC"
+      "_id": "match_143",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Everton FC",
+      "home_team_id": "team_everton_fc",
+      "away_team": "Nottingham Forest FC",
+      "away_team_id": "team_nottingham_forest_fc"
     },
     {
       "round": "Matchday 15",
       "date": "2025-12-06",
       "time": null,
-      "team1": "Manchester City FC",
-      "team2": "Sunderland AFC"
+      "_id": "match_144",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Manchester City FC",
+      "home_team_id": "team_manchester_city_fc",
+      "away_team": "Sunderland AFC",
+      "away_team_id": "team_sunderland_afc"
     },
     {
       "round": "Matchday 15",
       "date": "2025-12-06",
       "time": null,
-      "team1": "Newcastle United FC",
-      "team2": "Burnley FC"
+      "_id": "match_145",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Newcastle United FC",
+      "home_team_id": "team_newcastle_united_fc",
+      "away_team": "Burnley FC",
+      "away_team_id": "team_burnley_fc"
     },
     {
       "round": "Matchday 15",
       "date": "2025-12-06",
       "time": null,
-      "team1": "Tottenham Hotspur FC",
-      "team2": "Brentford FC"
+      "_id": "match_146",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Tottenham Hotspur FC",
+      "home_team_id": "team_tottenham_hotspur_fc",
+      "away_team": "Brentford FC",
+      "away_team_id": "team_brentford_fc"
     },
     {
       "round": "Matchday 15",
       "date": "2025-12-06",
       "time": "17:30",
-      "team1": "Leeds United FC",
-      "team2": "Liverpool FC"
+      "_id": "match_147",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Leeds United FC",
+      "home_team_id": "team_leeds_united_fc",
+      "away_team": "Liverpool FC",
+      "away_team_id": "team_liverpool_fc"
     },
     {
       "round": "Matchday 15",
       "date": "2025-12-07",
       "time": "14:00",
-      "team1": "Brighton & Hove Albion FC",
-      "team2": "West Ham United FC"
+      "_id": "match_148",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Brighton & Hove Albion FC",
+      "home_team_id": "team_brighton_hove_albion_fc",
+      "away_team": "West Ham United FC",
+      "away_team_id": "team_west_ham_united_fc"
     },
     {
       "round": "Matchday 15",
       "date": "2025-12-07",
       "time": "16:30",
-      "team1": "Fulham FC",
-      "team2": "Crystal Palace FC"
+      "_id": "match_149",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Fulham FC",
+      "home_team_id": "team_fulham_fc",
+      "away_team": "Crystal Palace FC",
+      "away_team_id": "team_crystal_palace_fc"
     },
     {
       "round": "Matchday 15",
       "date": "2025-12-08",
       "time": "20:00",
-      "team1": "Wolverhampton Wanderers FC",
-      "team2": "Manchester United FC"
+      "_id": "match_150",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Wolverhampton Wanderers FC",
+      "home_team_id": "team_wolverhampton_wanderers_fc",
+      "away_team": "Manchester United FC",
+      "away_team_id": "team_manchester_united_fc"
     },
     {
       "round": "Matchday 16",
       "date": "2025-12-13",
       "time": "15:00",
-      "team1": "Chelsea FC",
-      "team2": "Everton FC"
+      "_id": "match_151",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Chelsea FC",
+      "home_team_id": "team_chelsea_fc",
+      "away_team": "Everton FC",
+      "away_team_id": "team_everton_fc"
     },
     {
       "round": "Matchday 16",
       "date": "2025-12-13",
       "time": null,
-      "team1": "Liverpool FC",
-      "team2": "Brighton & Hove Albion FC"
+      "_id": "match_152",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Liverpool FC",
+      "home_team_id": "team_liverpool_fc",
+      "away_team": "Brighton & Hove Albion FC",
+      "away_team_id": "team_brighton_hove_albion_fc"
     },
     {
       "round": "Matchday 16",
       "date": "2025-12-13",
       "time": "17:30",
-      "team1": "Burnley FC",
-      "team2": "Fulham FC"
+      "_id": "match_153",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Burnley FC",
+      "home_team_id": "team_burnley_fc",
+      "away_team": "Fulham FC",
+      "away_team_id": "team_fulham_fc"
     },
     {
       "round": "Matchday 16",
       "date": "2025-12-13",
       "time": "20:00",
-      "team1": "Arsenal FC",
-      "team2": "Wolverhampton Wanderers FC"
+      "_id": "match_154",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Arsenal FC",
+      "home_team_id": "team_arsenal_fc",
+      "away_team": "Wolverhampton Wanderers FC",
+      "away_team_id": "team_wolverhampton_wanderers_fc"
     },
     {
       "round": "Matchday 16",
       "date": "2025-12-14",
       "time": "14:00",
-      "team1": "Sunderland AFC",
-      "team2": "Newcastle United FC"
+      "_id": "match_155",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Sunderland AFC",
+      "home_team_id": "team_sunderland_afc",
+      "away_team": "Newcastle United FC",
+      "away_team_id": "team_newcastle_united_fc"
     },
     {
       "round": "Matchday 16",
       "date": "2025-12-14",
       "time": null,
-      "team1": "Crystal Palace FC",
-      "team2": "Manchester City FC"
+      "_id": "match_156",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Crystal Palace FC",
+      "home_team_id": "team_crystal_palace_fc",
+      "away_team": "Manchester City FC",
+      "away_team_id": "team_manchester_city_fc"
     },
     {
       "round": "Matchday 16",
       "date": "2025-12-14",
       "time": null,
-      "team1": "Nottingham Forest FC",
-      "team2": "Tottenham Hotspur FC"
+      "_id": "match_157",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Nottingham Forest FC",
+      "home_team_id": "team_nottingham_forest_fc",
+      "away_team": "Tottenham Hotspur FC",
+      "away_team_id": "team_tottenham_hotspur_fc"
     },
     {
       "round": "Matchday 16",
       "date": "2025-12-14",
       "time": null,
-      "team1": "West Ham United FC",
-      "team2": "Aston Villa FC"
+      "_id": "match_158",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "West Ham United FC",
+      "home_team_id": "team_west_ham_united_fc",
+      "away_team": "Aston Villa FC",
+      "away_team_id": "team_aston_villa_fc"
     },
     {
       "round": "Matchday 16",
       "date": "2025-12-14",
       "time": "16:30",
-      "team1": "Brentford FC",
-      "team2": "Leeds United FC"
+      "_id": "match_159",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Brentford FC",
+      "home_team_id": "team_brentford_fc",
+      "away_team": "Leeds United FC",
+      "away_team_id": "team_leeds_united_fc"
     },
     {
       "round": "Matchday 16",
       "date": "2025-12-15",
       "time": "20:00",
-      "team1": "Manchester United FC",
-      "team2": "AFC Bournemouth"
+      "_id": "match_160",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Manchester United FC",
+      "home_team_id": "team_manchester_united_fc",
+      "away_team": "AFC Bournemouth",
+      "away_team_id": "team_afc_bournemouth"
     },
     {
       "round": "Matchday 17",
       "date": "2025-12-20",
       "time": "12:30",
-      "team1": "Newcastle United FC",
-      "team2": "Chelsea FC"
+      "_id": "match_161",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Newcastle United FC",
+      "home_team_id": "team_newcastle_united_fc",
+      "away_team": "Chelsea FC",
+      "away_team_id": "team_chelsea_fc"
     },
     {
       "round": "Matchday 17",
       "date": "2025-12-20",
       "time": "15:00",
-      "team1": "AFC Bournemouth",
-      "team2": "Burnley FC"
+      "_id": "match_162",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "AFC Bournemouth",
+      "home_team_id": "team_afc_bournemouth",
+      "away_team": "Burnley FC",
+      "away_team_id": "team_burnley_fc"
     },
     {
       "round": "Matchday 17",
       "date": "2025-12-20",
       "time": null,
-      "team1": "Brighton & Hove Albion FC",
-      "team2": "Sunderland AFC"
+      "_id": "match_163",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Brighton & Hove Albion FC",
+      "home_team_id": "team_brighton_hove_albion_fc",
+      "away_team": "Sunderland AFC",
+      "away_team_id": "team_sunderland_afc"
     },
     {
       "round": "Matchday 17",
       "date": "2025-12-20",
       "time": null,
-      "team1": "Manchester City FC",
-      "team2": "West Ham United FC"
+      "_id": "match_164",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Manchester City FC",
+      "home_team_id": "team_manchester_city_fc",
+      "away_team": "West Ham United FC",
+      "away_team_id": "team_west_ham_united_fc"
     },
     {
       "round": "Matchday 17",
       "date": "2025-12-20",
       "time": null,
-      "team1": "Wolverhampton Wanderers FC",
-      "team2": "Brentford FC"
+      "_id": "match_165",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Wolverhampton Wanderers FC",
+      "home_team_id": "team_wolverhampton_wanderers_fc",
+      "away_team": "Brentford FC",
+      "away_team_id": "team_brentford_fc"
     },
     {
       "round": "Matchday 17",
       "date": "2025-12-20",
       "time": "17:30",
-      "team1": "Tottenham Hotspur FC",
-      "team2": "Liverpool FC"
+      "_id": "match_166",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Tottenham Hotspur FC",
+      "home_team_id": "team_tottenham_hotspur_fc",
+      "away_team": "Liverpool FC",
+      "away_team_id": "team_liverpool_fc"
     },
     {
       "round": "Matchday 17",
       "date": "2025-12-21",
       "time": "14:00",
-      "team1": "Everton FC",
-      "team2": "Arsenal FC"
+      "_id": "match_167",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Everton FC",
+      "home_team_id": "team_everton_fc",
+      "away_team": "Arsenal FC",
+      "away_team_id": "team_arsenal_fc"
     },
     {
       "round": "Matchday 17",
       "date": "2025-12-21",
       "time": null,
-      "team1": "Leeds United FC",
-      "team2": "Crystal Palace FC"
+      "_id": "match_168",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Leeds United FC",
+      "home_team_id": "team_leeds_united_fc",
+      "away_team": "Crystal Palace FC",
+      "away_team_id": "team_crystal_palace_fc"
     },
     {
       "round": "Matchday 17",
       "date": "2025-12-21",
       "time": "16:30",
-      "team1": "Aston Villa FC",
-      "team2": "Manchester United FC"
+      "_id": "match_169",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Aston Villa FC",
+      "home_team_id": "team_aston_villa_fc",
+      "away_team": "Manchester United FC",
+      "away_team_id": "team_manchester_united_fc"
     },
     {
       "round": "Matchday 17",
       "date": "2025-12-22",
       "time": "20:00",
-      "team1": "Fulham FC",
-      "team2": "Nottingham Forest FC"
+      "_id": "match_170",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Fulham FC",
+      "home_team_id": "team_fulham_fc",
+      "away_team": "Nottingham Forest FC",
+      "away_team_id": "team_nottingham_forest_fc"
     },
     {
       "round": "Matchday 18",
       "date": "2025-12-26",
       "time": "20:00",
-      "team1": "Manchester United FC",
-      "team2": "Newcastle United FC"
+      "_id": "match_171",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Manchester United FC",
+      "home_team_id": "team_manchester_united_fc",
+      "away_team": "Newcastle United FC",
+      "away_team_id": "team_newcastle_united_fc"
     },
     {
       "round": "Matchday 18",
       "date": "2025-12-27",
       "time": "12:30",
-      "team1": "Nottingham Forest FC",
-      "team2": "Manchester City FC"
+      "_id": "match_172",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Nottingham Forest FC",
+      "home_team_id": "team_nottingham_forest_fc",
+      "away_team": "Manchester City FC",
+      "away_team_id": "team_manchester_city_fc"
     },
     {
       "round": "Matchday 18",
       "date": "2025-12-27",
       "time": "15:00",
-      "team1": "Arsenal FC",
-      "team2": "Brighton & Hove Albion FC"
+      "_id": "match_173",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Arsenal FC",
+      "home_team_id": "team_arsenal_fc",
+      "away_team": "Brighton & Hove Albion FC",
+      "away_team_id": "team_brighton_hove_albion_fc"
     },
     {
       "round": "Matchday 18",
       "date": "2025-12-27",
       "time": null,
-      "team1": "Brentford FC",
-      "team2": "AFC Bournemouth"
+      "_id": "match_174",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Brentford FC",
+      "home_team_id": "team_brentford_fc",
+      "away_team": "AFC Bournemouth",
+      "away_team_id": "team_afc_bournemouth"
     },
     {
       "round": "Matchday 18",
       "date": "2025-12-27",
       "time": null,
-      "team1": "Burnley FC",
-      "team2": "Everton FC"
+      "_id": "match_175",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Burnley FC",
+      "home_team_id": "team_burnley_fc",
+      "away_team": "Everton FC",
+      "away_team_id": "team_everton_fc"
     },
     {
       "round": "Matchday 18",
       "date": "2025-12-27",
       "time": null,
-      "team1": "Liverpool FC",
-      "team2": "Wolverhampton Wanderers FC"
+      "_id": "match_176",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Liverpool FC",
+      "home_team_id": "team_liverpool_fc",
+      "away_team": "Wolverhampton Wanderers FC",
+      "away_team_id": "team_wolverhampton_wanderers_fc"
     },
     {
       "round": "Matchday 18",
       "date": "2025-12-27",
       "time": null,
-      "team1": "West Ham United FC",
-      "team2": "Fulham FC"
+      "_id": "match_177",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "West Ham United FC",
+      "home_team_id": "team_west_ham_united_fc",
+      "away_team": "Fulham FC",
+      "away_team_id": "team_fulham_fc"
     },
     {
       "round": "Matchday 18",
       "date": "2025-12-27",
       "time": "17:30",
-      "team1": "Chelsea FC",
-      "team2": "Aston Villa FC"
+      "_id": "match_178",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Chelsea FC",
+      "home_team_id": "team_chelsea_fc",
+      "away_team": "Aston Villa FC",
+      "away_team_id": "team_aston_villa_fc"
     },
     {
       "round": "Matchday 18",
       "date": "2025-12-28",
       "time": "14:00",
-      "team1": "Sunderland AFC",
-      "team2": "Leeds United FC"
+      "_id": "match_179",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Sunderland AFC",
+      "home_team_id": "team_sunderland_afc",
+      "away_team": "Leeds United FC",
+      "away_team_id": "team_leeds_united_fc"
     },
     {
       "round": "Matchday 18",
       "date": "2025-12-28",
       "time": "16:30",
-      "team1": "Crystal Palace FC",
-      "team2": "Tottenham Hotspur FC"
+      "_id": "match_180",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Crystal Palace FC",
+      "home_team_id": "team_crystal_palace_fc",
+      "away_team": "Tottenham Hotspur FC",
+      "away_team_id": "team_tottenham_hotspur_fc"
     },
     {
       "round": "Matchday 19",
       "date": "2025-12-30",
       "time": "19:30",
-      "team1": "Burnley FC",
-      "team2": "Newcastle United FC"
+      "_id": "match_181",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Burnley FC",
+      "home_team_id": "team_burnley_fc",
+      "away_team": "Newcastle United FC",
+      "away_team_id": "team_newcastle_united_fc"
     },
     {
       "round": "Matchday 19",
       "date": "2025-12-30",
       "time": null,
-      "team1": "Chelsea FC",
-      "team2": "AFC Bournemouth"
+      "_id": "match_182",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Chelsea FC",
+      "home_team_id": "team_chelsea_fc",
+      "away_team": "AFC Bournemouth",
+      "away_team_id": "team_afc_bournemouth"
     },
     {
       "round": "Matchday 19",
       "date": "2025-12-30",
       "time": null,
-      "team1": "Nottingham Forest FC",
-      "team2": "Everton FC"
+      "_id": "match_183",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Nottingham Forest FC",
+      "home_team_id": "team_nottingham_forest_fc",
+      "away_team": "Everton FC",
+      "away_team_id": "team_everton_fc"
     },
     {
       "round": "Matchday 19",
       "date": "2025-12-30",
       "time": null,
-      "team1": "West Ham United FC",
-      "team2": "Brighton & Hove Albion FC"
+      "_id": "match_184",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "West Ham United FC",
+      "home_team_id": "team_west_ham_united_fc",
+      "away_team": "Brighton & Hove Albion FC",
+      "away_team_id": "team_brighton_hove_albion_fc"
     },
     {
       "round": "Matchday 19",
       "date": "2025-12-30",
       "time": "20:15",
-      "team1": "Arsenal FC",
-      "team2": "Aston Villa FC"
+      "_id": "match_185",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Arsenal FC",
+      "home_team_id": "team_arsenal_fc",
+      "away_team": "Aston Villa FC",
+      "away_team_id": "team_aston_villa_fc"
     },
     {
       "round": "Matchday 19",
       "date": "2025-12-30",
       "time": null,
-      "team1": "Manchester United FC",
-      "team2": "Wolverhampton Wanderers FC"
+      "_id": "match_186",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Manchester United FC",
+      "home_team_id": "team_manchester_united_fc",
+      "away_team": "Wolverhampton Wanderers FC",
+      "away_team_id": "team_wolverhampton_wanderers_fc"
     },
     {
       "round": "Matchday 19",
       "date": "2026-01-01",
       "time": "17:30",
-      "team1": "Crystal Palace FC",
-      "team2": "Fulham FC"
+      "_id": "match_187",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Crystal Palace FC",
+      "home_team_id": "team_crystal_palace_fc",
+      "away_team": "Fulham FC",
+      "away_team_id": "team_fulham_fc"
     },
     {
       "round": "Matchday 19",
       "date": "2026-01-01",
       "time": null,
-      "team1": "Liverpool FC",
-      "team2": "Leeds United FC"
+      "_id": "match_188",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Liverpool FC",
+      "home_team_id": "team_liverpool_fc",
+      "away_team": "Leeds United FC",
+      "away_team_id": "team_leeds_united_fc"
     },
     {
       "round": "Matchday 19",
       "date": "2026-01-01",
       "time": "20:00",
-      "team1": "Sunderland AFC",
-      "team2": "Manchester City FC"
+      "_id": "match_189",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Sunderland AFC",
+      "home_team_id": "team_sunderland_afc",
+      "away_team": "Manchester City FC",
+      "away_team_id": "team_manchester_city_fc"
     },
     {
       "round": "Matchday 19",
       "date": "2026-01-01",
       "time": null,
-      "team1": "Brentford FC",
-      "team2": "Tottenham Hotspur FC"
+      "_id": "match_190",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Brentford FC",
+      "home_team_id": "team_brentford_fc",
+      "away_team": "Tottenham Hotspur FC",
+      "away_team_id": "team_tottenham_hotspur_fc"
     },
     {
       "round": "Matchday 20",
       "date": "2026-01-03",
       "time": "12:30",
-      "team1": "Aston Villa FC",
-      "team2": "Nottingham Forest FC"
+      "_id": "match_191",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Aston Villa FC",
+      "home_team_id": "team_aston_villa_fc",
+      "away_team": "Nottingham Forest FC",
+      "away_team_id": "team_nottingham_forest_fc"
     },
     {
       "round": "Matchday 20",
       "date": "2026-01-03",
       "time": "15:00",
-      "team1": "Brighton & Hove Albion FC",
-      "team2": "Burnley FC"
+      "_id": "match_192",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Brighton & Hove Albion FC",
+      "home_team_id": "team_brighton_hove_albion_fc",
+      "away_team": "Burnley FC",
+      "away_team_id": "team_burnley_fc"
     },
     {
       "round": "Matchday 20",
       "date": "2026-01-03",
       "time": null,
-      "team1": "Wolverhampton Wanderers FC",
-      "team2": "West Ham United FC"
+      "_id": "match_193",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Wolverhampton Wanderers FC",
+      "home_team_id": "team_wolverhampton_wanderers_fc",
+      "away_team": "West Ham United FC",
+      "away_team_id": "team_west_ham_united_fc"
     },
     {
       "round": "Matchday 20",
       "date": "2026-01-03",
       "time": "17:30",
-      "team1": "AFC Bournemouth",
-      "team2": "Arsenal FC"
+      "_id": "match_194",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "AFC Bournemouth",
+      "home_team_id": "team_afc_bournemouth",
+      "away_team": "Arsenal FC",
+      "away_team_id": "team_arsenal_fc"
     },
     {
       "round": "Matchday 20",
       "date": "2026-01-04",
       "time": "12:30",
-      "team1": "Leeds United FC",
-      "team2": "Manchester United FC"
+      "_id": "match_195",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Leeds United FC",
+      "home_team_id": "team_leeds_united_fc",
+      "away_team": "Manchester United FC",
+      "away_team_id": "team_manchester_united_fc"
     },
     {
       "round": "Matchday 20",
       "date": "2026-01-04",
       "time": "15:00",
-      "team1": "Everton FC",
-      "team2": "Brentford FC"
+      "_id": "match_196",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Everton FC",
+      "home_team_id": "team_everton_fc",
+      "away_team": "Brentford FC",
+      "away_team_id": "team_brentford_fc"
     },
     {
       "round": "Matchday 20",
       "date": "2026-01-04",
       "time": null,
-      "team1": "Fulham FC",
-      "team2": "Liverpool FC"
+      "_id": "match_197",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Fulham FC",
+      "home_team_id": "team_fulham_fc",
+      "away_team": "Liverpool FC",
+      "away_team_id": "team_liverpool_fc"
     },
     {
       "round": "Matchday 20",
       "date": "2026-01-04",
       "time": null,
-      "team1": "Newcastle United FC",
-      "team2": "Crystal Palace FC"
+      "_id": "match_198",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Newcastle United FC",
+      "home_team_id": "team_newcastle_united_fc",
+      "away_team": "Crystal Palace FC",
+      "away_team_id": "team_crystal_palace_fc"
     },
     {
       "round": "Matchday 20",
       "date": "2026-01-04",
       "time": null,
-      "team1": "Tottenham Hotspur FC",
-      "team2": "Sunderland AFC"
+      "_id": "match_199",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Tottenham Hotspur FC",
+      "home_team_id": "team_tottenham_hotspur_fc",
+      "away_team": "Sunderland AFC",
+      "away_team_id": "team_sunderland_afc"
     },
     {
       "round": "Matchday 20",
       "date": "2026-01-04",
       "time": "17:30",
-      "team1": "Manchester City FC",
-      "team2": "Chelsea FC"
+      "_id": "match_200",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Manchester City FC",
+      "home_team_id": "team_manchester_city_fc",
+      "away_team": "Chelsea FC",
+      "away_team_id": "team_chelsea_fc"
     },
     {
       "round": "Matchday 21",
       "date": "2026-01-06",
       "time": "20:00",
-      "team1": "West Ham United FC",
-      "team2": "Nottingham Forest FC"
+      "_id": "match_201",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "West Ham United FC",
+      "home_team_id": "team_west_ham_united_fc",
+      "away_team": "Nottingham Forest FC",
+      "away_team_id": "team_nottingham_forest_fc"
     },
     {
       "round": "Matchday 21",
       "date": "2026-01-07",
       "time": "19:30",
-      "team1": "AFC Bournemouth",
-      "team2": "Tottenham Hotspur FC"
+      "_id": "match_202",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "AFC Bournemouth",
+      "home_team_id": "team_afc_bournemouth",
+      "away_team": "Tottenham Hotspur FC",
+      "away_team_id": "team_tottenham_hotspur_fc"
     },
     {
       "round": "Matchday 21",
       "date": "2026-01-07",
       "time": null,
-      "team1": "Crystal Palace FC",
-      "team2": "Aston Villa FC"
+      "_id": "match_203",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Crystal Palace FC",
+      "home_team_id": "team_crystal_palace_fc",
+      "away_team": "Aston Villa FC",
+      "away_team_id": "team_aston_villa_fc"
     },
     {
       "round": "Matchday 21",
       "date": "2026-01-07",
       "time": null,
-      "team1": "Brentford FC",
-      "team2": "Sunderland AFC"
+      "_id": "match_204",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Brentford FC",
+      "home_team_id": "team_brentford_fc",
+      "away_team": "Sunderland AFC",
+      "away_team_id": "team_sunderland_afc"
     },
     {
       "round": "Matchday 21",
       "date": "2026-01-07",
       "time": null,
-      "team1": "Everton FC",
-      "team2": "Wolverhampton Wanderers FC"
+      "_id": "match_205",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Everton FC",
+      "home_team_id": "team_everton_fc",
+      "away_team": "Wolverhampton Wanderers FC",
+      "away_team_id": "team_wolverhampton_wanderers_fc"
     },
     {
       "round": "Matchday 21",
       "date": "2026-01-07",
       "time": null,
-      "team1": "Fulham FC",
-      "team2": "Chelsea FC"
+      "_id": "match_206",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Fulham FC",
+      "home_team_id": "team_fulham_fc",
+      "away_team": "Chelsea FC",
+      "away_team_id": "team_chelsea_fc"
     },
     {
       "round": "Matchday 21",
       "date": "2026-01-07",
       "time": null,
-      "team1": "Manchester City FC",
-      "team2": "Brighton & Hove Albion FC"
+      "_id": "match_207",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Manchester City FC",
+      "home_team_id": "team_manchester_city_fc",
+      "away_team": "Brighton & Hove Albion FC",
+      "away_team_id": "team_brighton_hove_albion_fc"
     },
     {
       "round": "Matchday 21",
       "date": "2026-01-07",
       "time": "20:15",
-      "team1": "Burnley FC",
-      "team2": "Manchester United FC"
+      "_id": "match_208",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Burnley FC",
+      "home_team_id": "team_burnley_fc",
+      "away_team": "Manchester United FC",
+      "away_team_id": "team_manchester_united_fc"
     },
     {
       "round": "Matchday 21",
       "date": "2026-01-07",
       "time": null,
-      "team1": "Newcastle United FC",
-      "team2": "Leeds United FC"
+      "_id": "match_209",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Newcastle United FC",
+      "home_team_id": "team_newcastle_united_fc",
+      "away_team": "Leeds United FC",
+      "away_team_id": "team_leeds_united_fc"
     },
     {
       "round": "Matchday 21",
       "date": "2026-01-08",
       "time": "20:00",
-      "team1": "Arsenal FC",
-      "team2": "Liverpool FC"
+      "_id": "match_210",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Arsenal FC",
+      "home_team_id": "team_arsenal_fc",
+      "away_team": "Liverpool FC",
+      "away_team_id": "team_liverpool_fc"
     },
     {
       "round": "Matchday 22",
       "date": "2026-01-17",
       "time": null,
-      "team1": "Sunderland AFC",
-      "team2": "Crystal Palace FC"
+      "_id": "match_211",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Sunderland AFC",
+      "home_team_id": "team_sunderland_afc",
+      "away_team": "Crystal Palace FC",
+      "away_team_id": "team_crystal_palace_fc"
     },
     {
       "round": "Matchday 22",
       "date": "2026-01-17",
       "time": null,
-      "team1": "Aston Villa FC",
-      "team2": "Everton FC"
+      "_id": "match_212",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Aston Villa FC",
+      "home_team_id": "team_aston_villa_fc",
+      "away_team": "Everton FC",
+      "away_team_id": "team_everton_fc"
     },
     {
       "round": "Matchday 22",
       "date": "2026-01-17",
       "time": null,
-      "team1": "Brighton & Hove Albion FC",
-      "team2": "AFC Bournemouth"
+      "_id": "match_213",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Brighton & Hove Albion FC",
+      "home_team_id": "team_brighton_hove_albion_fc",
+      "away_team": "AFC Bournemouth",
+      "away_team_id": "team_afc_bournemouth"
     },
     {
       "round": "Matchday 22",
       "date": "2026-01-17",
       "time": null,
-      "team1": "Chelsea FC",
-      "team2": "Brentford FC"
+      "_id": "match_214",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Chelsea FC",
+      "home_team_id": "team_chelsea_fc",
+      "away_team": "Brentford FC",
+      "away_team_id": "team_brentford_fc"
     },
     {
       "round": "Matchday 22",
       "date": "2026-01-17",
       "time": null,
-      "team1": "Liverpool FC",
-      "team2": "Burnley FC"
+      "_id": "match_215",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Liverpool FC",
+      "home_team_id": "team_liverpool_fc",
+      "away_team": "Burnley FC",
+      "away_team_id": "team_burnley_fc"
     },
     {
       "round": "Matchday 22",
       "date": "2026-01-17",
       "time": null,
-      "team1": "Leeds United FC",
-      "team2": "Fulham FC"
+      "_id": "match_216",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Leeds United FC",
+      "home_team_id": "team_leeds_united_fc",
+      "away_team": "Fulham FC",
+      "away_team_id": "team_fulham_fc"
     },
     {
       "round": "Matchday 22",
       "date": "2026-01-17",
       "time": null,
-      "team1": "Manchester United FC",
-      "team2": "Manchester City FC"
+      "_id": "match_217",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Manchester United FC",
+      "home_team_id": "team_manchester_united_fc",
+      "away_team": "Manchester City FC",
+      "away_team_id": "team_manchester_city_fc"
     },
     {
       "round": "Matchday 22",
       "date": "2026-01-17",
       "time": null,
-      "team1": "Nottingham Forest FC",
-      "team2": "Arsenal FC"
+      "_id": "match_218",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Nottingham Forest FC",
+      "home_team_id": "team_nottingham_forest_fc",
+      "away_team": "Arsenal FC",
+      "away_team_id": "team_arsenal_fc"
     },
     {
       "round": "Matchday 22",
       "date": "2026-01-17",
       "time": null,
-      "team1": "Tottenham Hotspur FC",
-      "team2": "West Ham United FC"
+      "_id": "match_219",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Tottenham Hotspur FC",
+      "home_team_id": "team_tottenham_hotspur_fc",
+      "away_team": "West Ham United FC",
+      "away_team_id": "team_west_ham_united_fc"
     },
     {
       "round": "Matchday 22",
       "date": "2026-01-17",
       "time": null,
-      "team1": "Wolverhampton Wanderers FC",
-      "team2": "Newcastle United FC"
+      "_id": "match_220",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Wolverhampton Wanderers FC",
+      "home_team_id": "team_wolverhampton_wanderers_fc",
+      "away_team": "Newcastle United FC",
+      "away_team_id": "team_newcastle_united_fc"
     },
     {
       "round": "Matchday 23",
       "date": "2026-01-24",
       "time": null,
-      "team1": "AFC Bournemouth",
-      "team2": "Liverpool FC"
+      "_id": "match_221",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "AFC Bournemouth",
+      "home_team_id": "team_afc_bournemouth",
+      "away_team": "Liverpool FC",
+      "away_team_id": "team_liverpool_fc"
     },
     {
       "round": "Matchday 23",
       "date": "2026-01-24",
       "time": null,
-      "team1": "Crystal Palace FC",
-      "team2": "Chelsea FC"
+      "_id": "match_222",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Crystal Palace FC",
+      "home_team_id": "team_crystal_palace_fc",
+      "away_team": "Chelsea FC",
+      "away_team_id": "team_chelsea_fc"
     },
     {
       "round": "Matchday 23",
       "date": "2026-01-24",
       "time": null,
-      "team1": "Arsenal FC",
-      "team2": "Manchester United FC"
+      "_id": "match_223",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Arsenal FC",
+      "home_team_id": "team_arsenal_fc",
+      "away_team": "Manchester United FC",
+      "away_team_id": "team_manchester_united_fc"
     },
     {
       "round": "Matchday 23",
       "date": "2026-01-24",
       "time": null,
-      "team1": "Brentford FC",
-      "team2": "Nottingham Forest FC"
+      "_id": "match_224",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Brentford FC",
+      "home_team_id": "team_brentford_fc",
+      "away_team": "Nottingham Forest FC",
+      "away_team_id": "team_nottingham_forest_fc"
     },
     {
       "round": "Matchday 23",
       "date": "2026-01-24",
       "time": null,
-      "team1": "Burnley FC",
-      "team2": "Tottenham Hotspur FC"
+      "_id": "match_225",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Burnley FC",
+      "home_team_id": "team_burnley_fc",
+      "away_team": "Tottenham Hotspur FC",
+      "away_team_id": "team_tottenham_hotspur_fc"
     },
     {
       "round": "Matchday 23",
       "date": "2026-01-24",
       "time": null,
-      "team1": "Everton FC",
-      "team2": "Leeds United FC"
+      "_id": "match_226",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Everton FC",
+      "home_team_id": "team_everton_fc",
+      "away_team": "Leeds United FC",
+      "away_team_id": "team_leeds_united_fc"
     },
     {
       "round": "Matchday 23",
       "date": "2026-01-24",
       "time": null,
-      "team1": "Fulham FC",
-      "team2": "Brighton & Hove Albion FC"
+      "_id": "match_227",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Fulham FC",
+      "home_team_id": "team_fulham_fc",
+      "away_team": "Brighton & Hove Albion FC",
+      "away_team_id": "team_brighton_hove_albion_fc"
     },
     {
       "round": "Matchday 23",
       "date": "2026-01-24",
       "time": null,
-      "team1": "Manchester City FC",
-      "team2": "Wolverhampton Wanderers FC"
+      "_id": "match_228",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Manchester City FC",
+      "home_team_id": "team_manchester_city_fc",
+      "away_team": "Wolverhampton Wanderers FC",
+      "away_team_id": "team_wolverhampton_wanderers_fc"
     },
     {
       "round": "Matchday 23",
       "date": "2026-01-24",
       "time": null,
-      "team1": "Newcastle United FC",
-      "team2": "Aston Villa FC"
+      "_id": "match_229",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Newcastle United FC",
+      "home_team_id": "team_newcastle_united_fc",
+      "away_team": "Aston Villa FC",
+      "away_team_id": "team_aston_villa_fc"
     },
     {
       "round": "Matchday 23",
       "date": "2026-01-24",
       "time": null,
-      "team1": "West Ham United FC",
-      "team2": "Sunderland AFC"
+      "_id": "match_230",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "West Ham United FC",
+      "home_team_id": "team_west_ham_united_fc",
+      "away_team": "Sunderland AFC",
+      "away_team_id": "team_sunderland_afc"
     },
     {
       "round": "Matchday 24",
       "date": "2026-01-31",
       "time": null,
-      "team1": "Sunderland AFC",
-      "team2": "Burnley FC"
+      "_id": "match_231",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Sunderland AFC",
+      "home_team_id": "team_sunderland_afc",
+      "away_team": "Burnley FC",
+      "away_team_id": "team_burnley_fc"
     },
     {
       "round": "Matchday 24",
       "date": "2026-01-31",
       "time": null,
-      "team1": "Aston Villa FC",
-      "team2": "Brentford FC"
+      "_id": "match_232",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Aston Villa FC",
+      "home_team_id": "team_aston_villa_fc",
+      "away_team": "Brentford FC",
+      "away_team_id": "team_brentford_fc"
     },
     {
       "round": "Matchday 24",
       "date": "2026-01-31",
       "time": null,
-      "team1": "Brighton & Hove Albion FC",
-      "team2": "Everton FC"
+      "_id": "match_233",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Brighton & Hove Albion FC",
+      "home_team_id": "team_brighton_hove_albion_fc",
+      "away_team": "Everton FC",
+      "away_team_id": "team_everton_fc"
     },
     {
       "round": "Matchday 24",
       "date": "2026-01-31",
       "time": null,
-      "team1": "Chelsea FC",
-      "team2": "West Ham United FC"
+      "_id": "match_234",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Chelsea FC",
+      "home_team_id": "team_chelsea_fc",
+      "away_team": "West Ham United FC",
+      "away_team_id": "team_west_ham_united_fc"
     },
     {
       "round": "Matchday 24",
       "date": "2026-01-31",
       "time": null,
-      "team1": "Liverpool FC",
-      "team2": "Newcastle United FC"
+      "_id": "match_235",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Liverpool FC",
+      "home_team_id": "team_liverpool_fc",
+      "away_team": "Newcastle United FC",
+      "away_team_id": "team_newcastle_united_fc"
     },
     {
       "round": "Matchday 24",
       "date": "2026-01-31",
       "time": null,
-      "team1": "Leeds United FC",
-      "team2": "Arsenal FC"
+      "_id": "match_236",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Leeds United FC",
+      "home_team_id": "team_leeds_united_fc",
+      "away_team": "Arsenal FC",
+      "away_team_id": "team_arsenal_fc"
     },
     {
       "round": "Matchday 24",
       "date": "2026-01-31",
       "time": null,
-      "team1": "Manchester United FC",
-      "team2": "Fulham FC"
+      "_id": "match_237",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Manchester United FC",
+      "home_team_id": "team_manchester_united_fc",
+      "away_team": "Fulham FC",
+      "away_team_id": "team_fulham_fc"
     },
     {
       "round": "Matchday 24",
       "date": "2026-01-31",
       "time": null,
-      "team1": "Nottingham Forest FC",
-      "team2": "Crystal Palace FC"
+      "_id": "match_238",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Nottingham Forest FC",
+      "home_team_id": "team_nottingham_forest_fc",
+      "away_team": "Crystal Palace FC",
+      "away_team_id": "team_crystal_palace_fc"
     },
     {
       "round": "Matchday 24",
       "date": "2026-01-31",
       "time": null,
-      "team1": "Tottenham Hotspur FC",
-      "team2": "Manchester City FC"
+      "_id": "match_239",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Tottenham Hotspur FC",
+      "home_team_id": "team_tottenham_hotspur_fc",
+      "away_team": "Manchester City FC",
+      "away_team_id": "team_manchester_city_fc"
     },
     {
       "round": "Matchday 24",
       "date": "2026-01-31",
       "time": null,
-      "team1": "Wolverhampton Wanderers FC",
-      "team2": "AFC Bournemouth"
+      "_id": "match_240",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Wolverhampton Wanderers FC",
+      "home_team_id": "team_wolverhampton_wanderers_fc",
+      "away_team": "AFC Bournemouth",
+      "away_team_id": "team_afc_bournemouth"
     },
     {
       "round": "Matchday 25",
       "date": "2026-02-07",
       "time": null,
-      "team1": "AFC Bournemouth",
-      "team2": "Aston Villa FC"
+      "_id": "match_241",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "AFC Bournemouth",
+      "home_team_id": "team_afc_bournemouth",
+      "away_team": "Aston Villa FC",
+      "away_team_id": "team_aston_villa_fc"
     },
     {
       "round": "Matchday 25",
       "date": "2026-02-07",
       "time": null,
-      "team1": "Brighton & Hove Albion FC",
-      "team2": "Crystal Palace FC"
+      "_id": "match_242",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Brighton & Hove Albion FC",
+      "home_team_id": "team_brighton_hove_albion_fc",
+      "away_team": "Crystal Palace FC",
+      "away_team_id": "team_crystal_palace_fc"
     },
     {
       "round": "Matchday 25",
       "date": "2026-02-07",
       "time": null,
-      "team1": "Arsenal FC",
-      "team2": "Sunderland AFC"
+      "_id": "match_243",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Arsenal FC",
+      "home_team_id": "team_arsenal_fc",
+      "away_team": "Sunderland AFC",
+      "away_team_id": "team_sunderland_afc"
     },
     {
       "round": "Matchday 25",
       "date": "2026-02-07",
       "time": null,
-      "team1": "Burnley FC",
-      "team2": "West Ham United FC"
+      "_id": "match_244",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Burnley FC",
+      "home_team_id": "team_burnley_fc",
+      "away_team": "West Ham United FC",
+      "away_team_id": "team_west_ham_united_fc"
     },
     {
       "round": "Matchday 25",
       "date": "2026-02-07",
       "time": null,
-      "team1": "Fulham FC",
-      "team2": "Everton FC"
+      "_id": "match_245",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Fulham FC",
+      "home_team_id": "team_fulham_fc",
+      "away_team": "Everton FC",
+      "away_team_id": "team_everton_fc"
     },
     {
       "round": "Matchday 25",
       "date": "2026-02-07",
       "time": null,
-      "team1": "Liverpool FC",
-      "team2": "Manchester City FC"
+      "_id": "match_246",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Liverpool FC",
+      "home_team_id": "team_liverpool_fc",
+      "away_team": "Manchester City FC",
+      "away_team_id": "team_manchester_city_fc"
     },
     {
       "round": "Matchday 25",
       "date": "2026-02-07",
       "time": null,
-      "team1": "Leeds United FC",
-      "team2": "Nottingham Forest FC"
+      "_id": "match_247",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Leeds United FC",
+      "home_team_id": "team_leeds_united_fc",
+      "away_team": "Nottingham Forest FC",
+      "away_team_id": "team_nottingham_forest_fc"
     },
     {
       "round": "Matchday 25",
       "date": "2026-02-07",
       "time": null,
-      "team1": "Manchester United FC",
-      "team2": "Tottenham Hotspur FC"
+      "_id": "match_248",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Manchester United FC",
+      "home_team_id": "team_manchester_united_fc",
+      "away_team": "Tottenham Hotspur FC",
+      "away_team_id": "team_tottenham_hotspur_fc"
     },
     {
       "round": "Matchday 25",
       "date": "2026-02-07",
       "time": null,
-      "team1": "Newcastle United FC",
-      "team2": "Brentford FC"
+      "_id": "match_249",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Newcastle United FC",
+      "home_team_id": "team_newcastle_united_fc",
+      "away_team": "Brentford FC",
+      "away_team_id": "team_brentford_fc"
     },
     {
       "round": "Matchday 25",
       "date": "2026-02-07",
       "time": null,
-      "team1": "Wolverhampton Wanderers FC",
-      "team2": "Chelsea FC"
+      "_id": "match_250",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Wolverhampton Wanderers FC",
+      "home_team_id": "team_wolverhampton_wanderers_fc",
+      "away_team": "Chelsea FC",
+      "away_team_id": "team_chelsea_fc"
     },
     {
       "round": "Matchday 26",
       "date": "2026-02-11",
       "time": null,
-      "team1": "Sunderland AFC",
-      "team2": "Liverpool FC"
+      "_id": "match_251",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Sunderland AFC",
+      "home_team_id": "team_sunderland_afc",
+      "away_team": "Liverpool FC",
+      "away_team_id": "team_liverpool_fc"
     },
     {
       "round": "Matchday 26",
       "date": "2026-02-11",
       "time": null,
-      "team1": "Aston Villa FC",
-      "team2": "Brighton & Hove Albion FC"
+      "_id": "match_252",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Aston Villa FC",
+      "home_team_id": "team_aston_villa_fc",
+      "away_team": "Brighton & Hove Albion FC",
+      "away_team_id": "team_brighton_hove_albion_fc"
     },
     {
       "round": "Matchday 26",
       "date": "2026-02-11",
       "time": null,
-      "team1": "Crystal Palace FC",
-      "team2": "Burnley FC"
+      "_id": "match_253",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Crystal Palace FC",
+      "home_team_id": "team_crystal_palace_fc",
+      "away_team": "Burnley FC",
+      "away_team_id": "team_burnley_fc"
     },
     {
       "round": "Matchday 26",
       "date": "2026-02-11",
       "time": null,
-      "team1": "Brentford FC",
-      "team2": "Arsenal FC"
+      "_id": "match_254",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Brentford FC",
+      "home_team_id": "team_brentford_fc",
+      "away_team": "Arsenal FC",
+      "away_team_id": "team_arsenal_fc"
     },
     {
       "round": "Matchday 26",
       "date": "2026-02-11",
       "time": null,
-      "team1": "Chelsea FC",
-      "team2": "Leeds United FC"
+      "_id": "match_255",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Chelsea FC",
+      "home_team_id": "team_chelsea_fc",
+      "away_team": "Leeds United FC",
+      "away_team_id": "team_leeds_united_fc"
     },
     {
       "round": "Matchday 26",
       "date": "2026-02-11",
       "time": null,
-      "team1": "Everton FC",
-      "team2": "AFC Bournemouth"
+      "_id": "match_256",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Everton FC",
+      "home_team_id": "team_everton_fc",
+      "away_team": "AFC Bournemouth",
+      "away_team_id": "team_afc_bournemouth"
     },
     {
       "round": "Matchday 26",
       "date": "2026-02-11",
       "time": null,
-      "team1": "Manchester City FC",
-      "team2": "Fulham FC"
+      "_id": "match_257",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Manchester City FC",
+      "home_team_id": "team_manchester_city_fc",
+      "away_team": "Fulham FC",
+      "away_team_id": "team_fulham_fc"
     },
     {
       "round": "Matchday 26",
       "date": "2026-02-11",
       "time": null,
-      "team1": "Nottingham Forest FC",
-      "team2": "Wolverhampton Wanderers FC"
+      "_id": "match_258",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Nottingham Forest FC",
+      "home_team_id": "team_nottingham_forest_fc",
+      "away_team": "Wolverhampton Wanderers FC",
+      "away_team_id": "team_wolverhampton_wanderers_fc"
     },
     {
       "round": "Matchday 26",
       "date": "2026-02-11",
       "time": null,
-      "team1": "Tottenham Hotspur FC",
-      "team2": "Newcastle United FC"
+      "_id": "match_259",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Tottenham Hotspur FC",
+      "home_team_id": "team_tottenham_hotspur_fc",
+      "away_team": "Newcastle United FC",
+      "away_team_id": "team_newcastle_united_fc"
     },
     {
       "round": "Matchday 26",
       "date": "2026-02-11",
       "time": null,
-      "team1": "West Ham United FC",
-      "team2": "Manchester United FC"
+      "_id": "match_260",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "West Ham United FC",
+      "home_team_id": "team_west_ham_united_fc",
+      "away_team": "Manchester United FC",
+      "away_team_id": "team_manchester_united_fc"
     },
     {
       "round": "Matchday 27",
       "date": "2026-02-21",
       "time": null,
-      "team1": "Sunderland AFC",
-      "team2": "Fulham FC"
+      "_id": "match_261",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Sunderland AFC",
+      "home_team_id": "team_sunderland_afc",
+      "away_team": "Fulham FC",
+      "away_team_id": "team_fulham_fc"
     },
     {
       "round": "Matchday 27",
       "date": "2026-02-21",
       "time": null,
-      "team1": "Aston Villa FC",
-      "team2": "Leeds United FC"
+      "_id": "match_262",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Aston Villa FC",
+      "home_team_id": "team_aston_villa_fc",
+      "away_team": "Leeds United FC",
+      "away_team_id": "team_leeds_united_fc"
     },
     {
       "round": "Matchday 27",
       "date": "2026-02-21",
       "time": null,
-      "team1": "Crystal Palace FC",
-      "team2": "Wolverhampton Wanderers FC"
+      "_id": "match_263",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Crystal Palace FC",
+      "home_team_id": "team_crystal_palace_fc",
+      "away_team": "Wolverhampton Wanderers FC",
+      "away_team_id": "team_wolverhampton_wanderers_fc"
     },
     {
       "round": "Matchday 27",
       "date": "2026-02-21",
       "time": null,
-      "team1": "Brentford FC",
-      "team2": "Brighton & Hove Albion FC"
+      "_id": "match_264",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Brentford FC",
+      "home_team_id": "team_brentford_fc",
+      "away_team": "Brighton & Hove Albion FC",
+      "away_team_id": "team_brighton_hove_albion_fc"
     },
     {
       "round": "Matchday 27",
       "date": "2026-02-21",
       "time": null,
-      "team1": "Chelsea FC",
-      "team2": "Burnley FC"
+      "_id": "match_265",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Chelsea FC",
+      "home_team_id": "team_chelsea_fc",
+      "away_team": "Burnley FC",
+      "away_team_id": "team_burnley_fc"
     },
     {
       "round": "Matchday 27",
       "date": "2026-02-21",
       "time": null,
-      "team1": "Everton FC",
-      "team2": "Manchester United FC"
+      "_id": "match_266",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Everton FC",
+      "home_team_id": "team_everton_fc",
+      "away_team": "Manchester United FC",
+      "away_team_id": "team_manchester_united_fc"
     },
     {
       "round": "Matchday 27",
       "date": "2026-02-21",
       "time": null,
-      "team1": "Manchester City FC",
-      "team2": "Newcastle United FC"
+      "_id": "match_267",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Manchester City FC",
+      "home_team_id": "team_manchester_city_fc",
+      "away_team": "Newcastle United FC",
+      "away_team_id": "team_newcastle_united_fc"
     },
     {
       "round": "Matchday 27",
       "date": "2026-02-21",
       "time": null,
-      "team1": "Nottingham Forest FC",
-      "team2": "Liverpool FC"
+      "_id": "match_268",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Nottingham Forest FC",
+      "home_team_id": "team_nottingham_forest_fc",
+      "away_team": "Liverpool FC",
+      "away_team_id": "team_liverpool_fc"
     },
     {
       "round": "Matchday 27",
       "date": "2026-02-21",
       "time": null,
-      "team1": "Tottenham Hotspur FC",
-      "team2": "Arsenal FC"
+      "_id": "match_269",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Tottenham Hotspur FC",
+      "home_team_id": "team_tottenham_hotspur_fc",
+      "away_team": "Arsenal FC",
+      "away_team_id": "team_arsenal_fc"
     },
     {
       "round": "Matchday 27",
       "date": "2026-02-21",
       "time": null,
-      "team1": "West Ham United FC",
-      "team2": "AFC Bournemouth"
+      "_id": "match_270",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "West Ham United FC",
+      "home_team_id": "team_west_ham_united_fc",
+      "away_team": "AFC Bournemouth",
+      "away_team_id": "team_afc_bournemouth"
     },
     {
       "round": "Matchday 28",
       "date": "2026-02-28",
       "time": null,
-      "team1": "AFC Bournemouth",
-      "team2": "Sunderland AFC"
+      "_id": "match_271",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "AFC Bournemouth",
+      "home_team_id": "team_afc_bournemouth",
+      "away_team": "Sunderland AFC",
+      "away_team_id": "team_sunderland_afc"
     },
     {
       "round": "Matchday 28",
       "date": "2026-02-28",
       "time": null,
-      "team1": "Brighton & Hove Albion FC",
-      "team2": "Nottingham Forest FC"
+      "_id": "match_272",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Brighton & Hove Albion FC",
+      "home_team_id": "team_brighton_hove_albion_fc",
+      "away_team": "Nottingham Forest FC",
+      "away_team_id": "team_nottingham_forest_fc"
     },
     {
       "round": "Matchday 28",
       "date": "2026-02-28",
       "time": null,
-      "team1": "Arsenal FC",
-      "team2": "Chelsea FC"
+      "_id": "match_273",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Arsenal FC",
+      "home_team_id": "team_arsenal_fc",
+      "away_team": "Chelsea FC",
+      "away_team_id": "team_chelsea_fc"
     },
     {
       "round": "Matchday 28",
       "date": "2026-02-28",
       "time": null,
-      "team1": "Burnley FC",
-      "team2": "Brentford FC"
+      "_id": "match_274",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Burnley FC",
+      "home_team_id": "team_burnley_fc",
+      "away_team": "Brentford FC",
+      "away_team_id": "team_brentford_fc"
     },
     {
       "round": "Matchday 28",
       "date": "2026-02-28",
       "time": null,
-      "team1": "Fulham FC",
-      "team2": "Tottenham Hotspur FC"
+      "_id": "match_275",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Fulham FC",
+      "home_team_id": "team_fulham_fc",
+      "away_team": "Tottenham Hotspur FC",
+      "away_team_id": "team_tottenham_hotspur_fc"
     },
     {
       "round": "Matchday 28",
       "date": "2026-02-28",
       "time": null,
-      "team1": "Liverpool FC",
-      "team2": "West Ham United FC"
+      "_id": "match_276",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Liverpool FC",
+      "home_team_id": "team_liverpool_fc",
+      "away_team": "West Ham United FC",
+      "away_team_id": "team_west_ham_united_fc"
     },
     {
       "round": "Matchday 28",
       "date": "2026-02-28",
       "time": null,
-      "team1": "Leeds United FC",
-      "team2": "Manchester City FC"
+      "_id": "match_277",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Leeds United FC",
+      "home_team_id": "team_leeds_united_fc",
+      "away_team": "Manchester City FC",
+      "away_team_id": "team_manchester_city_fc"
     },
     {
       "round": "Matchday 28",
       "date": "2026-02-28",
       "time": null,
-      "team1": "Manchester United FC",
-      "team2": "Crystal Palace FC"
+      "_id": "match_278",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Manchester United FC",
+      "home_team_id": "team_manchester_united_fc",
+      "away_team": "Crystal Palace FC",
+      "away_team_id": "team_crystal_palace_fc"
     },
     {
       "round": "Matchday 28",
       "date": "2026-02-28",
       "time": null,
-      "team1": "Newcastle United FC",
-      "team2": "Everton FC"
+      "_id": "match_279",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Newcastle United FC",
+      "home_team_id": "team_newcastle_united_fc",
+      "away_team": "Everton FC",
+      "away_team_id": "team_everton_fc"
     },
     {
       "round": "Matchday 28",
       "date": "2026-02-28",
       "time": null,
-      "team1": "Wolverhampton Wanderers FC",
-      "team2": "Aston Villa FC"
+      "_id": "match_280",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Wolverhampton Wanderers FC",
+      "home_team_id": "team_wolverhampton_wanderers_fc",
+      "away_team": "Aston Villa FC",
+      "away_team_id": "team_aston_villa_fc"
     },
     {
       "round": "Matchday 29",
       "date": "2026-03-04",
       "time": null,
-      "team1": "AFC Bournemouth",
-      "team2": "Brentford FC"
+      "_id": "match_281",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "AFC Bournemouth",
+      "home_team_id": "team_afc_bournemouth",
+      "away_team": "Brentford FC",
+      "away_team_id": "team_brentford_fc"
     },
     {
       "round": "Matchday 29",
       "date": "2026-03-04",
       "time": null,
-      "team1": "Aston Villa FC",
-      "team2": "Chelsea FC"
+      "_id": "match_282",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Aston Villa FC",
+      "home_team_id": "team_aston_villa_fc",
+      "away_team": "Chelsea FC",
+      "away_team_id": "team_chelsea_fc"
     },
     {
       "round": "Matchday 29",
       "date": "2026-03-04",
       "time": null,
-      "team1": "Brighton & Hove Albion FC",
-      "team2": "Arsenal FC"
+      "_id": "match_283",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Brighton & Hove Albion FC",
+      "home_team_id": "team_brighton_hove_albion_fc",
+      "away_team": "Arsenal FC",
+      "away_team_id": "team_arsenal_fc"
     },
     {
       "round": "Matchday 29",
       "date": "2026-03-04",
       "time": null,
-      "team1": "Everton FC",
-      "team2": "Burnley FC"
+      "_id": "match_284",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Everton FC",
+      "home_team_id": "team_everton_fc",
+      "away_team": "Burnley FC",
+      "away_team_id": "team_burnley_fc"
     },
     {
       "round": "Matchday 29",
       "date": "2026-03-04",
       "time": null,
-      "team1": "Fulham FC",
-      "team2": "West Ham United FC"
+      "_id": "match_285",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Fulham FC",
+      "home_team_id": "team_fulham_fc",
+      "away_team": "West Ham United FC",
+      "away_team_id": "team_west_ham_united_fc"
     },
     {
       "round": "Matchday 29",
       "date": "2026-03-04",
       "time": null,
-      "team1": "Leeds United FC",
-      "team2": "Sunderland AFC"
+      "_id": "match_286",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Leeds United FC",
+      "home_team_id": "team_leeds_united_fc",
+      "away_team": "Sunderland AFC",
+      "away_team_id": "team_sunderland_afc"
     },
     {
       "round": "Matchday 29",
       "date": "2026-03-04",
       "time": null,
-      "team1": "Manchester City FC",
-      "team2": "Nottingham Forest FC"
+      "_id": "match_287",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Manchester City FC",
+      "home_team_id": "team_manchester_city_fc",
+      "away_team": "Nottingham Forest FC",
+      "away_team_id": "team_nottingham_forest_fc"
     },
     {
       "round": "Matchday 29",
       "date": "2026-03-04",
       "time": null,
-      "team1": "Newcastle United FC",
-      "team2": "Manchester United FC"
+      "_id": "match_288",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Newcastle United FC",
+      "home_team_id": "team_newcastle_united_fc",
+      "away_team": "Manchester United FC",
+      "away_team_id": "team_manchester_united_fc"
     },
     {
       "round": "Matchday 29",
       "date": "2026-03-04",
       "time": null,
-      "team1": "Tottenham Hotspur FC",
-      "team2": "Crystal Palace FC"
+      "_id": "match_289",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Tottenham Hotspur FC",
+      "home_team_id": "team_tottenham_hotspur_fc",
+      "away_team": "Crystal Palace FC",
+      "away_team_id": "team_crystal_palace_fc"
     },
     {
       "round": "Matchday 29",
       "date": "2026-03-04",
       "time": null,
-      "team1": "Wolverhampton Wanderers FC",
-      "team2": "Liverpool FC"
+      "_id": "match_290",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Wolverhampton Wanderers FC",
+      "home_team_id": "team_wolverhampton_wanderers_fc",
+      "away_team": "Liverpool FC",
+      "away_team_id": "team_liverpool_fc"
     },
     {
       "round": "Matchday 30",
       "date": "2026-03-14",
       "time": null,
-      "team1": "Sunderland AFC",
-      "team2": "Brighton & Hove Albion FC"
+      "_id": "match_291",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Sunderland AFC",
+      "home_team_id": "team_sunderland_afc",
+      "away_team": "Brighton & Hove Albion FC",
+      "away_team_id": "team_brighton_hove_albion_fc"
     },
     {
       "round": "Matchday 30",
       "date": "2026-03-14",
       "time": null,
-      "team1": "Crystal Palace FC",
-      "team2": "Leeds United FC"
+      "_id": "match_292",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Crystal Palace FC",
+      "home_team_id": "team_crystal_palace_fc",
+      "away_team": "Leeds United FC",
+      "away_team_id": "team_leeds_united_fc"
     },
     {
       "round": "Matchday 30",
       "date": "2026-03-14",
       "time": null,
-      "team1": "Arsenal FC",
-      "team2": "Everton FC"
+      "_id": "match_293",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Arsenal FC",
+      "home_team_id": "team_arsenal_fc",
+      "away_team": "Everton FC",
+      "away_team_id": "team_everton_fc"
     },
     {
       "round": "Matchday 30",
       "date": "2026-03-14",
       "time": null,
-      "team1": "Brentford FC",
-      "team2": "Wolverhampton Wanderers FC"
+      "_id": "match_294",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Brentford FC",
+      "home_team_id": "team_brentford_fc",
+      "away_team": "Wolverhampton Wanderers FC",
+      "away_team_id": "team_wolverhampton_wanderers_fc"
     },
     {
       "round": "Matchday 30",
       "date": "2026-03-14",
       "time": null,
-      "team1": "Burnley FC",
-      "team2": "AFC Bournemouth"
+      "_id": "match_295",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Burnley FC",
+      "home_team_id": "team_burnley_fc",
+      "away_team": "AFC Bournemouth",
+      "away_team_id": "team_afc_bournemouth"
     },
     {
       "round": "Matchday 30",
       "date": "2026-03-14",
       "time": null,
-      "team1": "Chelsea FC",
-      "team2": "Newcastle United FC"
+      "_id": "match_296",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Chelsea FC",
+      "home_team_id": "team_chelsea_fc",
+      "away_team": "Newcastle United FC",
+      "away_team_id": "team_newcastle_united_fc"
     },
     {
       "round": "Matchday 30",
       "date": "2026-03-14",
       "time": null,
-      "team1": "Liverpool FC",
-      "team2": "Tottenham Hotspur FC"
+      "_id": "match_297",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Liverpool FC",
+      "home_team_id": "team_liverpool_fc",
+      "away_team": "Tottenham Hotspur FC",
+      "away_team_id": "team_tottenham_hotspur_fc"
     },
     {
       "round": "Matchday 30",
       "date": "2026-03-14",
       "time": null,
-      "team1": "Manchester United FC",
-      "team2": "Aston Villa FC"
+      "_id": "match_298",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Manchester United FC",
+      "home_team_id": "team_manchester_united_fc",
+      "away_team": "Aston Villa FC",
+      "away_team_id": "team_aston_villa_fc"
     },
     {
       "round": "Matchday 30",
       "date": "2026-03-14",
       "time": null,
-      "team1": "Nottingham Forest FC",
-      "team2": "Fulham FC"
+      "_id": "match_299",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Nottingham Forest FC",
+      "home_team_id": "team_nottingham_forest_fc",
+      "away_team": "Fulham FC",
+      "away_team_id": "team_fulham_fc"
     },
     {
       "round": "Matchday 30",
       "date": "2026-03-14",
       "time": null,
-      "team1": "West Ham United FC",
-      "team2": "Manchester City FC"
+      "_id": "match_300",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "West Ham United FC",
+      "home_team_id": "team_west_ham_united_fc",
+      "away_team": "Manchester City FC",
+      "away_team_id": "team_manchester_city_fc"
     },
     {
       "round": "Matchday 31",
       "date": "2026-03-21",
       "time": null,
-      "team1": "AFC Bournemouth",
-      "team2": "Manchester United FC"
+      "_id": "match_301",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "AFC Bournemouth",
+      "home_team_id": "team_afc_bournemouth",
+      "away_team": "Manchester United FC",
+      "away_team_id": "team_manchester_united_fc"
     },
     {
       "round": "Matchday 31",
       "date": "2026-03-21",
       "time": null,
-      "team1": "Aston Villa FC",
-      "team2": "West Ham United FC"
+      "_id": "match_302",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Aston Villa FC",
+      "home_team_id": "team_aston_villa_fc",
+      "away_team": "West Ham United FC",
+      "away_team_id": "team_west_ham_united_fc"
     },
     {
       "round": "Matchday 31",
       "date": "2026-03-21",
       "time": null,
-      "team1": "Brighton & Hove Albion FC",
-      "team2": "Liverpool FC"
+      "_id": "match_303",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Brighton & Hove Albion FC",
+      "home_team_id": "team_brighton_hove_albion_fc",
+      "away_team": "Liverpool FC",
+      "away_team_id": "team_liverpool_fc"
     },
     {
       "round": "Matchday 31",
       "date": "2026-03-21",
       "time": null,
-      "team1": "Everton FC",
-      "team2": "Chelsea FC"
+      "_id": "match_304",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Everton FC",
+      "home_team_id": "team_everton_fc",
+      "away_team": "Chelsea FC",
+      "away_team_id": "team_chelsea_fc"
     },
     {
       "round": "Matchday 31",
       "date": "2026-03-21",
       "time": null,
-      "team1": "Fulham FC",
-      "team2": "Burnley FC"
+      "_id": "match_305",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Fulham FC",
+      "home_team_id": "team_fulham_fc",
+      "away_team": "Burnley FC",
+      "away_team_id": "team_burnley_fc"
     },
     {
       "round": "Matchday 31",
       "date": "2026-03-21",
       "time": null,
-      "team1": "Leeds United FC",
-      "team2": "Brentford FC"
+      "_id": "match_306",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Leeds United FC",
+      "home_team_id": "team_leeds_united_fc",
+      "away_team": "Brentford FC",
+      "away_team_id": "team_brentford_fc"
     },
     {
       "round": "Matchday 31",
       "date": "2026-03-21",
       "time": null,
-      "team1": "Manchester City FC",
-      "team2": "Crystal Palace FC"
+      "_id": "match_307",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Manchester City FC",
+      "home_team_id": "team_manchester_city_fc",
+      "away_team": "Crystal Palace FC",
+      "away_team_id": "team_crystal_palace_fc"
     },
     {
       "round": "Matchday 31",
       "date": "2026-03-21",
       "time": null,
-      "team1": "Newcastle United FC",
-      "team2": "Sunderland AFC"
+      "_id": "match_308",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Newcastle United FC",
+      "home_team_id": "team_newcastle_united_fc",
+      "away_team": "Sunderland AFC",
+      "away_team_id": "team_sunderland_afc"
     },
     {
       "round": "Matchday 31",
       "date": "2026-03-21",
       "time": null,
-      "team1": "Tottenham Hotspur FC",
-      "team2": "Nottingham Forest FC"
+      "_id": "match_309",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Tottenham Hotspur FC",
+      "home_team_id": "team_tottenham_hotspur_fc",
+      "away_team": "Nottingham Forest FC",
+      "away_team_id": "team_nottingham_forest_fc"
     },
     {
       "round": "Matchday 31",
       "date": "2026-03-21",
       "time": null,
-      "team1": "Wolverhampton Wanderers FC",
-      "team2": "Arsenal FC"
+      "_id": "match_310",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Wolverhampton Wanderers FC",
+      "home_team_id": "team_wolverhampton_wanderers_fc",
+      "away_team": "Arsenal FC",
+      "away_team_id": "team_arsenal_fc"
     },
     {
       "round": "Matchday 32",
       "date": "2026-04-11",
       "time": null,
-      "team1": "Sunderland AFC",
-      "team2": "Tottenham Hotspur FC"
+      "_id": "match_311",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Sunderland AFC",
+      "home_team_id": "team_sunderland_afc",
+      "away_team": "Tottenham Hotspur FC",
+      "away_team_id": "team_tottenham_hotspur_fc"
     },
     {
       "round": "Matchday 32",
       "date": "2026-04-11",
       "time": null,
-      "team1": "Crystal Palace FC",
-      "team2": "Newcastle United FC"
+      "_id": "match_312",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Crystal Palace FC",
+      "home_team_id": "team_crystal_palace_fc",
+      "away_team": "Newcastle United FC",
+      "away_team_id": "team_newcastle_united_fc"
     },
     {
       "round": "Matchday 32",
       "date": "2026-04-11",
       "time": null,
-      "team1": "Arsenal FC",
-      "team2": "AFC Bournemouth"
+      "_id": "match_313",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Arsenal FC",
+      "home_team_id": "team_arsenal_fc",
+      "away_team": "AFC Bournemouth",
+      "away_team_id": "team_afc_bournemouth"
     },
     {
       "round": "Matchday 32",
       "date": "2026-04-11",
       "time": null,
-      "team1": "Brentford FC",
-      "team2": "Everton FC"
+      "_id": "match_314",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Brentford FC",
+      "home_team_id": "team_brentford_fc",
+      "away_team": "Everton FC",
+      "away_team_id": "team_everton_fc"
     },
     {
       "round": "Matchday 32",
       "date": "2026-04-11",
       "time": null,
-      "team1": "Burnley FC",
-      "team2": "Brighton & Hove Albion FC"
+      "_id": "match_315",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Burnley FC",
+      "home_team_id": "team_burnley_fc",
+      "away_team": "Brighton & Hove Albion FC",
+      "away_team_id": "team_brighton_hove_albion_fc"
     },
     {
       "round": "Matchday 32",
       "date": "2026-04-11",
       "time": null,
-      "team1": "Chelsea FC",
-      "team2": "Manchester City FC"
+      "_id": "match_316",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Chelsea FC",
+      "home_team_id": "team_chelsea_fc",
+      "away_team": "Manchester City FC",
+      "away_team_id": "team_manchester_city_fc"
     },
     {
       "round": "Matchday 32",
       "date": "2026-04-11",
       "time": null,
-      "team1": "Liverpool FC",
-      "team2": "Fulham FC"
+      "_id": "match_317",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Liverpool FC",
+      "home_team_id": "team_liverpool_fc",
+      "away_team": "Fulham FC",
+      "away_team_id": "team_fulham_fc"
     },
     {
       "round": "Matchday 32",
       "date": "2026-04-11",
       "time": null,
-      "team1": "Manchester United FC",
-      "team2": "Leeds United FC"
+      "_id": "match_318",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Manchester United FC",
+      "home_team_id": "team_manchester_united_fc",
+      "away_team": "Leeds United FC",
+      "away_team_id": "team_leeds_united_fc"
     },
     {
       "round": "Matchday 32",
       "date": "2026-04-11",
       "time": null,
-      "team1": "Nottingham Forest FC",
-      "team2": "Aston Villa FC"
+      "_id": "match_319",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Nottingham Forest FC",
+      "home_team_id": "team_nottingham_forest_fc",
+      "away_team": "Aston Villa FC",
+      "away_team_id": "team_aston_villa_fc"
     },
     {
       "round": "Matchday 32",
       "date": "2026-04-11",
       "time": null,
-      "team1": "West Ham United FC",
-      "team2": "Wolverhampton Wanderers FC"
+      "_id": "match_320",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "West Ham United FC",
+      "home_team_id": "team_west_ham_united_fc",
+      "away_team": "Wolverhampton Wanderers FC",
+      "away_team_id": "team_wolverhampton_wanderers_fc"
     },
     {
       "round": "Matchday 33",
       "date": "2026-04-18",
       "time": null,
-      "team1": "Newcastle United FC",
-      "team2": "AFC Bournemouth"
+      "_id": "match_321",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Newcastle United FC",
+      "home_team_id": "team_newcastle_united_fc",
+      "away_team": "AFC Bournemouth",
+      "away_team_id": "team_afc_bournemouth"
     },
     {
       "round": "Matchday 33",
       "date": "2026-04-18",
       "time": null,
-      "team1": "Nottingham Forest FC",
-      "team2": "Burnley FC"
+      "_id": "match_322",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Nottingham Forest FC",
+      "home_team_id": "team_nottingham_forest_fc",
+      "away_team": "Burnley FC",
+      "away_team_id": "team_burnley_fc"
     },
     {
       "round": "Matchday 33",
       "date": "2026-04-18",
       "time": null,
-      "team1": "Tottenham Hotspur FC",
-      "team2": "Brighton & Hove Albion FC"
+      "_id": "match_323",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Tottenham Hotspur FC",
+      "home_team_id": "team_tottenham_hotspur_fc",
+      "away_team": "Brighton & Hove Albion FC",
+      "away_team_id": "team_brighton_hove_albion_fc"
     },
     {
       "round": "Matchday 33",
       "date": "2026-04-18",
       "time": null,
-      "team1": "Aston Villa FC",
-      "team2": "Sunderland AFC"
+      "_id": "match_324",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Aston Villa FC",
+      "home_team_id": "team_aston_villa_fc",
+      "away_team": "Sunderland AFC",
+      "away_team_id": "team_sunderland_afc"
     },
     {
       "round": "Matchday 33",
       "date": "2026-04-18",
       "time": null,
-      "team1": "Crystal Palace FC",
-      "team2": "West Ham United FC"
+      "_id": "match_325",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Crystal Palace FC",
+      "home_team_id": "team_crystal_palace_fc",
+      "away_team": "West Ham United FC",
+      "away_team_id": "team_west_ham_united_fc"
     },
     {
       "round": "Matchday 33",
       "date": "2026-04-18",
       "time": null,
-      "team1": "Brentford FC",
-      "team2": "Fulham FC"
+      "_id": "match_326",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Brentford FC",
+      "home_team_id": "team_brentford_fc",
+      "away_team": "Fulham FC",
+      "away_team_id": "team_fulham_fc"
     },
     {
       "round": "Matchday 33",
       "date": "2026-04-18",
       "time": null,
-      "team1": "Chelsea FC",
-      "team2": "Manchester United FC"
+      "_id": "match_327",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Chelsea FC",
+      "home_team_id": "team_chelsea_fc",
+      "away_team": "Manchester United FC",
+      "away_team_id": "team_manchester_united_fc"
     },
     {
       "round": "Matchday 33",
       "date": "2026-04-18",
       "time": null,
-      "team1": "Everton FC",
-      "team2": "Liverpool FC"
+      "_id": "match_328",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Everton FC",
+      "home_team_id": "team_everton_fc",
+      "away_team": "Liverpool FC",
+      "away_team_id": "team_liverpool_fc"
     },
     {
       "round": "Matchday 33",
       "date": "2026-04-18",
       "time": null,
-      "team1": "Leeds United FC",
-      "team2": "Wolverhampton Wanderers FC"
+      "_id": "match_329",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Leeds United FC",
+      "home_team_id": "team_leeds_united_fc",
+      "away_team": "Wolverhampton Wanderers FC",
+      "away_team_id": "team_wolverhampton_wanderers_fc"
     },
     {
       "round": "Matchday 33",
       "date": "2026-04-18",
       "time": null,
-      "team1": "Manchester City FC",
-      "team2": "Arsenal FC"
+      "_id": "match_330",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Manchester City FC",
+      "home_team_id": "team_manchester_city_fc",
+      "away_team": "Arsenal FC",
+      "away_team_id": "team_arsenal_fc"
     },
     {
       "round": "Matchday 34",
       "date": "2026-04-25",
       "time": null,
-      "team1": "AFC Bournemouth",
-      "team2": "Leeds United FC"
+      "_id": "match_331",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "AFC Bournemouth",
+      "home_team_id": "team_afc_bournemouth",
+      "away_team": "Leeds United FC",
+      "away_team_id": "team_leeds_united_fc"
     },
     {
       "round": "Matchday 34",
       "date": "2026-04-25",
       "time": null,
-      "team1": "Sunderland AFC",
-      "team2": "Nottingham Forest FC"
+      "_id": "match_332",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Sunderland AFC",
+      "home_team_id": "team_sunderland_afc",
+      "away_team": "Nottingham Forest FC",
+      "away_team_id": "team_nottingham_forest_fc"
     },
     {
       "round": "Matchday 34",
       "date": "2026-04-25",
       "time": null,
-      "team1": "Brighton & Hove Albion FC",
-      "team2": "Chelsea FC"
+      "_id": "match_333",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Brighton & Hove Albion FC",
+      "home_team_id": "team_brighton_hove_albion_fc",
+      "away_team": "Chelsea FC",
+      "away_team_id": "team_chelsea_fc"
     },
     {
       "round": "Matchday 34",
       "date": "2026-04-25",
       "time": null,
-      "team1": "Arsenal FC",
-      "team2": "Newcastle United FC"
+      "_id": "match_334",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Arsenal FC",
+      "home_team_id": "team_arsenal_fc",
+      "away_team": "Newcastle United FC",
+      "away_team_id": "team_newcastle_united_fc"
     },
     {
       "round": "Matchday 34",
       "date": "2026-04-25",
       "time": null,
-      "team1": "Burnley FC",
-      "team2": "Manchester City FC"
+      "_id": "match_335",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Burnley FC",
+      "home_team_id": "team_burnley_fc",
+      "away_team": "Manchester City FC",
+      "away_team_id": "team_manchester_city_fc"
     },
     {
       "round": "Matchday 34",
       "date": "2026-04-25",
       "time": null,
-      "team1": "Fulham FC",
-      "team2": "Aston Villa FC"
+      "_id": "match_336",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Fulham FC",
+      "home_team_id": "team_fulham_fc",
+      "away_team": "Aston Villa FC",
+      "away_team_id": "team_aston_villa_fc"
     },
     {
       "round": "Matchday 34",
       "date": "2026-04-25",
       "time": null,
-      "team1": "Liverpool FC",
-      "team2": "Crystal Palace FC"
+      "_id": "match_337",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Liverpool FC",
+      "home_team_id": "team_liverpool_fc",
+      "away_team": "Crystal Palace FC",
+      "away_team_id": "team_crystal_palace_fc"
     },
     {
       "round": "Matchday 34",
       "date": "2026-04-25",
       "time": null,
-      "team1": "Manchester United FC",
-      "team2": "Brentford FC"
+      "_id": "match_338",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Manchester United FC",
+      "home_team_id": "team_manchester_united_fc",
+      "away_team": "Brentford FC",
+      "away_team_id": "team_brentford_fc"
     },
     {
       "round": "Matchday 34",
       "date": "2026-04-25",
       "time": null,
-      "team1": "West Ham United FC",
-      "team2": "Everton FC"
+      "_id": "match_339",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "West Ham United FC",
+      "home_team_id": "team_west_ham_united_fc",
+      "away_team": "Everton FC",
+      "away_team_id": "team_everton_fc"
     },
     {
       "round": "Matchday 34",
       "date": "2026-04-25",
       "time": null,
-      "team1": "Wolverhampton Wanderers FC",
-      "team2": "Tottenham Hotspur FC"
+      "_id": "match_340",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Wolverhampton Wanderers FC",
+      "home_team_id": "team_wolverhampton_wanderers_fc",
+      "away_team": "Tottenham Hotspur FC",
+      "away_team_id": "team_tottenham_hotspur_fc"
     },
     {
       "round": "Matchday 35",
       "date": "2026-05-02",
       "time": null,
-      "team1": "AFC Bournemouth",
-      "team2": "Crystal Palace FC"
+      "_id": "match_341",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "AFC Bournemouth",
+      "home_team_id": "team_afc_bournemouth",
+      "away_team": "Crystal Palace FC",
+      "away_team_id": "team_crystal_palace_fc"
     },
     {
       "round": "Matchday 35",
       "date": "2026-05-02",
       "time": null,
-      "team1": "Aston Villa FC",
-      "team2": "Tottenham Hotspur FC"
+      "_id": "match_342",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Aston Villa FC",
+      "home_team_id": "team_aston_villa_fc",
+      "away_team": "Tottenham Hotspur FC",
+      "away_team_id": "team_tottenham_hotspur_fc"
     },
     {
       "round": "Matchday 35",
       "date": "2026-05-02",
       "time": null,
-      "team1": "Arsenal FC",
-      "team2": "Fulham FC"
+      "_id": "match_343",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Arsenal FC",
+      "home_team_id": "team_arsenal_fc",
+      "away_team": "Fulham FC",
+      "away_team_id": "team_fulham_fc"
     },
     {
       "round": "Matchday 35",
       "date": "2026-05-02",
       "time": null,
-      "team1": "Brentford FC",
-      "team2": "West Ham United FC"
+      "_id": "match_344",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Brentford FC",
+      "home_team_id": "team_brentford_fc",
+      "away_team": "West Ham United FC",
+      "away_team_id": "team_west_ham_united_fc"
     },
     {
       "round": "Matchday 35",
       "date": "2026-05-02",
       "time": null,
-      "team1": "Chelsea FC",
-      "team2": "Nottingham Forest FC"
+      "_id": "match_345",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Chelsea FC",
+      "home_team_id": "team_chelsea_fc",
+      "away_team": "Nottingham Forest FC",
+      "away_team_id": "team_nottingham_forest_fc"
     },
     {
       "round": "Matchday 35",
       "date": "2026-05-02",
       "time": null,
-      "team1": "Everton FC",
-      "team2": "Manchester City FC"
+      "_id": "match_346",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Everton FC",
+      "home_team_id": "team_everton_fc",
+      "away_team": "Manchester City FC",
+      "away_team_id": "team_manchester_city_fc"
     },
     {
       "round": "Matchday 35",
       "date": "2026-05-02",
       "time": null,
-      "team1": "Leeds United FC",
-      "team2": "Burnley FC"
+      "_id": "match_347",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Leeds United FC",
+      "home_team_id": "team_leeds_united_fc",
+      "away_team": "Burnley FC",
+      "away_team_id": "team_burnley_fc"
     },
     {
       "round": "Matchday 35",
       "date": "2026-05-02",
       "time": null,
-      "team1": "Manchester United FC",
-      "team2": "Liverpool FC"
+      "_id": "match_348",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Manchester United FC",
+      "home_team_id": "team_manchester_united_fc",
+      "away_team": "Liverpool FC",
+      "away_team_id": "team_liverpool_fc"
     },
     {
       "round": "Matchday 35",
       "date": "2026-05-02",
       "time": null,
-      "team1": "Newcastle United FC",
-      "team2": "Brighton & Hove Albion FC"
+      "_id": "match_349",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Newcastle United FC",
+      "home_team_id": "team_newcastle_united_fc",
+      "away_team": "Brighton & Hove Albion FC",
+      "away_team_id": "team_brighton_hove_albion_fc"
     },
     {
       "round": "Matchday 35",
       "date": "2026-05-02",
       "time": null,
-      "team1": "Wolverhampton Wanderers FC",
-      "team2": "Sunderland AFC"
+      "_id": "match_350",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Wolverhampton Wanderers FC",
+      "home_team_id": "team_wolverhampton_wanderers_fc",
+      "away_team": "Sunderland AFC",
+      "away_team_id": "team_sunderland_afc"
     },
     {
       "round": "Matchday 36",
       "date": "2026-05-09",
       "time": null,
-      "team1": "Sunderland AFC",
-      "team2": "Manchester United FC"
+      "_id": "match_351",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Sunderland AFC",
+      "home_team_id": "team_sunderland_afc",
+      "away_team": "Manchester United FC",
+      "away_team_id": "team_manchester_united_fc"
     },
     {
       "round": "Matchday 36",
       "date": "2026-05-09",
       "time": null,
-      "team1": "Brighton & Hove Albion FC",
-      "team2": "Wolverhampton Wanderers FC"
+      "_id": "match_352",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Brighton & Hove Albion FC",
+      "home_team_id": "team_brighton_hove_albion_fc",
+      "away_team": "Wolverhampton Wanderers FC",
+      "away_team_id": "team_wolverhampton_wanderers_fc"
     },
     {
       "round": "Matchday 36",
       "date": "2026-05-09",
       "time": null,
-      "team1": "Crystal Palace FC",
-      "team2": "Everton FC"
+      "_id": "match_353",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Crystal Palace FC",
+      "home_team_id": "team_crystal_palace_fc",
+      "away_team": "Everton FC",
+      "away_team_id": "team_everton_fc"
     },
     {
       "round": "Matchday 36",
       "date": "2026-05-09",
       "time": null,
-      "team1": "Burnley FC",
-      "team2": "Aston Villa FC"
+      "_id": "match_354",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Burnley FC",
+      "home_team_id": "team_burnley_fc",
+      "away_team": "Aston Villa FC",
+      "away_team_id": "team_aston_villa_fc"
     },
     {
       "round": "Matchday 36",
       "date": "2026-05-09",
       "time": null,
-      "team1": "Fulham FC",
-      "team2": "AFC Bournemouth"
+      "_id": "match_355",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Fulham FC",
+      "home_team_id": "team_fulham_fc",
+      "away_team": "AFC Bournemouth",
+      "away_team_id": "team_afc_bournemouth"
     },
     {
       "round": "Matchday 36",
       "date": "2026-05-09",
       "time": null,
-      "team1": "Liverpool FC",
-      "team2": "Chelsea FC"
+      "_id": "match_356",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Liverpool FC",
+      "home_team_id": "team_liverpool_fc",
+      "away_team": "Chelsea FC",
+      "away_team_id": "team_chelsea_fc"
     },
     {
       "round": "Matchday 36",
       "date": "2026-05-09",
       "time": null,
-      "team1": "Manchester City FC",
-      "team2": "Brentford FC"
+      "_id": "match_357",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Manchester City FC",
+      "home_team_id": "team_manchester_city_fc",
+      "away_team": "Brentford FC",
+      "away_team_id": "team_brentford_fc"
     },
     {
       "round": "Matchday 36",
       "date": "2026-05-09",
       "time": null,
-      "team1": "Nottingham Forest FC",
-      "team2": "Newcastle United FC"
+      "_id": "match_358",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Nottingham Forest FC",
+      "home_team_id": "team_nottingham_forest_fc",
+      "away_team": "Newcastle United FC",
+      "away_team_id": "team_newcastle_united_fc"
     },
     {
       "round": "Matchday 36",
       "date": "2026-05-09",
       "time": null,
-      "team1": "Tottenham Hotspur FC",
-      "team2": "Leeds United FC"
+      "_id": "match_359",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Tottenham Hotspur FC",
+      "home_team_id": "team_tottenham_hotspur_fc",
+      "away_team": "Leeds United FC",
+      "away_team_id": "team_leeds_united_fc"
     },
     {
       "round": "Matchday 36",
       "date": "2026-05-09",
       "time": null,
-      "team1": "West Ham United FC",
-      "team2": "Arsenal FC"
+      "_id": "match_360",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "West Ham United FC",
+      "home_team_id": "team_west_ham_united_fc",
+      "away_team": "Arsenal FC",
+      "away_team_id": "team_arsenal_fc"
     },
     {
       "round": "Matchday 37",
       "date": "2026-05-17",
       "time": null,
-      "team1": "AFC Bournemouth",
-      "team2": "Manchester City FC"
+      "_id": "match_361",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "AFC Bournemouth",
+      "home_team_id": "team_afc_bournemouth",
+      "away_team": "Manchester City FC",
+      "away_team_id": "team_manchester_city_fc"
     },
     {
       "round": "Matchday 37",
       "date": "2026-05-17",
       "time": null,
-      "team1": "Aston Villa FC",
-      "team2": "Liverpool FC"
+      "_id": "match_362",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Aston Villa FC",
+      "home_team_id": "team_aston_villa_fc",
+      "away_team": "Liverpool FC",
+      "away_team_id": "team_liverpool_fc"
     },
     {
       "round": "Matchday 37",
       "date": "2026-05-17",
       "time": null,
-      "team1": "Arsenal FC",
-      "team2": "Burnley FC"
+      "_id": "match_363",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Arsenal FC",
+      "home_team_id": "team_arsenal_fc",
+      "away_team": "Burnley FC",
+      "away_team_id": "team_burnley_fc"
     },
     {
       "round": "Matchday 37",
       "date": "2026-05-17",
       "time": null,
-      "team1": "Brentford FC",
-      "team2": "Crystal Palace FC"
+      "_id": "match_364",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Brentford FC",
+      "home_team_id": "team_brentford_fc",
+      "away_team": "Crystal Palace FC",
+      "away_team_id": "team_crystal_palace_fc"
     },
     {
       "round": "Matchday 37",
       "date": "2026-05-17",
       "time": null,
-      "team1": "Chelsea FC",
-      "team2": "Tottenham Hotspur FC"
+      "_id": "match_365",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Chelsea FC",
+      "home_team_id": "team_chelsea_fc",
+      "away_team": "Tottenham Hotspur FC",
+      "away_team_id": "team_tottenham_hotspur_fc"
     },
     {
       "round": "Matchday 37",
       "date": "2026-05-17",
       "time": null,
-      "team1": "Everton FC",
-      "team2": "Sunderland AFC"
+      "_id": "match_366",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Everton FC",
+      "home_team_id": "team_everton_fc",
+      "away_team": "Sunderland AFC",
+      "away_team_id": "team_sunderland_afc"
     },
     {
       "round": "Matchday 37",
       "date": "2026-05-17",
       "time": null,
-      "team1": "Leeds United FC",
-      "team2": "Brighton & Hove Albion FC"
+      "_id": "match_367",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Leeds United FC",
+      "home_team_id": "team_leeds_united_fc",
+      "away_team": "Brighton & Hove Albion FC",
+      "away_team_id": "team_brighton_hove_albion_fc"
     },
     {
       "round": "Matchday 37",
       "date": "2026-05-17",
       "time": null,
-      "team1": "Manchester United FC",
-      "team2": "Nottingham Forest FC"
+      "_id": "match_368",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Manchester United FC",
+      "home_team_id": "team_manchester_united_fc",
+      "away_team": "Nottingham Forest FC",
+      "away_team_id": "team_nottingham_forest_fc"
     },
     {
       "round": "Matchday 37",
       "date": "2026-05-17",
       "time": null,
-      "team1": "Newcastle United FC",
-      "team2": "West Ham United FC"
+      "_id": "match_369",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Newcastle United FC",
+      "home_team_id": "team_newcastle_united_fc",
+      "away_team": "West Ham United FC",
+      "away_team_id": "team_west_ham_united_fc"
     },
     {
       "round": "Matchday 37",
       "date": "2026-05-17",
       "time": null,
-      "team1": "Wolverhampton Wanderers FC",
-      "team2": "Fulham FC"
+      "_id": "match_370",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Wolverhampton Wanderers FC",
+      "home_team_id": "team_wolverhampton_wanderers_fc",
+      "away_team": "Fulham FC",
+      "away_team_id": "team_fulham_fc"
     },
     {
       "round": "Matchday 38",
       "date": "2026-05-24",
       "time": null,
-      "team1": "Sunderland AFC",
-      "team2": "Chelsea FC"
+      "_id": "match_371",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Sunderland AFC",
+      "home_team_id": "team_sunderland_afc",
+      "away_team": "Chelsea FC",
+      "away_team_id": "team_chelsea_fc"
     },
     {
       "round": "Matchday 38",
       "date": "2026-05-24",
       "time": null,
-      "team1": "Brighton & Hove Albion FC",
-      "team2": "Manchester United FC"
+      "_id": "match_372",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Brighton & Hove Albion FC",
+      "home_team_id": "team_brighton_hove_albion_fc",
+      "away_team": "Manchester United FC",
+      "away_team_id": "team_manchester_united_fc"
     },
     {
       "round": "Matchday 38",
       "date": "2026-05-24",
       "time": null,
-      "team1": "Crystal Palace FC",
-      "team2": "Arsenal FC"
+      "_id": "match_373",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Crystal Palace FC",
+      "home_team_id": "team_crystal_palace_fc",
+      "away_team": "Arsenal FC",
+      "away_team_id": "team_arsenal_fc"
     },
     {
       "round": "Matchday 38",
       "date": "2026-05-24",
       "time": null,
-      "team1": "Burnley FC",
-      "team2": "Wolverhampton Wanderers FC"
+      "_id": "match_374",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Burnley FC",
+      "home_team_id": "team_burnley_fc",
+      "away_team": "Wolverhampton Wanderers FC",
+      "away_team_id": "team_wolverhampton_wanderers_fc"
     },
     {
       "round": "Matchday 38",
       "date": "2026-05-24",
       "time": null,
-      "team1": "Fulham FC",
-      "team2": "Newcastle United FC"
+      "_id": "match_375",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Fulham FC",
+      "home_team_id": "team_fulham_fc",
+      "away_team": "Newcastle United FC",
+      "away_team_id": "team_newcastle_united_fc"
     },
     {
       "round": "Matchday 38",
       "date": "2026-05-24",
       "time": null,
-      "team1": "Liverpool FC",
-      "team2": "Brentford FC"
+      "_id": "match_376",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Liverpool FC",
+      "home_team_id": "team_liverpool_fc",
+      "away_team": "Brentford FC",
+      "away_team_id": "team_brentford_fc"
     },
     {
       "round": "Matchday 38",
       "date": "2026-05-24",
       "time": null,
-      "team1": "Manchester City FC",
-      "team2": "Aston Villa FC"
+      "_id": "match_377",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Manchester City FC",
+      "home_team_id": "team_manchester_city_fc",
+      "away_team": "Aston Villa FC",
+      "away_team_id": "team_aston_villa_fc"
     },
     {
       "round": "Matchday 38",
       "date": "2026-05-24",
       "time": null,
-      "team1": "Nottingham Forest FC",
-      "team2": "AFC Bournemouth"
+      "_id": "match_378",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Nottingham Forest FC",
+      "home_team_id": "team_nottingham_forest_fc",
+      "away_team": "AFC Bournemouth",
+      "away_team_id": "team_afc_bournemouth"
     },
     {
       "round": "Matchday 38",
       "date": "2026-05-24",
       "time": null,
-      "team1": "Tottenham Hotspur FC",
-      "team2": "Everton FC"
+      "_id": "match_379",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "Tottenham Hotspur FC",
+      "home_team_id": "team_tottenham_hotspur_fc",
+      "away_team": "Everton FC",
+      "away_team_id": "team_everton_fc"
     },
     {
       "round": "Matchday 38",
       "date": "2026-05-24",
       "time": null,
-      "team1": "West Ham United FC",
-      "team2": "Leeds United FC"
+      "_id": "match_380",
+      "competition_id": "comp_english_premier_league",
+      "season_id": "season_2025_26_epl",
+      "home_team": "West Ham United FC",
+      "home_team_id": "team_west_ham_united_fc",
+      "away_team": "Leeds United FC",
+      "away_team_id": "team_leeds_united_fc"
     }
   ]
 }
