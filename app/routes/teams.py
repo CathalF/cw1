@@ -1,9 +1,15 @@
 # app/teams.py
-from bson import ObjectId
 from flask import Blueprint, request, jsonify
+
 from ..db import get_db
 from ..decorators import require_auth
-from ..utils import normalize_id, normalize_many, error_response, ok_list
+from ..utils import (
+    normalize_id,
+    normalize_many,
+    error_response,
+    ok_list,
+    maybe_object_id,
+)
 from ..pagination import parse_pagination_args
 from ..validators import TeamCreateSchema, TeamUpdateSchema
 
@@ -31,11 +37,11 @@ def list_teams():
 @teams_bp.get("/<team_id>")
 def get_team(team_id):
     db = get_db()
-    try:
-        doc = db.teams.find_one({"_id": ObjectId(team_id)})
-    except Exception:
-        # --- FIX: Added 3 arguments ---
+    if not team_id:
         return error_response("VALIDATION_ERROR", "Invalid team id", 400)
+
+    key = maybe_object_id(team_id)
+    doc = db.teams.find_one({"_id": key})
     if not doc:
         # --- FIX: Added 3 arguments ---
         return error_response("NOT_FOUND", "Team not found", 404)
@@ -61,28 +67,26 @@ def update_team(team_id):
     db = get_db()
     payload = request.get_json(force=True) or {}
     data = TeamUpdateSchema().load(payload)
-    try:
-        _id = ObjectId(team_id)
-    except Exception:
-        # --- FIX: Added 3 arguments ---
+    if not team_id:
         return error_response("VALIDATION_ERROR", "Invalid team id", 400)
-    res = db.teams.update_one({"_id": _id}, {"$set": data})
+
+    key = maybe_object_id(team_id)
+    res = db.teams.update_one({"_id": key}, {"$set": data})
     if res.matched_count == 0:
         # --- FIX: Added 3 arguments ---
         return error_response("NOT_FOUND", "Team not found", 404)
-    doc = db.teams.find_one({"_id": _id})
+    doc = db.teams.find_one({"_id": key})
     return jsonify(normalize_id(doc)), 200
 
 @teams_bp.delete("/<team_id>")
 @require_auth(role="admin")
 def delete_team(team_id):
     db = get_db()
-    try:
-        _id = ObjectId(team_id)
-    except Exception:
-        # --- FIX: Added 3 arguments ---
+    if not team_id:
         return error_response("VALIDATION_ERROR", "Invalid team id", 400)
-    res = db.teams.delete_one({"_id": _id})
+
+    key = maybe_object_id(team_id)
+    res = db.teams.delete_one({"_id": key})
     if res.deleted_count == 0:
         # --- FIX: Added 3 arguments ---
         return error_response("NOT_FOUND", "Team not found", 404)

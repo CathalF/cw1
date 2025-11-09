@@ -10,7 +10,8 @@
     "website": "http://www.arsenal.com",
     "clubColors": "Red / White",
     "venue": "Emirates Stadium",
-    "source": "football-data.org"
+    "source": "football-data.org",
+    "_id": "team_arsenal_fc"
   },
   {
     "name": "Aston Villa FC",
@@ -23,7 +24,8 @@
     "website": "http://www.avfc.co.uk",
     "clubColors": "Claret / Sky Blue",
     "venue": "Villa Park",
-    "source": "football-data.org"
+    "source": "football-data.org",
+    "_id": "team_aston_villa_fc"
   },
   {
     "name": "Chelsea FC",
@@ -36,7 +38,8 @@
     "website": "http://www.chelseafc.com",
     "clubColors": "Royal Blue / White",
     "venue": "Stamford Bridge",
-    "source": "football-data.org"
+    "source": "football-data.org",
+    "_id": "team_chelsea_fc"
   },
   {
     "name": "Everton FC",
@@ -49,7 +52,8 @@
     "website": "http://www.evertonfc.com",
     "clubColors": "Blue / White",
     "venue": "Goodison Park",
-    "source": "football-data.org"
+    "source": "football-data.org",
+    "_id": "team_everton_fc"
   },
   {
     "name": "Fulham FC",
@@ -62,7 +66,8 @@
     "website": "http://www.fulhamfc.com",
     "clubColors": "White / Black",
     "venue": "Craven Cottage",
-    "source": "football-data.org"
+    "source": "football-data.org",
+    "_id": "team_fulham_fc"
   },
   {
     "name": "Liverpool FC",
@@ -75,7 +80,8 @@
     "website": "http://www.liverpoolfc.tv",
     "clubColors": "Red / White",
     "venue": "Anfield",
-    "source": "football-data.org"
+    "source": "football-data.org",
+    "_id": "team_liverpool_fc"
   },
   {
     "name": "Manchester City FC",
@@ -88,7 +94,8 @@
     "website": "https://www.mancity.com",
     "clubColors": "Sky Blue / White",
     "venue": "Etihad Stadium",
-    "source": "football-data.org"
+    "source": "football-data.org",
+    "_id": "team_manchester_city_fc"
   },
   {
     "name": "Manchester United FC",
@@ -101,7 +108,8 @@
     "website": "http://www.manutd.com",
     "clubColors": "Red / White",
     "venue": "Old Trafford",
-    "source": "football-data.org"
+    "source": "football-data.org",
+    "_id": "team_manchester_united_fc"
   },
   {
     "name": "Newcastle United FC",
@@ -114,7 +122,8 @@
     "website": "http://www.nufc.co.uk",
     "clubColors": "Black / White",
     "venue": "St. James' Park",
-    "source": "football-data.org"
+    "source": "football-data.org",
+    "_id": "team_newcastle_united_fc"
   },
   {
     "name": "Sunderland AFC",
@@ -127,7 +136,8 @@
     "website": "http://www.safc.com",
     "clubColors": "Red / White",
     "venue": "Stadium of Light",
-    "source": "football-data.org"
+    "source": "football-data.org",
+    "_id": "team_sunderland_afc"
   },
   {
     "name": "Tottenham Hotspur FC",
@@ -140,7 +150,8 @@
     "website": "http://www.tottenhamhotspur.com",
     "clubColors": "Navy Blue / White",
     "venue": "Tottenham Hotspur Stadium",
-    "source": "football-data.org"
+    "source": "football-data.org",
+    "_id": "team_tottenham_hotspur_fc"
   },
   {
     "name": "Wolverhampton Wanderers FC",
@@ -153,7 +164,8 @@
     "website": "http://www.wolves.co.uk",
     "clubColors": "Black / Gold",
     "venue": "Molineux Stadium",
-    "source": "football-data.org"
+    "source": "football-data.org",
+    "_id": "team_wolverhampton_wanderers_fc"
   },
   {
     "name": "Burnley FC",
@@ -166,7 +178,8 @@
     "website": "http://www.burnleyfootballclub.com",
     "clubColors": "Claret / Sky Blue",
     "venue": "Turf Moor",
-    "source": "football-data.org"
+    "source": "football-data.org",
+    "_id": "team_burnley_fc"
   },
   {
     "name": "Leeds United FC",
@@ -179,7 +192,8 @@
     "website": "http://www.leedsunited.com",
     "clubColors": "White / Blue",
     "venue": "Elland Road",
-    "source": "football-data.org"
+    "source": "football-data.org",
+    "_id": "team_leeds_united_fc"
   },
   {
     "name": "Nottingham Forest FC",
@@ -192,7 +206,8 @@
     "website": "http://www.nottinghamforest.co.uk",
     "clubColors": "Red / White",
     "venue": "The City Ground",
-    "source": "football-data.org"
+    "source": "football-data.org",
+    "_id": "team_nottingham_forest_fc"
   },
   {
     "name": "Crystal Palace FC",
@@ -205,7 +220,8 @@
     "website": "http://www.cpfc.co.uk",
     "clubColors": "Red / Blue",
     "venue": "Selhurst Park",
-    "source": "football-data.org"
+    "source": "football-data.org",
+    "_id": "team_crystal_palace_fc"
   },
   {
     "name": "Brighton & Hove Albion FC",
@@ -218,7 +234,8 @@
     "website": "http://www.seagulls.co.uk",
     "clubColors": "Blue / White",
     "venue": "The American Express Community Stadium",
-    "source": "football-data.org"
+    "source": "football-data.org",
+    "_id": "team_brighton_hove_albion_fc"
   },
   {
     "name": "Brentford FC",
@@ -231,7 +248,8 @@
     "website": "http://www.brentfordfc.co.uk",
     "clubColors": "Red / White / Black",
     "venue": "Griffin Park",
-    "source": "football-data.org"
+    "source": "football-data.org",
+    "_id": "team_brentford_fc"
   },
   {
     "name": "West Ham United FC",
@@ -244,7 +262,8 @@
     "website": "http://www.whufc.com",
     "clubColors": "Claret / Sky Blue",
     "venue": "London Stadium",
-    "source": "football-data.org"
+    "source": "football-data.org",
+    "_id": "team_west_ham_united_fc"
   },
   {
     "name": "AFC Bournemouth",
@@ -257,6 +276,7 @@
     "website": "http://www.afcb.co.uk",
     "clubColors": "Red / Black",
     "venue": "Vitality Stadium",
-    "source": "football-data.org"
+    "source": "football-data.org",
+    "_id": "team_afc_bournemouth"
   }
 ]

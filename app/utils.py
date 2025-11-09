@@ -2,8 +2,8 @@ from __future__ import annotations
 
 from datetime import datetime
 from typing import Any, Iterable, Optional
-from bson import ObjectId
 
+from bson import ObjectId
 from flask import jsonify, request
 
 from .config import config
@@ -58,6 +58,7 @@ def iso_to_datetime(value: str) -> Optional[datetime]:
     except (TypeError, ValueError):
         return None
 
+
 def parse_pagination_args(req, default_size=20, max_size=100):
     try:
         page = max(1, int(req.args.get("page", 1)))
@@ -85,8 +86,10 @@ def normalize_id(doc: dict | None):
         doc.pop("_id", None)
     return doc
 
+
 def normalize_many(docs: list[dict]):
     return [normalize_id(d) for d in docs]
+
 
 def ok_list(items, page, page_size, total):
     return jsonify({
@@ -97,18 +100,23 @@ def ok_list(items, page, page_size, total):
         "total_pages": (total + page_size - 1) // page_size if page_size else 0,
     }), 200
 
+
 def looks_like_oid(s: str) -> bool:
     return isinstance(s, str) and len(s) == 24 and all(c in "0123456789abcdefABCDEF" for c in s)
 
+
+def maybe_object_id(value: Any) -> Any:
+    """Coerce ``value`` to :class:`~bson.ObjectId` when appropriate."""
+    if isinstance(value, str) and looks_like_oid(value):
+        try:
+            return ObjectId(value)
+        except Exception:
+            return value
+    return value
+
+
 def resolve_existing_id(db, coll_name: str, value: str | None):
-    """
-    Accepts:
-      - ObjectId string
-      - existing string _id (e.g. 'season_2025_26_epl')
-      - known code/slug/name fields
-      - numeric legacy ids (e.g. fd_team_id=57)
-    Returns the exact _id stored in the DB (ObjectId or string), or None.
-    """
+    """Resolve ``value`` to the stored ``_id`` in ``coll_name`` if it exists."""
     if not value:
         return None
 
@@ -129,7 +137,7 @@ def resolve_existing_id(db, coll_name: str, value: str | None):
         if doc:
             return value
 
-    # 3) Numeric legacy ids (your teams use fd_team_id)
+    # 3) Numeric legacy ids
     if isinstance(value, str) and value.isdigit():
         n = int(value)
         for f in ("fd_team_id", "legacy_id", "id", "external_id"):
@@ -140,8 +148,8 @@ def resolve_existing_id(db, coll_name: str, value: str | None):
     # 4) Common string identifiers (order matters)
     field_order = {
         "competitions": ("code", "slug", "name"),
-        "seasons":      ("code", "slug", "year"),   # your seasons use string _id anyway
-        "teams":        ("tla", "shortName", "name", "slug", "code"),
+        "seasons": ("code", "slug", "year"),
+        "teams": ("tla", "shortName", "name", "slug", "code"),
     }
     try_fields = field_order.get(coll_name, ("code", "slug", "name"))
 

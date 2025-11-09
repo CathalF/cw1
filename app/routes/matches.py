@@ -1,12 +1,16 @@
-from ..utils import resolve_existing_id
-
 # app/matches.py
-from datetime import datetime
+from datetime import datetime, date as dt_date
 from bson import ObjectId
 from flask import Blueprint, request, jsonify
 from ..db import get_db
 from ..decorators import require_auth
-from ..utils import normalize_id, normalize_many, error_response, ok_list
+from ..utils import (
+    normalize_id,
+    error_response,
+    ok_list,
+    maybe_object_id,
+    resolve_existing_id,
+)
 from ..pagination import parse_pagination_args
 # --- 1. IMPORT THE SCHEMA ---
 from ..validators import MatchSchema 
@@ -53,11 +57,16 @@ def list_matches():
     date_to = _parse_iso_date(request.args.get("to"))
     team_id = request.args.get("team_id")
 
-    # --- FIX: Use string IDs for queries ---
     if comp:
-        q["competition_id"] = comp
+        comp_id = resolve_existing_id(db, "competitions", comp)
+        if not comp_id:
+            return error_response("VALIDATION_ERROR", "Invalid competition_id", 400)
+        q["competition_id"] = comp_id
     if season:
-        q["season_id"] = season
+        season_id = resolve_existing_id(db, "seasons", season)
+        if not season_id:
+            return error_response("VALIDATION_ERROR", "Invalid season_id", 400)
+        q["season_id"] = season_id
     if status:
         q["status"] = status
     if date_from or date_to:
@@ -65,7 +74,10 @@ def list_matches():
         if date_from: q["date"]["$gte"] = date_from
         if date_to: q["date"]["$lte"] = date_to
     if team_id:
-        q["$or"] = [{"home_team_id": team_id}, {"away_team_id": team_id}]
+        resolved_team = resolve_existing_id(db, "teams", team_id)
+        if not resolved_team:
+            return error_response("VALIDATION_ERROR", "Invalid team_id", 400)
+        q["$or"] = [{"home_team_id": resolved_team}, {"away_team_id": resolved_team}]
 
     cursor = (
         db.matches.find(q)
@@ -77,9 +89,6 @@ def list_matches():
     total = db.matches.count_documents(q)
     return ok_list(items, page, page_size, total)
 
-
-from datetime import datetime, date as dt_date
-from ..utils import resolve_existing_id
 
 @matches_bp.post("/")
 @require_auth(role="admin")
@@ -118,26 +127,46 @@ def create_match():
 def update_match(match_id):
     db = get_db()
     payload = request.get_json(force=True) or {}
-    
+
     # --- 2. VALIDATE THE DATA ---
     data = MatchSchema(partial=True).load(payload)
 
-    # --- 3. CHECK FOREIGN KEYS (if provided) ---
-    if "competition_id" in data and not db.competitions.find_one({"_id": data["competition_id"]}):
-        return error_response("VALIDATION_ERROR", "Competition not found", 422)
-    if "season_id" in data and not db.seasons.find_one({"_id": data["season_id"]}):
-        return error_response("VALIDATION_ERROR", "Season not found", 422)
-    if "home_team_id" in data and not db.teams.find_one({"_id": data["home_team_id"]}):
-        return error_response("VALIDATION_ERROR", "Home team not found", 422)
-    if "away_team_id" in data and not db.teams.find_one({"_id": data["away_team_id"]}):
-        return error_response("VALIDATION_ERROR", "Away team not found", 422)
+    if not match_id:
+        return error_response("VALIDATION_ERROR", "Invalid match id", 400)
 
-    res = db.matches.update_one({"_id": match_id}, {"$set": data})
+    key = maybe_object_id(match_id)
+
+    # --- 3. CHECK FOREIGN KEYS (if provided) ---
+    if "competition_id" in data:
+        comp_id = resolve_existing_id(db, "competitions", data["competition_id"])
+        if not comp_id:
+            return error_response("VALIDATION_ERROR", "Competition not found", 422)
+        data["competition_id"] = comp_id
+    if "season_id" in data:
+        season_id = resolve_existing_id(db, "seasons", data["season_id"])
+        if not season_id:
+            return error_response("VALIDATION_ERROR", "Season not found", 422)
+        data["season_id"] = season_id
+    if "home_team_id" in data:
+        home_id = resolve_existing_id(db, "teams", data["home_team_id"])
+        if not home_id:
+            return error_response("VALIDATION_ERROR", "Home team not found", 422)
+        data["home_team_id"] = home_id
+    if "away_team_id" in data:
+        away_id = resolve_existing_id(db, "teams", data["away_team_id"])
+        if not away_id:
+            return error_response("VALIDATION_ERROR", "Away team not found", 422)
+        data["away_team_id"] = away_id
+
+    if "date" in data and isinstance(data["date"], dt_date) and not isinstance(data["date"], datetime):
+        data["date"] = datetime.combine(data["date"], datetime.min.time())
+
+    res = db.matches.update_one({"_id": key}, {"$set": data})
     if res.matched_count == 0:
         # --- FIX: Added 3 arguments ---
         return error_response("NOT_FOUND", "Match not found", 404)
 
-    doc = db.matches.find_one({"_id": match_id})
+    doc = db.matches.find_one({"_id": key})
     return jsonify(_serialize_match(doc)), 200
 
 
@@ -145,8 +174,11 @@ def update_match(match_id):
 @require_auth(role="admin")
 def delete_match(match_id):
     db = get_db()
-    # --- FIX: Use string ID ---
-    res = db.matches.delete_one({"_id": match_id})
+    if not match_id:
+        return error_response("VALIDATION_ERROR", "Invalid match id", 400)
+
+    key = maybe_object_id(match_id)
+    res = db.matches.delete_one({"_id": key})
     if res.deleted_count == 0:
         # --- FIX: Added 3 arguments ---
         return error_response("NOT_FOUND", "Match not found", 404)
