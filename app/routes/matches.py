@@ -1,4 +1,3 @@
-# app/matches.py
 from datetime import datetime, date as dt_date
 from bson import ObjectId
 from flask import Blueprint, request, jsonify
@@ -12,13 +11,12 @@ from ..utils import (
     resolve_existing_id,
 )
 from ..pagination import parse_pagination_args
-# --- 1. IMPORT THE SCHEMA ---
-from ..validators import MatchSchema 
+from ..validators import MatchSchema
 
 matches_bp = Blueprint("matches", __name__, url_prefix="/api/v1/matches")
 
 
-# ---------- Helpers ----------
+# Helper utilities for parsing and serialising match documents.
 
 def _parse_iso_date(s: str | None):
     if not s: return None
@@ -30,10 +28,10 @@ def _serialize_match(doc):
     """Convert ObjectIds and datetime fields to JSON-safe types"""
     if not doc: return None
     
-    # --- USE NORMALIZE_ID ---
-    doc = normalize_id(doc) 
-    
-    # Normalize other string IDs (if they are present)
+    # Normalise the Mongo `_id` to a friendly `id` field first.
+    doc = normalize_id(doc)
+
+    # Convert foreign keys into strings when Mongo returns ObjectIds.
     for key in ["competition_id", "season_id", "home_team_id", "away_team_id"]:
         if key in doc and isinstance(doc[key], ObjectId):
             doc[key] = str(doc[key])
@@ -43,7 +41,7 @@ def _serialize_match(doc):
     return doc
 
 
-# ---------- Routes ----------
+# HTTP endpoints
 
 @matches_bp.get("/")
 def list_matches():
@@ -95,7 +93,8 @@ def get_match(match_id):
     if not match_id:
         return error_response("VALIDATION_ERROR", "Invalid match id", 400)
 
-    key = maybe_object_id(match_id)          # accepts ObjectId hex or plain string
+    # Accept either an ObjectId hex string or a plain identifier.
+    key = maybe_object_id(match_id)
     doc = db.matches.find_one({"_id": key})
     if not doc:
         return error_response("NOT_FOUND", "Match not found", 404)
@@ -108,9 +107,10 @@ def get_match(match_id):
 def create_match():
     db = get_db()
     payload = request.get_json(force=True) or {}
-    data = MatchSchema().load(payload)  # returns date as datetime.date
+    # The schema yields a datetime.date, which we upgrade before persistence.
+    data = MatchSchema().load(payload)
 
-    # Resolve incoming identifiers to actual _ids in your DB
+    # Resolve friendly identifiers to their stored counterparts before writing.
     comp_id   = resolve_existing_id(db, "competitions", data["competition_id"])
     season_id = resolve_existing_id(db, "seasons",      data["season_id"])
     home_id   = resolve_existing_id(db, "teams",        data["home_team_id"])
@@ -126,7 +126,7 @@ def create_match():
     data["home_team_id"]   = home_id
     data["away_team_id"]   = away_id
 
-    # Ensure Mongo gets a datetime (not a date)
+    # Mongo expects a datetime object, so coerce plain dates accordingly.
     if isinstance(data.get("date"), dt_date) and not isinstance(data["date"], datetime):
         data["date"] = datetime.combine(data["date"], datetime.min.time())
 
@@ -141,7 +141,7 @@ def update_match(match_id):
     db = get_db()
     payload = request.get_json(force=True) or {}
 
-    # --- 2. VALIDATE THE DATA ---
+    # Validate partial updates using the same schema rules.
     data = MatchSchema(partial=True).load(payload)
 
     if not match_id:
@@ -149,7 +149,7 @@ def update_match(match_id):
 
     key = maybe_object_id(match_id)
 
-    # --- 3. CHECK FOREIGN KEYS (if provided) ---
+    # Re-resolve any foreign keys provided in the update payload.
     if "competition_id" in data:
         comp_id = resolve_existing_id(db, "competitions", data["competition_id"])
         if not comp_id:
@@ -176,7 +176,6 @@ def update_match(match_id):
 
     res = db.matches.update_one({"_id": key}, {"$set": data})
     if res.matched_count == 0:
-        # --- FIX: Added 3 arguments ---
         return error_response("NOT_FOUND", "Match not found", 404)
 
     doc = db.matches.find_one({"_id": key})
@@ -193,6 +192,5 @@ def delete_match(match_id):
     key = maybe_object_id(match_id)
     res = db.matches.delete_one({"_id": key})
     if res.deleted_count == 0:
-        # --- FIX: Added 3 arguments ---
         return error_response("NOT_FOUND", "Match not found", 404)
     return "", 204

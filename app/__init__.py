@@ -1,4 +1,3 @@
-# app/__init__.py
 from __future__ import annotations
 
 from flask import Flask
@@ -19,7 +18,7 @@ from .utils import error_response
 def create_app() -> Flask:
     app = Flask(__name__)
 
-    # --- Configuration ---
+    # Load runtime settings from the central config module.
     app.config.from_mapping(
         MONGO_URI=config.MONGO_URI,
         JWT_SECRET=config.JWT_SECRET,
@@ -27,8 +26,7 @@ def create_app() -> Flask:
         PAGINATION_MAX=config.PAGINATION_MAX,
     )
 
-    # --- Register blueprints ---
-    # IMPORTANT: Blueprints themselves already define their url_prefix.
+    # Register every feature blueprint; each blueprint brings its own URL prefix.
     app.register_blueprint(auth_bp)
     app.register_blueprint(competitions_bp)
     app.register_blueprint(seasons_bp)
@@ -39,9 +37,9 @@ def create_app() -> Flask:
     app.register_blueprint(tables_bp)
     app.register_blueprint(analytics_bp)
 
-    # --- Error handlers ---
+    # Provide consistent API responses for common error cases.
     @app.errorhandler(ValidationError)
-    def handle_validation(error: ValidationError):  # type: ignore[override]
+    def handle_validation(error: ValidationError):
         details = [
             {"field": key, "issue": ", ".join(map(str, value))}
             for key, value in error.messages.items()

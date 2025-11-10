@@ -28,26 +28,26 @@ def collection(name: str) -> Collection:
 
 
 def ensure_indexes(db):
-    # competitions
+    # Keep competition lookups quick and enforce unique slugs.
     db.competitions.create_index([("slug", 1)], unique=True, name="competitions_slug_uq")
     db.competitions.create_index([("country", 1), ("tier", 1)], name="competitions_country_tier")
 
-    # seasons
+    # Seasons depend on their competition, so pair the keys together.
     db.seasons.create_index([("competition_id", 1), ("slug", 1)], unique=True, name="seasons_comp_slug_uq")
     db.seasons.create_index([("competition_id", 1), ("start_date", 1)], name="seasons_comp_start")
 
-    # teams
+    # Teams can be found by slug, name text search, or stadium location.
     db.teams.create_index([("slug", 1)], unique=True, name="teams_slug_uq")
     db.teams.create_index([("name", "text")], name="teams_name_text")
     db.teams.create_index([("stadium.location", "2dsphere")], name="teams_stadium_geo")
 
-    # players
+    # Player lookups need fast access by slug, name, and current club.
     db.players.create_index([("slug", 1)], unique=True, name="players_slug_uq")
     db.players.create_index([("name", "text")], name="players_name_text")
     db.players.create_index([("current_team_id", 1)], name="players_current_team")
 
-    # matches
-    # IMPORTANT: use *your* canonical date field; change "date" <-> "date_utc" if needed. Keep it consistent everywhere.
+    # Match queries revolve around competition, season, and chronological filters.
+    # Adjust the date field here if your schema uses a different key such as "date_utc".
     db.matches.create_index([("competition_id", 1), ("season_id", 1), ("date", 1)], name="matches_comp_season_date")
     db.matches.create_index([("home_team_id", 1), ("date", 1)], name="matches_home_date")
     db.matches.create_index([("away_team_id", 1), ("date", 1)], name="matches_away_date")
@@ -55,15 +55,15 @@ def ensure_indexes(db):
     db.matches.create_index([("events.player_id", 1)], name="matches_events_player")
     db.matches.create_index([("events.team_id", 1)], name="matches_events_team")
 
-    # notes (if you store notes separately)
+    # Notes live in their own collection so we order them by match and author timestamps.
     db.match_notes.create_index([("match_id", 1), ("created_at", -1)], name="notes_match_created")
     db.match_notes.create_index([("created_by.user_id", 1), ("created_at", -1)], name="notes_author_created")
 
-    # users
+    # Users must stay unique on username and email.
     db.users.create_index([("username", 1)], unique=True, name="users_username_uq")
     db.users.create_index([("email", 1)], unique=True, name="users_email_uq")
 
-    # blacklist
+    # Blacklist entries store the token itself once.
     db.blacklist.create_index([("token", 1)], unique=True, name="blacklist_token_uq")
 
 
