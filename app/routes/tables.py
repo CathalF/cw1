@@ -14,7 +14,7 @@ from ..utils import error_response, maybe_object_id
 tables_bp = Blueprint("tables", __name__, url_prefix="/api/v1/tables")
 MATCHES = collection("matches")
 
-# ---------- helpers ----------
+# Helper functions for cleaning scoreboard data.
 
 def _iso(s: str | None):
     if not s:
@@ -70,7 +70,7 @@ def _tally_row(row: Dict, gf: int, ga: int, pts_win=3, pts_draw=1, pts_loss=0):
     return res
 
 def _sort_key(row):
-    # points desc, gd desc, gf desc, name asc
+    # Sort by points first, then goal difference, then goals scored, then name.
     return (-row["points"], -row["gd"], -row["gf"], row["team"])
 
 def _slim(r: dict):
@@ -93,12 +93,12 @@ def league_table_by_ids(competition_id: str, season_id: str):
     if status:
         match_filter["status"] = status
 
-    # Helpers that return NULL when score is missing/unparseable (so we can filter them out)
+    # Build expressions that collapse to None when a match lacks a readable score.
     ft_home_expr = {
         "$let": { "vars": { "ft": "$score.ft", "s": "$score" }, "in":
             { "$switch": {
                 "branches": [
-                    # ft as array [h,a]
+                    # Handle the array representation like [home, away].
                     { "case": { "$eq": [ { "$type": "$$ft" }, "array" ] },
                       "then": {
                         "$let": { "vars": {
@@ -112,7 +112,7 @@ def league_table_by_ids(competition_id: str, season_id: str):
                           ] }
                         }
                       } },
-                    # ft as object {home, away}
+                    # Accept the object form {home: x, away: y} too.
                     { "case": { "$eq": [ { "$type": "$$ft" }, "object" ] },
                       "then": {
                         "$let": { "vars": { "h": "$score.ft.home", "a": "$score.ft.away" }, "in":
@@ -123,7 +123,7 @@ def league_table_by_ids(competition_id: str, season_id: str):
                           ] }
                         }
                       } },
-                    # score as string "h-a"
+                    # Fall back to parsing a string like "2-1".
                     { "case": { "$eq": [ { "$type": "$$s.score" }, "string" ] },
                       "then": {
                         "$let": { "vars": {
@@ -146,7 +146,7 @@ def league_table_by_ids(competition_id: str, season_id: str):
         "$let": { "vars": { "ft": "$score.ft", "s": "$score" }, "in":
             { "$switch": {
                 "branches": [
-                    # ft as array [h,a]
+                    # Handle the array representation like [home, away].
                     { "case": { "$eq": [ { "$type": "$$ft" }, "array" ] },
                       "then": {
                         "$let": { "vars": {
@@ -160,7 +160,7 @@ def league_table_by_ids(competition_id: str, season_id: str):
                           ] }
                         }
                       } },
-                    # ft as object {home, away}
+                    # Accept the object form {home: x, away: y} too.
                     { "case": { "$eq": [ { "$type": "$$ft" }, "object" ] },
                       "then": {
                         "$let": { "vars": { "h": "$score.ft.home", "a": "$score.ft.away" }, "in":
@@ -171,7 +171,7 @@ def league_table_by_ids(competition_id: str, season_id: str):
                           ] }
                         }
                       } },
-                    # score as string "h-a"
+                    # Fall back to parsing a string like "2-1".
                     { "case": { "$eq": [ { "$type": "$$s.score" }, "string" ] },
                       "then": {
                         "$let": { "vars": {
@@ -200,7 +200,7 @@ def league_table_by_ids(competition_id: str, season_id: str):
         { "$project": { "rows": ["$home_row", "$away_row"] } },
         { "$unwind": "$rows" },
 
-        # ⛔ Exclude unplayed/unknown scores (gf or ga is null)
+        # Skip any rows where the score never resolved to real numbers.
         { "$match": { "rows.gf": { "$ne": None }, "rows.ga": { "$ne": None } } },
 
         { "$addFields": {

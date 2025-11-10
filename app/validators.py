@@ -94,11 +94,11 @@ class TeamCreateSchema(Schema):
     founded     = fields.Int(allow_none=True, validate=validate.Range(min=1800, max=2100))
     stadium     = fields.Str(allow_none=True, validate=validate.Length(max=120))
     competition = fields.Str(allow_none=True, validate=validate.Length(max=120))
-    # anything extra (e.g., crest url, colors)
+    # Allow optional presentation extras such as crest URLs or club colors.
     extra       = fields.Dict(allow_none=True)
 
 class TeamUpdateSchema(Schema):
-    # all optional; same constraints
+    # Updates mirror the creation rules but keep every field optional.
     name        = fields.Str(validate=validate.Length(min=2, max=100))
     short_name  = fields.Str(validate=validate.Length(max=40))
     city        = fields.Str(validate=validate.Length(max=80))

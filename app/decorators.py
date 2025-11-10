@@ -1,4 +1,3 @@
-# app/decorators.py
 from __future__ import annotations
 
 from functools import wraps
@@ -35,12 +34,12 @@ def require_auth(role: Optional[Literal["user", "admin"]] = None) -> Callable:
             if not token:
                 return error_response("UNAUTHENTICATED", "Authentication required", 401)
 
-            # 1) Blacklist check
+            # Make sure the token hasn't been explicitly revoked first.
             db = get_db()
             if db.blacklist.find_one({"token": token}):
                 return error_response("TOKEN_REVOKED", "Token has been revoked", 401)
 
-            # 2) Decode token
+            # Decode the JWT so we can read the user information.
             try:
                 payload = jwt.decode(token, config.JWT_SECRET, algorithms=["HS256"])
             except jwt.ExpiredSignatureError:
@@ -52,7 +51,7 @@ def require_auth(role: Optional[Literal["user", "admin"]] = None) -> Callable:
             if not sub:
                 return error_response("INVALID_TOKEN", "Invalid token payload", 401)
 
-            # Your users use string UUIDs for _id
+            # User identifiers are stored as string UUIDs in the collection.
             users = collection("users")
             user = users.find_one({"_id": sub})
             if not user:
@@ -61,7 +60,7 @@ def require_auth(role: Optional[Literal["user", "admin"]] = None) -> Callable:
             if role == "admin" and user.get("role") != "admin":
                 return error_response("UNAUTHORISED", "Admin privileges required", 403)
 
-            # Attach user to request context for downstream handlers
+            # Stash the authenticated user on the request context for later handlers.
             g.current_user = {
                 "_id": str(user["_id"]),
                 "email": user.get("email"),

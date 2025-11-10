@@ -1,4 +1,3 @@
-# app/auth.py
 from __future__ import annotations
 
 import uuid
@@ -15,13 +14,13 @@ from .db import collection, get_db
 from .utils import error_response
 from .decorators import require_auth
 
-# Use a clear URL prefix so routes mount under /api/v1/auth/...
+# We keep auth endpoints under a dedicated blueprint for clarity.
 auth_bp = Blueprint("auth", __name__, url_prefix="/api/v1/auth")
 
 
-# ------------ helpers ------------
+# Password helpers
 def hash_password(password: str) -> str:
-    # PBKDF2 (sha256 + random salt)
+    # PBKDF2 keeps brute-force attempts slow without us managing salts manually.
     return generate_password_hash(str(password), method="pbkdf2:sha256", salt_length=16)
 
 def verify_password(password: str, password_hash: str) -> bool:
@@ -30,7 +29,8 @@ def verify_password(password: str, password_hash: str) -> bool:
 def create_token(user: dict[str, Any]) -> str:
     now = datetime.now(timezone.utc)
     payload = {
-        "sub": str(user["_id"]),                     # subject = user id (string UUID)
+        # Store the user identifier so the token tells us who it belongs to.
+        "sub": str(user["_id"]),
         "role": user.get("role", "user"),
         "iat": int(now.timestamp()),
         "exp": int((now + config.JWT_EXPIRATION).timestamp()),
@@ -38,7 +38,7 @@ def create_token(user: dict[str, Any]) -> str:
     return jwt.encode(payload, config.JWT_SECRET, algorithm="HS256")
 
 
-# ------------ routes ------------
+# Public endpoints
 @auth_bp.post("/register")
 def register():
     data = request.get_json(silent=True) or {}
@@ -54,7 +54,8 @@ def register():
 
     user_id = str(uuid.uuid4())
     doc = {
-        "_id": user_id,                       # string UUID
+        # Use UUIDs so they play nicely with JSON clients.
+        "_id": user_id,
         "email": email,
         "password_hash": hash_password(password),
         "role": "user",
@@ -91,7 +92,7 @@ def login():
 
 
 @auth_bp.post("/logout")
-@require_auth()  # any logged-in user can log out
+@require_auth()
 def logout():
     """
     Blacklist the exact token string so it can't be reused.
