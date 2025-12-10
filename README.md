@@ -15,6 +15,14 @@ GoalLine API is a RESTful football data service exposing competitions, seasons, 
    flask --app goalline_api.app:create_app run --debug
    ```
 
+### Angular frontend (optional)
+
+An Angular 17 client lives under `frontend/` and consumes the same `/api/v1` endpoints exposed by the Flask service.
+
+1. Install Node 18+ and run `npm install` inside `frontend/`.
+2. Start the UI locally with `npm start`; the dev server defaults to port 4200.
+3. Ensure the Flask server is reachable at `http://localhost:5000` or update `frontend/src/environments/environment.ts` to point at your API host.
+
 ## Project Structure
 
 ```

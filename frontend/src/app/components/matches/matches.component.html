@@ -1,0 +1,37 @@
+<div class="card">
+  <h2>Matches</h2>
+  <form class="filters" (ngSubmit)="load()">
+    <div class="field">
+      <label>Team id</label>
+      <input [(ngModel)]="team_id" name="team_id" placeholder="team id or slug" />
+    </div>
+    <div class="field">
+      <label>Status</label>
+      <select [(ngModel)]="status" name="status">
+        <option value="">Any</option>
+        <option value="scheduled">Scheduled</option>
+        <option value="finished">Finished</option>
+      </select>
+    </div>
+    <button class="primary" type="submit" [disabled]="loading">Filter</button>
+  </form>
+  <p *ngIf="loading">Loading matches…</p>
+  <table class="table" *ngIf="!loading">
+    <thead>
+      <tr>
+        <th>Fixture</th>
+        <th>Date</th>
+        <th>Status</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let m of matches">
+        <td>{{ m.home_team_id }} vs {{ m.away_team_id }}</td>
+        <td>{{ m.date ? (m.date | date:'medium') : '—' }}</td>
+        <td><span class="badge">{{ m.status || 'scheduled' }}</span></td>
+        <td><a [routerLink]="['/notes', m.id]">Notes</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
