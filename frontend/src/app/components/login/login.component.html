@@ -1,0 +1,18 @@
+<div class="card form-card">
+  <h2>Login</h2>
+  <p class="muted">Use the same credentials you registered with the API.</p>
+
+  <div *ngIf="error" class="alert">{{ error }}</div>
+
+  <form (ngSubmit)="submit()" autocomplete="on">
+    <div class="field">
+      <label>Email</label>
+      <input type="email" [(ngModel)]="email" name="email" required />
+    </div>
+    <div class="field">
+      <label>Password</label>
+      <input type="password" [(ngModel)]="password" name="password" required />
+    </div>
+    <button class="primary" type="submit" [disabled]="loading">{{ loading ? 'Signing in…' : 'Login' }}</button>
+  </form>
+</div>

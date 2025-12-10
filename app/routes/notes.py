@@ -1,4 +1,3 @@
-# app/routes/notes.py
 from __future__ import annotations
 
 from datetime import datetime, timezone
@@ -9,12 +8,14 @@ from flask import Blueprint, jsonify, request, g
 
 from ..db import get_db
 from ..utils import error_response, resolve_existing_id
-from ..auth import require_auth  # uses g.current_user set by token
+from ..auth import require_auth
+
+# The auth decorator populates ``g.current_user`` so we can record ownership.
 
 notes_bp = Blueprint("notes", __name__, url_prefix="/api/v1/notes")
 notes_bp.strict_slashes = False
 
-# -------- helpers --------
+# Helper utilities for formatting note documents.
 
 def _iso(dt):
     if not dt:
@@ -44,7 +45,7 @@ def _object_id(id_str: str):
     except Exception:
         return None
 
-# -------- routes --------
+# Endpoints
 
 @notes_bp.post("/")
 @require_auth()
@@ -58,13 +59,14 @@ def create_note():
     if not match_id or not text:
         return error_response("VALIDATION_ERROR", "match_id and note are required", 422)
 
-    # returns the canonical _id (ObjectId OR string) if it exists; otherwise None
+    # Resolve whatever identifier the caller provided to the stored match id.
     mid = resolve_existing_id(db, "matches", match_id)
     if not mid:
         return error_response("NOT_FOUND", "Match not found", 404)
 
     doc = {
-        "match_id": mid,                 # store in the same type as matches._id
+        # Keep the match reference in the same type Mongo already uses.
+        "match_id": mid,
         "note": text,
         "created_by": {
             "user_id": str(g.current_user["_id"]),

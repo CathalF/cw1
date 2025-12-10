@@ -1,0 +1,27 @@
+<div class="layout">
+  <header class="header">
+    <div class="brand">GoalLine</div>
+    <nav class="nav">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Dashboard</a>
+      <a routerLink="/competitions" routerLinkActive="active">Competitions</a>
+      <a routerLink="/matches" routerLinkActive="active">Matches</a>
+      <a routerLink="/teams" routerLinkActive="active">Teams</a>
+      <a routerLink="/players" routerLinkActive="active">Players</a>
+      <a routerLink="/analytics" routerLinkActive="active">Analytics</a>
+    </nav>
+    <div class="auth">
+      <ng-container *ngIf="(user$ | async) as user; else loggedOut">
+        <span class="user">{{ user.email }} ({{ user.role }})</span>
+        <button class="link" (click)="logout()">Logout</button>
+      </ng-container>
+      <ng-template #loggedOut>
+        <a routerLink="/login" class="link">Login</a>
+        <a routerLink="/register" class="link">Register</a>
+      </ng-template>
+    </div>
+  </header>
+
+  <main class="content">
+    <router-outlet></router-outlet>
+  </main>
+</div>

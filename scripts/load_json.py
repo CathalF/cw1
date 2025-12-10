@@ -1,11 +1,10 @@
-# scripts/load_json.py
 from pathlib import Path
 import json, re
 from datetime import datetime
 from pymongo import MongoClient
 
 MONGO_URI = "mongodb://localhost:27017"
-DB_NAME = "goalline"  # change if needed
+DB_NAME = "goalline"  # Tweak this when loading into a different database.
 
 client = MongoClient(MONGO_URI)
 db = client[DB_NAME]
@@ -34,7 +33,7 @@ def normalize_score(score):
     """
     out = {}
 
-    # dict with ft/ht
+    # Structured payloads with ft/ht keys.
     if isinstance(score, dict):
         ft = score.get("ft")
         if isinstance(ft, list) and len(ft) == 2:
@@ -50,7 +49,7 @@ def normalize_score(score):
 
         return out if "ft" in out else None
 
-    # plain "h-a" string
+    # Handle simple "h-a" score strings.
     if isinstance(score, str):
         m = re.match(r"^\s*(\d+)\D+(\d+)\s*$", score)
         if m:
@@ -69,7 +68,7 @@ def load_simple(name):
     if not isinstance(docs, list):
         return 0
     if docs:
-        db[name].delete_many({})  # replace-all for simplicity
+        db[name].delete_many({})  # Clear existing documents so we reload from scratch.
         db[name].insert_many(docs)
     return len(docs)
 
@@ -81,7 +80,7 @@ def load_matches():
 
     raw = json.loads(path.read_text(encoding="utf-8"))
 
-    # Accept either: {"name": "...", "matches":[...]} OR a plain list of matches
+    # Input can be either {"name": ..., "matches": [...]} or a bare list of matches.
     comp_name = None
     matches = []
     if isinstance(raw, dict) and "matches" in raw:
@@ -90,7 +89,7 @@ def load_matches():
     elif isinstance(raw, list):
         matches = raw
 
-    # Try to parse a season token from name like "... 2025/26"
+    # Pull a season token from names like "Competition 2025/26" when possible.
     parsed_season = None
     if isinstance(comp_name, str):
         m = re.search(r"(\d{4}\s*/\s*\d{2})$", comp_name)
@@ -103,38 +102,38 @@ def load_matches():
     season_ids_seen = set()
 
     for m in matches:
-        doc = dict(m)  # shallow copy
+        doc = dict(m)  # Shallow copy so we can tweak fields safely.
 
-        # Normalise date string
+        # Normalise the date field into YYYY-MM-DD.
         doc["date"] = to_iso(m.get("date"))
 
-        # Normalise score
+        # Tidy score representations into our canonical structure.
         ns = normalize_score(m.get("score"))
         if ns:
             doc["score"] = ns
         else:
             doc.pop("score", None)
 
-        # Preserve explicit *_id fields from input; optionally add human-friendly fields
+        # Keep explicit *_id values but backfill friendly names when they are missing.
         if comp_name and "competition" not in doc:
             doc["competition"] = comp_name
         if parsed_season and "season" not in doc:
             doc["season"] = parsed_season
 
-        # Track ids to build a delete filter for this dataset
+        # Track identifiers so we can build a precise delete filter later.
         if isinstance(doc.get("competition_id"), str):
             comp_ids_seen.add(doc["competition_id"])
         if isinstance(doc.get("season_id"), str):
             season_ids_seen.add(doc["season_id"])
 
-        # Remove None fields
+        # Strip out keys with None values to keep documents lean.
         doc = {k: v for k, v in doc.items() if v is not None}
         out.append(doc)
 
     if not out:
         return 0
 
-    # Replace existing docs for this dataset if we can identify them narrowly
+    # Replace existing docs when we can uniquely identify the dataset by ids.
     delete_filter = {}
     if len(comp_ids_seen) == 1:
         delete_filter["competition_id"] = next(iter(comp_ids_seen))
@@ -151,12 +150,12 @@ def load_matches():
 
 
 def ensure_indexes():
-    # New schema indexes
+    # Indexes for the newer schema fields.
     db.matches.create_index([("date", 1)])
     db.matches.create_index([("competition_id", 1), ("season_id", 1)])
     db.matches.create_index([("home_team_id", 1)])
     db.matches.create_index([("away_team_id", 1)])
-    # Legacy helpers (if you ever query these)
+    # Handy indexes for the legacy structure in case you still query it.
     db.matches.create_index([("competition", 1), ("season", 1)])
     db.matches.create_index([("team1", 1)])
     db.matches.create_index([("team2", 1)])
