@@ -1,6 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/angular.json",
   "version": 1,
+  "defaultProject": "goalline-frontend",
   "projects": {
     "goalline-frontend": {
       "projectType": "application",
@@ -41,11 +42,11 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "buildTarget": "goalline-frontend:build"
+            "browserTarget": "goalline-frontend:build"
           },
           "configurations": {
             "production": {
-              "buildTarget": "goalline-frontend:build:production"
+              "browserTarget": "goalline-frontend:build:production"
             }
           }
         },
@@ -61,8 +62,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": false
   }
 }
