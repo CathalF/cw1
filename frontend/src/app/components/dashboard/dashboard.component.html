@@ -1,0 +1,34 @@
+<div class="card-grid">
+  <div class="card">
+    <h3>Competitions</h3>
+    <p *ngIf="!competitions.length">No competitions loaded yet.</p>
+    <ul>
+      <li *ngFor="let c of competitions">{{ c.name }} <span class="badge">{{ c.country || 'Unknown' }}</span></li>
+    </ul>
+    <a routerLink="/competitions">View competitions →</a>
+  </div>
+
+  <div class="card">
+    <h3>Teams</h3>
+    <p *ngIf="!teams.length">No teams available.</p>
+    <ul>
+      <li *ngFor="let t of teams">{{ t.name }}<span class="badge" *ngIf="t.country">{{ t.country }}</span></li>
+    </ul>
+    <a routerLink="/teams">Explore teams →</a>
+  </div>
+
+  <div class="card">
+    <h3>Upcoming matches</h3>
+    <p *ngIf="!matches.length">No fixtures stored yet.</p>
+    <ul>
+      <li *ngFor="let m of matches">
+        <div class="row">
+          <span>{{ m.home_team_id }} vs {{ m.away_team_id }}</span>
+          <span class="badge">{{ m.status || 'scheduled' }}</span>
+        </div>
+        <small *ngIf="m.date">{{ m.date | date:'mediumDate' }}</small>
+      </li>
+    </ul>
+    <a routerLink="/matches">See all matches →</a>
+  </div>
+</div>

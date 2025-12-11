@@ -1,4 +1,3 @@
-# app/competitions.py
 from flask import Blueprint, request, jsonify
 
 from ..db import get_db
@@ -22,6 +21,7 @@ def list_competitions():
     q = {}
     country = request.args.get("country")
     if country:
+        # Country filters allow clients to slice the competition list quickly.
         q["country"] = country
     cursor = (db.competitions.find(q)
                            .sort([("tier", 1), ("name", 1)])
@@ -40,7 +40,6 @@ def get_competition(comp_id):
     key = maybe_object_id(comp_id)
     doc = db.competitions.find_one({"_id": key})
     if not doc:
-        # --- FIX: Added 3 arguments ---
         return error_response("NOT_FOUND", "Competition not found", 404)
     return jsonify(normalize_id(doc)), 200
 
@@ -66,7 +65,6 @@ def update_competition(comp_id):
     key = maybe_object_id(comp_id)
     res = db.competitions.update_one({"_id": key}, {"$set": data})
     if res.matched_count == 0:
-        # --- FIX: Added 3 arguments ---
         return error_response("NOT_FOUND", "Competition not found", 404)
     doc = db.competitions.find_one({"_id": key})
     return jsonify(normalize_id(doc)), 200
@@ -81,6 +79,5 @@ def delete_competition(comp_id):
     key = maybe_object_id(comp_id)
     res = db.competitions.delete_one({"_id": key})
     if res.deleted_count == 0:
-        # --- FIX: Added 3 arguments ---
         return error_response("NOT_FOUND", "Competition not found", 404)
     return "", 204

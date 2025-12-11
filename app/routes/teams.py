@@ -1,4 +1,3 @@
-# app/teams.py
 from flask import Blueprint, request, jsonify
 
 from ..db import get_db
@@ -43,7 +42,6 @@ def get_team(team_id):
     key = maybe_object_id(team_id)
     doc = db.teams.find_one({"_id": key})
     if not doc:
-        # --- FIX: Added 3 arguments ---
         return error_response("NOT_FOUND", "Team not found", 404)
     return jsonify(normalize_id(doc)), 200
 
@@ -56,7 +54,7 @@ def create_team():
     try:
         res = db.teams.insert_one(data)
     except Exception as e:
-        # --- FIX: Added 3 arguments ---
+        # Surface the database error so clients know why the insert failed.
         return error_response("SERVER_ERROR", f"Insert failed: {e}", 400)
     doc = db.teams.find_one({"_id": res.inserted_id})
     return jsonify(normalize_id(doc)), 201
@@ -73,7 +71,6 @@ def update_team(team_id):
     key = maybe_object_id(team_id)
     res = db.teams.update_one({"_id": key}, {"$set": data})
     if res.matched_count == 0:
-        # --- FIX: Added 3 arguments ---
         return error_response("NOT_FOUND", "Team not found", 404)
     doc = db.teams.find_one({"_id": key})
     return jsonify(normalize_id(doc)), 200
@@ -88,6 +85,5 @@ def delete_team(team_id):
     key = maybe_object_id(team_id)
     res = db.teams.delete_one({"_id": key})
     if res.deleted_count == 0:
-        # --- FIX: Added 3 arguments ---
         return error_response("NOT_FOUND", "Team not found", 404)
     return "", 204

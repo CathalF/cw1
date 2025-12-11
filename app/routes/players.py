@@ -1,4 +1,3 @@
-# app/players.py
 from flask import Blueprint, request, jsonify
 
 from ..db import get_db
@@ -26,6 +25,7 @@ def list_players():
     if name:
         q["$text"] = {"$search": name}
     if team_id:
+        # Let callers supply any known team identifier and resolve it to the primary key.
         resolved = resolve_existing_id(db, "teams", team_id)
         if not resolved:
             return error_response("VALIDATION_ERROR", "Invalid team_id", 400)
@@ -47,7 +47,6 @@ def get_player(player_id):
     key = maybe_object_id(player_id)
     doc = db.players.find_one({"_id": key})
     if not doc:
-        # --- FIX: Added 3 arguments ---
         return error_response("NOT_FOUND", "Player not found", 404)
     return jsonify(normalize_id(doc)), 200
 
@@ -73,7 +72,6 @@ def update_player(player_id):
     key = maybe_object_id(player_id)
     res = db.players.update_one({"_id": key}, {"$set": data})
     if res.matched_count == 0:
-        # --- FIX: Added 3 arguments ---
         return error_response("NOT_FOUND", "Player not found", 404)
     doc = db.players.find_one({"_id": key})
     return jsonify(normalize_id(doc)), 200
@@ -88,6 +86,5 @@ def delete_player(player_id):
     key = maybe_object_id(player_id)
     res = db.players.delete_one({"_id": key})
     if res.deleted_count == 0:
-        # --- FIX: Added 3 arguments ---
         return error_response("NOT_FOUND", "Player not found", 404)
     return "", 204

@@ -12,7 +12,7 @@ from ..db import collection
 analytics_bp = Blueprint("analytics", __name__, url_prefix="/api/v1/analytics")
 MATCHES = collection("matches")
 
-# ------------ helpers ------------
+# Helper utilities shared across analytics endpoints.
 
 def _iso(s: str | None) -> Optional[str]:
     if not s:
@@ -22,7 +22,7 @@ def _iso(s: str | None) -> Optional[str]:
     except Exception:
         return None
 
-# Accept "2-1" (any non-digit separator)
+# Accept score strings like "2-1" even when separators vary.
 
 _SCORE_RE = re.compile(r"^\s*(\d+)\D+(\d+)\s*$")
 
@@ -48,7 +48,7 @@ def _parse_score(score):
                 return None
 
     if isinstance(score, str):
-        m = _SCORE_RE.match(score)  # <-- no space here
+        m = _SCORE_RE.match(score)  # Compact pattern keeps non-digits as separators only.
         if m:
             return int(m.group(1)), int(m.group(2))
 
@@ -73,7 +73,7 @@ def _base_query_from_args():
     """
     q: Dict[str, Any] = {}
 
-    # legacy
+    # Legacy schema filters.
     comp = request.args.get("competition")
     if comp:
         q["competition"] = comp.strip()
@@ -84,7 +84,7 @@ def _base_query_from_args():
     if season:
         q["season"] = season.strip()
 
-    # new
+    # New schema filters.
     comp_id = request.args.get("competition_id")
     if comp_id:
         q["competition_id"] = comp_id.strip()
@@ -98,7 +98,7 @@ def _base_query_from_args():
     if status:
         q["status"] = status.strip()
 
-    # dates
+    # Date range filters.
     df = _iso(request.args.get("date_from"))
     dt = _iso(request.args.get("date_to"))
     if df and dt:
@@ -112,34 +112,28 @@ def _base_query_from_args():
     return q, round_to, df, dt
 
 def _fetch_matches(q: Dict[str, Any], round_to: Optional[str]) -> Iterator[Dict[str, Any]]:
-    """
-    Yields normalized match dicts with:
-      - teamA, teamB (IDs if available else names)
-      - score_ft: (h, a)
-      - date, round (if present)
-    Skips unplayed matches (no valid FT score).
-    """
+    """Yield normalised match dicts ready for downstream analytics."""
     proj = {
-        # new schema
+        # Fields from the modern schema.
         "home_team_id": 1, "away_team_id": 1,
         "home_team": 1, "away_team": 1,
         "competition_id": 1, "season_id": 1,
         "status": 1,
-        # legacy
+        # Fields from the legacy schema.
         "team1": 1, "team2": 1,
         "competition": 1, "season": 1,
-        # common
+        # Fields shared by both versions.
         "score": 1, "round": 1, "date": 1, "_id": 0
     }
     cursor = MATCHES.find(q, proj).sort([("date", 1), ("round", 1)])
     for m in cursor:
-        # legacy cutoff by round lexicographically (as your original)
+        # Honour optional round cut-offs for legacy data sets.
         if round_to and isinstance(m.get("round"), str) and m["round"] > round_to:
             continue
 
         s = _parse_score(m.get("score"))
         if s is None:
-            continue  # ignore fixtures with no FT score
+            continue  # ignore fixtures with no full-time score
 
         a, b = _pick_team_fields(m)
         yield {
@@ -150,7 +144,7 @@ def _fetch_matches(q: Dict[str, Any], round_to: Optional[str]) -> Iterator[Dict[
             "score_ft": s,
         }
 
-# ------------ /h2h ------------
+# Head-to-head endpoint
 
 @analytics_bp.get("/h2h")
 def head_to_head():
@@ -164,11 +158,10 @@ def head_to_head():
     if not t1 or not t2:
         return jsonify({"error":{"code":"BAD_REQUEST","message":"team1 and team2 are required"}}), 400
 
-    # Base filters (competition/season/date/status etc.)
+    # Start from the shared filter set (competition, season, date, and status).
     q, round_to, df, dt = _base_query_from_args()
 
-    # Only fetch matches that *could* involve either team (fast pre-filter).
-    # Works for both schemas (IDs or names).
+    # Pre-filter to matches that reference either team across both schemas.
     teams_or = [
         {"home_team_id": {"$in": [t1, t2]}},
         {"away_team_id": {"$in": [t1, t2]}},
@@ -178,7 +171,7 @@ def head_to_head():
         {"team2":       {"$in": [t1, t2]}},
     ]
     if "$or" in q:
-        # merge with any existing "$or" (e.g., team_id); keep both using AND
+        # Merge any previous OR clauses (like team_id) with the new one via AND.
         q = {"$and": [ {k:v for k,v in q.items() if k != "$or"}, {"$or": q["$or"]}, {"$or": teams_or} ]}
     else:
         q["$or"] = teams_or
@@ -194,7 +187,7 @@ def head_to_head():
         a, b = m["teamA"], m["teamB"]
         g1, g2 = m["score_ft"]
 
-        # STRICT check: this fixture must be exactly these two teams
+        # Only count fixtures involving exactly the two requested teams.
         if {a, b} != {t1, t2}:
             continue
 
@@ -225,7 +218,7 @@ def head_to_head():
         "matches": matches
     }), 200
 
-# ------------ /streaks ------------
+# Streaks endpoint
 
 @analytics_bp.get("/streaks")
 def streaks():
@@ -241,8 +234,8 @@ def streaks():
     q, round_to, df, dt = _base_query_from_args()
     matches = list(_fetch_matches(q, round_to))
 
-    # chronological sequences per team (overall; home perspective vs away perspective)
-    seqs = defaultdict(list)  # team -> [(res, gf, ga), ...]
+    # Build chronological sequences per team so we can measure streaks.
+    seqs = defaultdict(list)  # Each entry is (result, goals_for, goals_against).
     for m in matches:
         a, b = m["teamA"], m["teamB"]
         g1, g2 = m["score_ft"]
@@ -277,7 +270,7 @@ def streaks():
         "streaks": rows[:limit]
     })
 
-# ------------ /form ------------
+# Form endpoint
 
 @analytics_bp.get("/form")
 def form():
@@ -314,7 +307,7 @@ def form():
             continue
         rows.append({"team": t, "n": n, "form": list(seq), "form_str": "".join(seq)})
 
-    # Sort by most Ws in window, then by string length (all equal to n), then team
+    # Sort primarily by wins in the window, then alphabetically for stability.
     rows.sort(key=lambda r: (-r["form"].count("W"), r["team"]))
     return jsonify({
         "filters": {"n": n, "by": by, "team": team_filter,
