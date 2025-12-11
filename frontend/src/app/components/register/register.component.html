@@ -1,0 +1,18 @@
+<div class="card form-card">
+  <h2>Create an account</h2>
+  <p class="muted">Registration immediately logs you in and stores the JWT for protected endpoints.</p>
+
+  <div *ngIf="error" class="alert">{{ error }}</div>
+
+  <form (ngSubmit)="submit()">
+    <div class="field">
+      <label>Email</label>
+      <input type="email" [(ngModel)]="email" name="email" required />
+    </div>
+    <div class="field">
+      <label>Password</label>
+      <input type="password" [(ngModel)]="password" name="password" required />
+    </div>
+    <button class="primary" type="submit" [disabled]="loading">{{ loading ? 'Working…' : 'Register' }}</button>
+  </form>
+</div>

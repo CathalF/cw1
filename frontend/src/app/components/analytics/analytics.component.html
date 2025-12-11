@@ -1,0 +1,20 @@
+<div class="card">
+  <h2>Recent form</h2>
+  <p class="muted">Derived from /api/v1/analytics/form (wins shown as W, draws as D, losses as L).</p>
+  <p *ngIf="loading">Loading form guide…</p>
+  <div *ngIf="error" class="alert">{{ error }}</div>
+  <table class="table" *ngIf="!loading && !error">
+    <thead>
+      <tr>
+        <th>Team</th>
+        <th>Last results</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of data">
+        <td>{{ row.team }}</td>
+        <td>{{ row.form_str }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

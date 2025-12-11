@@ -1,4 +1,3 @@
-# app/pagination.py
 from __future__ import annotations
 
 from typing import Tuple
@@ -24,6 +23,7 @@ def parse_pagination_args(
       - PAGINATION_MAX
     Returns (page, page_size).
     """
+    # Use caller overrides when available, otherwise lean on Flask configuration.
     cfg_default = default if default is not None else int(current_app.config.get("PAGINATION_DEFAULT", 20))
     cfg_max = max_ if max_ is not None else int(current_app.config.get("PAGINATION_MAX", 100))
 

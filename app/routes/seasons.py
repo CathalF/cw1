@@ -1,4 +1,3 @@
-# app/seasons.py
 from bson import ObjectId
 from flask import Blueprint, request, jsonify
 
@@ -25,6 +24,7 @@ def list_seasons():
     competition_id = request.args.get("competition_id")
     status = request.args.get("status")
     if competition_id:
+        # Resolve various competition identifiers to the stored primary key.
         resolved = resolve_existing_id(db, "competitions", competition_id)
         if not resolved:
             return error_response("VALIDATION_ERROR", "Invalid competition_id", 400)
@@ -48,7 +48,6 @@ def get_season(season_id):
     key = maybe_object_id(season_id)
     doc = db.seasons.find_one({"_id": key})
     if not doc:
-        # --- FIX: Added 3 arguments ---
         return error_response("NOT_FOUND", "Season not found", 404)
     doc = normalize_id(doc)
     if isinstance(doc.get("competition_id"), ObjectId):
@@ -71,7 +70,7 @@ def create_season():
     res = db.seasons.insert_one(data)
     doc = db.seasons.find_one({"_id": res.inserted_id})
 
-    # 🔧 convert ObjectIds to strings for JSON
+    # Convert ObjectIds to plain strings so the payload stays JSON friendly.
     doc = normalize_id(doc)
     if isinstance(doc.get("competition_id"), ObjectId):
         doc["competition_id"] = str(doc["competition_id"])
@@ -95,7 +94,6 @@ def update_season(season_id):
         data["competition_id"] = resolved_comp
     res = db.seasons.update_one({"_id": key}, {"$set": data})
     if res.matched_count == 0:
-        # --- FIX: Added 3 arguments ---
         return error_response("NOT_FOUND", "Season not found", 404)
     doc = db.seasons.find_one({"_id": key})
     doc = normalize_id(doc)
@@ -113,6 +111,5 @@ def delete_season(season_id):
     key = maybe_object_id(season_id)
     res = db.seasons.delete_one({"_id": key})
     if res.deleted_count == 0:
-        # --- FIX: Added 3 arguments ---
         return error_response("NOT_FOUND", "Season not found", 404)
     return "", 204

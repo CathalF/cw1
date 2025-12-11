@@ -1,0 +1,35 @@
+<div class="card" *ngIf="match">
+  <h2>Match notes</h2>
+  <p class="muted">{{ match.home_team_id }} vs {{ match.away_team_id }} • {{ match.date ? (match.date | date:'medium') : 'TBC' }}</p>
+</div>
+
+<div class="card" *ngIf="error">{{ error }}</div>
+
+<div class="card">
+  <h3>Existing notes</h3>
+  <p *ngIf="loading">Loading notes…</p>
+  <p *ngIf="!loading && !notes.length">No notes for this match yet.</p>
+  <ul class="notes" *ngIf="!loading && notes.length">
+    <li *ngFor="let n of notes">
+      <div class="note-header">
+        <strong>{{ n.created_by.username || 'User' }}</strong>
+        <small>{{ n.created_at | date:'short' }}</small>
+      </div>
+      <p>{{ n.note }}</p>
+      <button class="primary" (click)="delete(n.id)">Delete</button>
+    </li>
+  </ul>
+</div>
+
+<div class="card" *ngIf="auth.isAuthenticated(); else loginPrompt">
+  <h3>Add a note</h3>
+  <div class="field">
+    <label>Note</label>
+    <textarea [(ngModel)]="noteText" rows="4" placeholder="Observations, tactics, standout players…"></textarea>
+  </div>
+  <button class="primary" (click)="saveNote()">Save note</button>
+</div>
+
+<ng-template #loginPrompt>
+  <div class="card alert">Login to leave match notes.</div>
+</ng-template>

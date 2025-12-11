@@ -82,7 +82,8 @@ def normalize_id(doc: dict | None):
         try:
             doc["id"] = str(_id)
         except Exception:
-            doc["id"] = _id  # fallback if already a string/uuid
+            # If the value is already JSON-friendly just reuse it.
+            doc["id"] = _id
         doc.pop("_id", None)
     return doc
 
@@ -122,7 +123,7 @@ def resolve_existing_id(db, coll_name: str, value: str | None):
 
     coll = db[coll_name]
 
-    # 1) ObjectId string?
+    # First, treat the value as a hexadecimal ObjectId if it fits the pattern.
     if isinstance(value, str) and looks_like_oid(value):
         try:
             oid = ObjectId(value)
@@ -131,13 +132,13 @@ def resolve_existing_id(db, coll_name: str, value: str | None):
         except Exception:
             pass
 
-    # 2) Exact string _id?
+    # If that fails, look for an exact string match on the primary key.
     if isinstance(value, str):
         doc = coll.find_one({"_id": value}, {"_id": 1})
         if doc:
             return value
 
-    # 3) Numeric legacy ids
+    # Some clients still send numeric identifiers from older systems.
     if isinstance(value, str) and value.isdigit():
         n = int(value)
         for f in ("fd_team_id", "legacy_id", "id", "external_id"):
@@ -145,7 +146,7 @@ def resolve_existing_id(db, coll_name: str, value: str | None):
             if doc:
                 return doc["_id"]
 
-    # 4) Common string identifiers (order matters)
+    # Finally, try common string fields in a deterministic order.
     field_order = {
         "competitions": ("code", "slug", "name"),
         "seasons": ("code", "slug", "year"),

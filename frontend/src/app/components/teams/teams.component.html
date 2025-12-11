@@ -1,0 +1,31 @@
+<div class="card">
+  <h2>Teams</h2>
+  <form class="filters" (ngSubmit)="load()">
+    <div class="field">
+      <label>Search name</label>
+      <input [(ngModel)]="name" name="name" placeholder="Arsenal" />
+    </div>
+    <div class="field">
+      <label>Country</label>
+      <input [(ngModel)]="country" name="country" placeholder="England" />
+    </div>
+    <button class="primary" type="submit" [disabled]="loading">Filter</button>
+  </form>
+  <p *ngIf="loading">Loading teams…</p>
+  <table class="table" *ngIf="!loading">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Country</th>
+        <th>Code</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let t of teams">
+        <td>{{ t.name }}</td>
+        <td>{{ t.country || '—' }}</td>
+        <td>{{ t.code || '—' }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
