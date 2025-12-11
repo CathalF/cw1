@@ -1,7 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/angular.json",
   "version": 1,
-  "defaultProject": "goalline-frontend",
   "projects": {
     "goalline-frontend": {
       "projectType": "application",
